@@ -4,7 +4,7 @@ client = Client()
 
 def mod_order(app, option, type_user):
     if (option  == 'create'):
-        order.create()
+        order.create(app)
     elif (option  == 'status'):
         order.status(app)
     elif (option  == 'update'):
