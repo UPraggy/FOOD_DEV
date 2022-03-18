@@ -52,11 +52,4 @@ class Client:
 
     def delete(field_src):
         cd.delete_data(Client.src_path(), 'CLIENT', field_src)
-        
-class Chat:
-    def __init__(self, name_employee, name_client, order_number):
-        self.name_employee = name_employee
-        self.name_client = name_client
-        self.order_number = order_number
-        
 
