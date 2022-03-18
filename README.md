@@ -1,6 +1,4 @@
 # FOOD_DEV
-Program aimed at storing in excel using python.
-# FOOD_DEV
 Program aimed at storing in excel using python.<br>
 All and any documentation related to the program will be in their proper folders.
 
