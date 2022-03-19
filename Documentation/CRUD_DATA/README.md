@@ -1,7 +1,7 @@
 # Summary
 - **[Objective]()**
 - **[List Functions]()**
-- **[Functions]()**
+- **[Functions](FOOD_DEV/Documentation/CRUD_DATA#Functions)**
 # Objective
 - The objective of this module is to perform the basic operations of
 include, select, update and delete.
@@ -21,11 +21,11 @@ visualization, trying to escape the repetition of lines.
 ## Insert Data
 The structure has as entries the file_path which varies according to
 the type_data which is the other input, its purpose is to insert data in the selected file.<br>
-- Entries:<br>
-   - Type_data -> input variable that checks what type of file
+- **Entries:**<br>
+   - **Type_data** -> input variable that checks what type of file
      that you want to access "CLIENT" or "ORDER". Its function is to help the File_path.
 
-  - File_path -> input variable that receives the folder address
+  - **File_path** -> input variable that receives the folder address
     where the file is located, varying according to the Type_data. When the
     Type_data assumes "ORDER" it receives the address of the Verify_type function where the
     set of operations around directories and files. When it assumes "CLIENT"
@@ -35,7 +35,7 @@ the type_data which is the other input, its purpose is to insert data in the sel
     are used in the Verify_type function, the description about these entries will be in the
     Verify_Type function description
 
-- Operation:
+- **Operation**:
   - After setting the value of File_path, the open operation is performed
     the excel file through Pandas and storage in the Data variable
     
