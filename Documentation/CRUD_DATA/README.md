@@ -138,7 +138,48 @@ selected file.<br>
    
    
    
+## Delete  Data
+The structure has as entries the file_path that varies according to
+the type_data which is the other input and the Field_src, its purpose is to delete data in the
+selected file.<br>
+- **Entries:**<br>
+   - **Type_data** -> input variable that checks what type of file
+     that you want to access "CLIENT" or "ORDER". Its function is to help the File_path.
+
+  - **File_path** -> input variable that receives the folder address
+    where the file is located, varying according to the Type_data. When the
+    Type_data assumes "ORDER" it receives the address of the Verify_type function where the
+    set of operations around directories and files. When it assumes "CLIENT"
+    it doesn't need to go through the conditional structure as it already has a directory
+    default, which was received.
+    Obs.: When assuming the value "ORDER" the variable also has other parameters of which
+    are used in the Verify_type function, the description about these entries will be in the
+    Verify_Type function description
+    
+  - **Field_src** -> input variable that receives the name of the column you want to change.
+
+- **Operation**:
+  - After setting the value of File_path, the open operation is performed
+    the excel file through Pandas and storage in the Data variable
+    
+  - The Search_data function is executed where the data to be searched is entered
+   and returns the line the data is on, the description about these entries and the function
+   will be in the description of the Search_data function.
+   
+  - Checks through the conditional structure if any data was recovered and then
+    after checking if there is more than one data retrieved.
+    
+  - If there is more than one data, you will be asked to select which data to
+    be deleted.
+    
+  - The Data variable receives a new dataframe without the deleted data that was deleted.
+
+  - Finally, the index is set for the first column of data so that
+   the first column of the new DataFrame does not display the column index values
+   as 0,1,2... and yes as the first column, after that the saving is done
    of the data file with all changes in excel format.
    
+   
+   > END OF PAGE
    
 
