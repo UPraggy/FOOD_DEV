@@ -35,28 +35,52 @@ the type_data which is the other input, its purpose is to insert data in the sel
     Obs.: When assuming the value "ORDER" the variable also has other parameters of which
     are used in the Verify_type function, the description about these entries will be in the
     Verify_Type function description
+```python
+def insert_data(file_path, type_data):
+```
 
 - **Operation**:
   - After setting the value of File_path, the open operation is performed
     the excel file through Pandas and storage in the Data variable
-    
+```python
+def insert_data(file_path, type_data):
+    if(type_data == 'ORDER'):
+        file_path = verify_type(file_path)       
+    data = pd.read_excel(f'{file_path}')
+```
   - stored the columns in the Cols variable
-
+```python
+    cols = data.columns
+```
   - Creation of an Nw_data vector that will receive the input data
     it was created to the exact size according to the columns.
-    
+```python
+    nw_data = [x for x in range(len(cols))]
+```
   - After creating the vector and inputting data the vector is converted
     in a tuple which is the only way to create a Data_frame
     as seen soon after
-    
+```python
+    print("Insert the dataset")
+    for x in range(len(cols)):
+        nw_data[x] = input(f'Insert {cols[x]}: ')
+    nw_data = [tuple(nw_data)]
+    nw_data = pd.DataFrame(nw_data, columns = cols)
+```
   - The Data variable receives as a vector it and the new dataframe for logo
     then join the data with the concatenate function into a single DataFrame
-    
+```python
+    data = [data, nw_data]
+    data = pd.concat(data)
+```
   - Finally, the index is set for the first column of data so that
   the first column of the new DataFrame does not display the column index values
   as 0,1,2... and yes as the first column, after that the saving is done
    of the data file with all changes in excel format.
-   
+```python
+    data = data.set_index(f'{cols[0]}')
+    data.to_excel(f'{file_path}')
+```
    
 
 ## Select  Data
