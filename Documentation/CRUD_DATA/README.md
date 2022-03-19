@@ -103,17 +103,32 @@ selected file.<br>
    
   - **Field_src** -> input variable that receives the name of the column you want to change.
 
+```python
+    def select_data(file_path, type_data, field_src):
+```
 - **Operation**:
   - After setting the value of File_path, the open operation is performed
     the excel file through Pandas and storage in the Data variable
-    
+```python
+    if(type_data == 'ORDER'):
+        file_path = verify_type(file_path)
+    data = pd.read_excel(f'{file_path}')
+```
   - The Search_data function is executed where the data to be searched is entered
    and returns the line the data is on, the description about these entries and the function
    will be in the description of the Search_data function.
+```python
+    input_data = search_data(data, field_src)
+```
 
-  - Checks through the conditional structure if any data was recovered.
-    
-  - After the data is retrieved, the data list with the same value is printed
+  - Checks through the conditional structure if any data was recovered.After the data is retrieved, the data list with the same value is printed
+```python
+    if(len(input_data) == 0):
+        print("ERROR: Invalid Input")
+    else:
+        print("List of records: \n")
+        print(input_data)
+```
 
 
 
@@ -140,6 +155,11 @@ selected file.<br>
 - **Operation**:
   - After setting the value of File_path, the open operation is performed
     the excel file through Pandas and storage in the Data variable
+    
+  - stored the columns in the Cols variable
+```python
+    cols = data.columns
+```
     
   - The Search_data function is executed where the data to be searched is entered
    and returns the line the data is on, the description about these entries and the function
@@ -185,6 +205,11 @@ selected file.<br>
 - **Operation**:
   - After setting the value of File_path, the open operation is performed
     the excel file through Pandas and storage in the Data variable
+    
+  - stored the columns in the Cols variable
+```python
+    cols = data.columns
+```
     
   - The Search_data function is executed where the data to be searched is entered
    and returns the line the data is on, the description about these entries and the function
