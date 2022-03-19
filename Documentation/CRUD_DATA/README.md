@@ -1,7 +1,7 @@
 # Summary
 - **[Objective]()**
 - **[List Functions]()**
-- **[Functions](FOOD_DEV/Documentation/CRUD_DATA#Functions)**
+- **[Functions](https://upraggy.github.io/FOOD_DEV/Documentation/CRUD_DATA#Functions)**
 # Objective
 - The objective of this module is to perform the basic operations of
 include, select, update and delete.
