@@ -1,7 +1,7 @@
 # Summary
-- **[Objective]()**
-- **[List Functions]()**
-- **[Functions](https://upraggy.github.io/FOOD_DEV/Documentation/CRUD_DATA/README.md#Functions)**
+- **Objective**
+- **List Functions**
+- **Functions**
 
 # Objective
 - The objective of this module is to perform the basic operations of
@@ -10,12 +10,12 @@ The other functions aim to simplify and improve performance and
 visualization, trying to escape the repetition of lines.
 
 # List Functions
-- [Insert Data ]()
-- [Select Data ]()
-- [Update Data ]()
-- [Delete Data ]()
-- [Verify Type ]()
-- [Search Data ]()
+- **Insert Data**
+- **Select Data**
+- **Update Data**
+- **Delete Data**
+- **Verify Type**
+- **Search Data**
 
 # Functions
 
