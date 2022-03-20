@@ -8,4 +8,4 @@ All and any documentation related to the program will be in their proper folders
 
 > [**Documentation**](https://upraggy.github.io/FOOD_DEV/Documentation/)
 
-> [**Documentation**]((https://upraggy.github.io/FOOD_DEV/README.md#project-presentation)
+> [**Documentation**]((https://upraggy.github.io/FOOD_DEV/#project-presentation)
