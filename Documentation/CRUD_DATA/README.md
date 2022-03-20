@@ -48,8 +48,8 @@ the type_data which is the other input, its purpose is to insert data in the sel
 def insert_data(file_path, type_data):
 ```
 
-- **Operation**:
-  - After setting the value of File_path, the open operation is performed
+### **Operation**:
+ - After setting the value of File_path, the open operation is performed
     the excel file through Pandas and storage in the Data variable
 ```python
 def insert_data(file_path, type_data):
@@ -61,12 +61,12 @@ def insert_data(file_path, type_data):
 ```python
     cols = data.columns
 ```
-  - Creation of an Nw_data vector that will receive the input data
+   - Creation of an Nw_data vector that will receive the input data
     it was created to the exact size according to the columns.
 ```python
     nw_data = [x for x in range(len(cols))]
 ```
-  - After creating the vector and inputting data the vector is converted
+   - After creating the vector and inputting data the vector is converted
     in a tuple which is the only way to create a Data_frame
     as seen soon after
 ```python
@@ -143,7 +143,7 @@ selected file.<br>
     
   - **[Field_src](#field-src)**
 
-- **Operation**:
+### **Operation**:
   - After setting the value of File_path, the open operation is performed
     the excel file through Pandas and storage in the Data variable
     
@@ -184,7 +184,7 @@ selected file.<br>
     
   - **[Field_src](#field-src)**
 
-- **Operation**:
+### **Operation**:
   - After setting the value of File_path, the open operation is performed
     the excel file through Pandas and storage in the Data variable
     
