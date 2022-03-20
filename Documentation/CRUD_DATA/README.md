@@ -21,6 +21,7 @@ These are the inputs used according to each function.
    ### **Type Data** 
    > Input variable that checks what type of file
    that you want to access "CLIENT" or "ORDER". Its function is to help the File_path.
+   
    ### **File Path**
    > Input variable that receives the folder address.
     where the file is located, varying according to the Type_data. When the
@@ -31,6 +32,7 @@ These are the inputs used according to each function.
     Obs.: When assuming the value "ORDER" the variable also has other parameters of which
     are used in the Verify_type function, the description about these entries will be in the
     Verify_Type function description.
+    
    ### **Field Src** 
    > Input variable that receives the name of the column you want to change.
     
