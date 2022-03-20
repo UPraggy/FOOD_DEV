@@ -1,7 +1,7 @@
 # Summary
-- **Objective**
-- **[List Functions](#insert-data)**
-- **Functions**
+- **[Objective](#objective)**
+- **[List Functions](#list-functions)**
+- **[Functions](#functions)**
 
 # Objective
 - The objective of this module is to perform the basic operations of
@@ -10,12 +10,12 @@ The other functions aim to simplify and improve performance and
 visualization, trying to escape the repetition of lines.
 
 # List Functions
-- **Insert Data**
-- **Select Data**
-- **Update Data**
-- **Delete Data**
-- **Verify Type**
-- **Search Data**
+- **[Insert Data](#insert-data)**
+- **[Select Data](select-data)**
+- **[Update Data](update-data)**
+- **[Delete Data](delete-data)**
+- **[Verify Type](verify-type)**
+- **[Search Data](search-data)**
 
 # Functions
 
