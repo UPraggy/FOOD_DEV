@@ -11,11 +11,11 @@ visualization, trying to escape the repetition of lines.
 
 # List Functions
 - **[Insert Data](#insert-data)**
-- **[Select Data](select-data)**
-- **[Update Data](update-data)**
-- **[Delete Data](delete-data)**
-- **[Verify Type](verify-type)**
-- **[Search Data](search-data)**
+- **[Select Data](#select--data)**
+- **[Update Data](#update-data)**
+- **[Delete Data](#delete--data)**
+- **[Verify Type](#verify-type)**
+- **[Search Data](#search-data)**
 
 # Functions
 
