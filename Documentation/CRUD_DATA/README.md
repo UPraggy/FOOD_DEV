@@ -1,13 +1,11 @@
 # Summary
 - **[Objective](#objective)**
+- **[Entries](#entries)**
 - **[List Functions](#list-functions)**
 - **[Functions](#functions)**
 
 # Objective
-- The objective of this module is to perform the basic operations of
-include, select, update and delete.
-The other functions aim to simplify and improve performance and
-visualization, trying to escape the repetition of lines.
+- The objective of this module is to perform the basic operations of adding, selecting, updating and deleting. The other functions aim to simplify and improve performance and visualization, trying to avoid repeating lines. This section has been split so that it does not have recursion.
 
 # List Functions
 - **[Insert Data](#insert-data)**
@@ -15,18 +13,16 @@ visualization, trying to escape the repetition of lines.
 - **[Update Data](#update-data)**
 - **[Delete Data](#delete--data)**
 - **[Verify Type](#verify-type)**
-- **[Search Data](#search-data)**
+- **[Search Data](#search-data)**   
 
-# Functions
+# Entries
+These are the inputs used according to each function.
 
-## Insert Data
-The structure has as entries the file_path which varies according to
-the type_data which is the other input, its purpose is to insert data in the selected file.<br>
-- **Entries:**<br>
-   - **Type_data** -> input variable that checks what type of file
-     that you want to access "CLIENT" or "ORDER". Its function is to help the File_path.
-
-  - **File_path** -> input variable that receives the folder address
+   ### **Type Data** 
+   > Input variable that checks what type of file
+   that you want to access "CLIENT" or "ORDER". Its function is to help the File_path.
+   ### **File Path**
+   > Input variable that receives the folder address.
     where the file is located, varying according to the Type_data. When the
     Type_data assumes "ORDER" it receives the address of the Verify_type function where the
     set of operations around directories and files. When it assumes "CLIENT"
@@ -34,7 +30,20 @@ the type_data which is the other input, its purpose is to insert data in the sel
     default, which was received.
     Obs.: When assuming the value "ORDER" the variable also has other parameters of which
     are used in the Verify_type function, the description about these entries will be in the
-    Verify_Type function description
+    Verify_Type function description.
+   ### **Field Src** 
+   > Input variable that receives the name of the column you want to change.
+    
+# Functions
+
+## Insert Data
+The structure has as entries the file_path which varies according to
+the type_data which is the other input, its purpose is to insert data in the selected file.<br>
+- **Entries:**<br>
+   - **[Type_data](#type-data)**
+
+   - **[File_path](#file-path)**
+  
 ```python
 def insert_data(file_path, type_data):
 ```
@@ -88,20 +97,11 @@ The structure has as entries the file_path that varies according to
 the type_data which is the other input and the Field_src, its purpose is to select data in the
 selected file.<br>
 - **Entries:**<br>
-   - **Type_data** -> input variable that checks what type of file
-     that you want to access "CLIENT" or "ORDER". Its function is to help the File_path.
+   - **[Type_data](#type-data)**
 
-  - **File_path** -> input variable that receives the folder address
-    where the file is located, varying according to the Type_data. When the
-    Type_data assumes "ORDER" it receives the address of the Verify_type function where the
-    set of operations around directories and files. When it assumes "CLIENT"
-    it doesn't need to go through the conditional structure as it already has a directory
-    default, which was received.
-    Obs.: When assuming the value "ORDER" the variable also has other parameters of which
-    are used in the Verify_type function, the description about these entries will be in the
-    Verify_Type function description
+  - **[File_path](#file-path)**
    
-  - **Field_src** -> input variable that receives the name of the column you want to change.
+  - **[Field_src](#field-src)**
 
 ```python
     def select_data(file_path, type_data, field_src):
@@ -137,20 +137,11 @@ The structure has as entries the file_path that varies according to
 the type_data which is the other input and the Field_src, its purpose is to update data in the
 selected file.<br>
 - **Entries:**<br>
-   - **Type_data** -> input variable that checks what type of file
-     that you want to access "CLIENT" or "ORDER". Its function is to help the File_path.
+   - **[Type_data](#type-data)**
 
-  - **File_path** -> input variable that receives the folder address
-    where the file is located, varying according to the Type_data. When the
-    Type_data assumes "ORDER" it receives the address of the Verify_type function where the
-    set of operations around directories and files. When it assumes "CLIENT"
-    it doesn't need to go through the conditional structure as it already has a directory
-    default, which was received.
-    Obs.: When assuming the value "ORDER" the variable also has other parameters of which
-    are used in the Verify_type function, the description about these entries will be in the
-    Verify_Type function description
+  - **[File_path](#file-path)**
     
-  - **Field_src** -> input variable that receives the name of the column you want to change.
+  - **[Field_src](#field-src)**
 
 - **Operation**:
   - After setting the value of File_path, the open operation is performed
@@ -187,20 +178,11 @@ The structure has as entries the file_path that varies according to
 the type_data which is the other input and the Field_src, its purpose is to delete data in the
 selected file.<br>
 - **Entries:**<br>
-   - **Type_data** -> input variable that checks what type of file
-     that you want to access "CLIENT" or "ORDER". Its function is to help the File_path.
+   - **[Type_data](#type-data)**
 
-  - **File_path** -> input variable that receives the folder address
-    where the file is located, varying according to the Type_data. When the
-    Type_data assumes "ORDER" it receives the address of the Verify_type function where the
-    set of operations around directories and files. When it assumes "CLIENT"
-    it doesn't need to go through the conditional structure as it already has a directory
-    default, which was received.
-    Obs.: When assuming the value "ORDER" the variable also has other parameters of which
-    are used in the Verify_type function, the description about these entries will be in the
-    Verify_Type function description
+  - **[File_path](#file-path)**
     
-  - **Field_src** -> input variable that receives the name of the column you want to change.
+  - **[Field_src](#field-src)**
 
 - **Operation**:
   - After setting the value of File_path, the open operation is performed
