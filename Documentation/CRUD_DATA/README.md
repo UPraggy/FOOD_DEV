@@ -15,14 +15,14 @@
 - **[Verify Type](#verify-type)**
 - **[Search Data](#search-data)**   
 
-# Entries:
+# Entries
 These are the inputs used according to each function.
 
-   ### **Type Data** 
+   ### Type Data
    > Input variable that checks what type of file
    that you want to access "CLIENT" or "ORDER". Its function is to help the File_path.
    
-   ### **File Path**
+   ### File Path
    > Input variable that receives the folder address.
     where the file is located, varying according to the Type_data. When the
     Type_data assumes "ORDER" it receives the address of the Verify_type function where the
@@ -33,7 +33,7 @@ These are the inputs used according to each function.
     are used in the Verify_type function, the description about these entries will be in the
     Verify_Type function description.
     
-   ### **Field Src** 
+   ### Field Src
    > Input variable that receives the name of the column you want to change.
     
 # Functions
