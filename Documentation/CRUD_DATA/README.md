@@ -15,7 +15,7 @@
 - **[Verify Type](#verify-type)**
 - **[Search Data](#search-data)**   
 
-# Entries
+# Entries:
 These are the inputs used according to each function.
 
    ### **Type Data** 
