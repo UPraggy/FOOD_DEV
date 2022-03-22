@@ -1,7 +1,7 @@
 # Project Presentation
 This page aims to present and document the project. The presentation can and will change as the project progresses.
 
-PROJECT STATUS: IN PROGRESS
+**PROJECT STATUS: IN PROGRESS**
 <br>
 
 >***Documentation links will be at the bottom of the page.*** <br>
