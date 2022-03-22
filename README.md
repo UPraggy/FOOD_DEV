@@ -7,3 +7,8 @@ All and any documentation related to the program will be in their proper folders
 <img src='https://user-images.githubusercontent.com/100146657/159002758-0f85e57a-4f56-46de-abfb-c45529535b24.png' alt="FOOD_DEV - CLIENT LIST">
 
 > [**Documentation**](https://upraggy.github.io/FOOD_DEV/Documentation/)
+> 
+**THIS PROGRAM WAS MADE BY**:<br>
+**Rafael Moreira Ramos de Rezende** 
+
+ [![image](https://user-images.githubusercontent.com/100146657/159492505-d6134d9b-7d19-43ee-9e30-72be719d69f4.png)](https://www.linkedin.com/in/rafael-moreira-ramos-de-rezende-16420b21b/)
