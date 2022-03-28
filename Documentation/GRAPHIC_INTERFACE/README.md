@@ -88,7 +88,7 @@
 ### OBJECTS
 ![image](https://user-images.githubusercontent.com/100146657/160432089-dad2c740-463c-488a-93da-ddeecff169d0.png)
 ```python
-    Variable Name = lmp_lb_p
+    Variable Name = lmp_lb_title
 ```
 ![image](https://user-images.githubusercontent.com/100146657/160432125-ba2476cb-24b0-4cd7-b23e-7cd61f09a046.png)
 
