@@ -20,6 +20,11 @@
 ### Main Menu - LMM
 ![image](https://user-images.githubusercontent.com/100146657/160426891-efbfb388-2b23-4444-9ba9-d3361ea2d62d.png)
 ### OBJECTS
+```python
+    Variable Name = lmm_lb_titel
+```
+![image](https://user-images.githubusercontent.com/100146657/160428010-423a830d-110d-4ce3-bcbb-106bd09350ad.png)
+
 
 ### Client Menu - LMC
 
