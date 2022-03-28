@@ -21,7 +21,7 @@
 ### Main Menu - LMM
 > **This is the System Home and/or Main Menu**
 
-![image](https://user-images.githubusercontent.com/100146657/160486584-e9779788-d38d-4bd3-9101-d043d728237c.png)
+![image](https://user-images.githubusercontent.com/100146657/160490370-0f311413-e266-4461-9643-2e72c0077c3b.png)
 
 ### OBJECTS
 ![image](https://user-images.githubusercontent.com/100146657/160428010-423a830d-110d-4ce3-bcbb-106bd09350ad.png)
@@ -152,15 +152,15 @@
     Variable Name = lmo_btn_m
 ```
 ## Right Menu - RM
-- **[Main Menu - RMM](#main-menu---rmm)** 
-- **[Client Menu - RMC](#client-menu---rmc)**
-- **[Product Menu - RMP](#product-menu---rmp)**
-- **[Order Menu - RMO](#order-menu---rmo)**
+- **[Main Frame - RMM](#main-menu---rmm)** 
+- **[Client Frame - RMC](#client-menu---rmc)**
+- **[Product Frame - RMP](#product-menu---rmp)**
+- **[Order Frame - RMO](#order-menu---rmo)**
 
-### Main Menu - RMM
+### Main Frame - RMM
 > **This is the System Home and/or Main Menu**
 
-![image](https://user-images.githubusercontent.com/100146657/160486635-fadaf442-9fdc-4763-a682-32558d1c842a.png)
+![image](https://user-images.githubusercontent.com/100146657/160490381-adf21f39-734f-4e57-8d79-04e0d01f40da.png)
 
 
 ### OBJECTS
@@ -179,6 +179,10 @@
 ```python
     Variable Name = rmm_lb_logo
 ```
+
+### Client Frame - RMC
+> **This is the Frame directed by clicking on the "CUSTOMER" option from the main menu**
+
 
 > END OF PAGE
    
