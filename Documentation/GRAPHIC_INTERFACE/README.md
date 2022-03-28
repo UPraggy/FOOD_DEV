@@ -21,7 +21,8 @@
 ### Main Menu - LMM
 > **This is the System Home and/or Main Menu**
 
-![image](https://user-images.githubusercontent.com/100146657/160426891-efbfb388-2b23-4444-9ba9-d3361ea2d62d.png)
+![image](https://user-images.githubusercontent.com/100146657/160486584-e9779788-d38d-4bd3-9101-d043d728237c.png)
+
 ### OBJECTS
 ![image](https://user-images.githubusercontent.com/100146657/160428010-423a830d-110d-4ce3-bcbb-106bd09350ad.png)
 ```python
@@ -156,8 +157,9 @@
 
 ### Main Menu - RMM
 > **This is the System Home and/or Main Menu**
-> 
-![image](https://user-images.githubusercontent.com/100146657/160426891-efbfb388-2b23-4444-9ba9-d3361ea2d62d.png)
+
+![image](https://user-images.githubusercontent.com/100146657/160486635-fadaf442-9fdc-4763-a682-32558d1c842a.png)
+
 
 ### OBJECTS
 
