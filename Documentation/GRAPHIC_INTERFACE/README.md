@@ -14,8 +14,9 @@
 ## Left Menu - LM
 - **[Main Menu - LMM](#main-menu---lmm)** 
 - **[Client Menu - LMC](#client-menu---lmc)**
-- **[Order Menu - LMO](#order-menu---lmo)**
 - **[Product Menu - LMP](#product-menu---lmp)**
+- **[Order Menu - LMO](#order-menu---lmo)**
+
 
 ### Main Menu - LMM
 > **This is the System Home and/or Main Menu**
@@ -116,9 +117,37 @@
 ```
 ### Order Menu - LMO
 > **This is the Menu directed by clicking on the "ORDER" option from the main menu**
+![image](https://user-images.githubusercontent.com/100146657/160434708-1914c2b8-e6aa-4327-aba1-c6ed66c43a24.png)
 
 ### OBJECTS
+![image](https://user-images.githubusercontent.com/100146657/160434770-77b0486a-bed0-4fde-8146-994492e1501d.png)
+```python
+    Variable Name = lmo_lb_title
+```
+![image](https://user-images.githubusercontent.com/100146657/160435055-35817a15-3397-43b0-a225-c14da4d08b1d.png)
+```python
+    Variable Name = lmo_btn_do
+```
+![image](https://user-images.githubusercontent.com/100146657/160435159-7179dd08-7919-4de7-a185-d2a64786180c.png)
 
+```python
+    Variable Name = lmo_btn_v
+```
+![image](https://user-images.githubusercontent.com/100146657/160435279-d73edc87-2a42-497b-a9ac-884651bf34ab.png)
+
+```python
+    Variable Name = lmo_btn_u
+```
+![image](https://user-images.githubusercontent.com/100146657/160435299-e8ceb95a-2d8d-4c6e-8d3c-8e965dbc8f41.png)
+
+```python
+    Variable Name = lmo_btn_d
+```
+![image](https://user-images.githubusercontent.com/100146657/160435331-5279b60f-0d0a-468a-b506-d3250fe94bd9.png)
+
+```python
+    Variable Name = lmo_btn_m
+```
 
 > END OF PAGE
    
