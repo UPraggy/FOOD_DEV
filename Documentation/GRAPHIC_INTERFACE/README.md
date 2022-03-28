@@ -4,7 +4,8 @@
 
 
 # Objective
-- The objective of this module is to perform the basic operations of adding, selecting, updating and deleting. The other functions aim to simplify and improve performance and visualization, trying to avoid repeating lines. This section has been split so that it does not have recursion.
+- The objective of this module is to illustrate and describe all the behavior of the interface and its environment variables. This section has been divided in a way that facilitates the understanding of the code and interface operation. **Images are for illustrative purposes only and may not be included in the final program.**
+> Note: The code referring to the program that performs the backend functions will not be available on this page, in case you need to redirect the previous pages.
 
 # GRAPHIC INTERFACE
 - **[Left Menu](#left-menu)**
