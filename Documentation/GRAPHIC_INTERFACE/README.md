@@ -51,7 +51,7 @@
 ### Client Menu - LMC
 > **This is the Menu directed by clicking on the "CLIENT" option from the main menu**
 
-![image](https://user-images.githubusercontent.com/100146657/160430445-9582afaa-b6ff-40c3-ac48-831d95cd389f.png)
+![image](https://user-images.githubusercontent.com/100146657/160489735-b29c992e-02bf-4716-8659-11d4748c0f7f.png)
 ### OBJECTS
 ![image](https://user-images.githubusercontent.com/100146657/160430654-f8628420-bcde-43e9-9890-7b522a716ca3.png)
 ```python
@@ -86,6 +86,7 @@
 ### Product Menu - LMP
 > **This is the Menu directed by clicking on the "PRODUCT" option from the main menu**
 
+![image](https://user-images.githubusercontent.com/100146657/160489786-c6d99b4a-0aee-4997-af5a-5e93b35ad39d.png)
 ### OBJECTS
 ![image](https://user-images.githubusercontent.com/100146657/160432089-dad2c740-463c-488a-93da-ddeecff169d0.png)
 ```python
@@ -118,7 +119,8 @@
 ```
 ### Order Menu - LMO
 > **This is the Menu directed by clicking on the "ORDER" option from the main menu**
-![image](https://user-images.githubusercontent.com/100146657/160434708-1914c2b8-e6aa-4327-aba1-c6ed66c43a24.png)
+
+![image](https://user-images.githubusercontent.com/100146657/160489833-ee4034de-346d-4649-ba87-a29eac58ce2d.png)
 
 ### OBJECTS
 ![image](https://user-images.githubusercontent.com/100146657/160434770-77b0486a-bed0-4fde-8146-994492e1501d.png)
@@ -163,8 +165,20 @@
 
 ### OBJECTS
 
-![image](https://user-images.githubusercontent.com/100146657/160483538-6ce1300e-9cf5-4163-97ec-82c0b0043c70.png)
-
+![Captura de tela 2022-03-28 180917](https://user-images.githubusercontent.com/100146657/160488761-3f41900c-0fe9-4e8e-adb1-73f7e2281aa1.png)
+```python
+    Variable Name = rmm_logo
+```
+> This Object is divided into 3 frames, where the image is located in the middle and the other two ends are used to resize the image according to the screen size.
+```python
+    Variable Name Frame Left = rmm_logo_lf
+    Variable Center Frame = rmm_logo_cf
+    Variable Frame Right = rmm_logo_rf
+```
+![image](https://user-images.githubusercontent.com/100146657/160489471-37009555-ea03-42ae-8736-eaf44408a812.png)
+```python
+    Variable Name = rmm_lb_logo
+```
 
 > END OF PAGE
    
