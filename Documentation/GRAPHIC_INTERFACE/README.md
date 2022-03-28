@@ -181,9 +181,58 @@
 ```
 
 ### Client Frame - RMC
-> **This is the Frame directed by clicking on the "CUSTOMER" option from the main menu**
+> **This is the Frame directed by clicking on the "CLIENT" option from the main menu**
 
+![image](https://user-images.githubusercontent.com/100146657/160494659-e3daf4af-5a5e-47b0-a4ac-df97df15028a.png)
 
+### OBJECTS
+![image](https://user-images.githubusercontent.com/100146657/160497887-854629e7-3062-4ec8-a7a1-41825f4e8b04.png)
+```python
+    Variable Name = rmc_lb_rs
+```
+![image](https://user-images.githubusercontent.com/100146657/160498060-583a0aa9-a7bf-4cda-b0c9-81c8266aa02a.png)
+```python
+    Variable Name = rmc_lb_ed
+```
+![image](https://user-images.githubusercontent.com/100146657/160498749-93f368b3-13e0-4a83-b590-0339fa069aaf.png)
+>this frame is organized between 5 inner frames which contain "LineEdit" inside
+```python
+    Variable Frame = rmc_cb_1
+```
+
+![image](https://user-images.githubusercontent.com/100146657/160499486-d77dba79-9ee6-4c16-95ac-43ac480ec196.png)
+```python
+    Variable Frame = rmc_cb_1_f1
+    Variable LineEdit = rmc_cb_1_f1_name
+```
+![image](https://user-images.githubusercontent.com/100146657/160499283-f0aee672-38a0-46db-ac6a-f3c5b388781a.png)
+```python
+    Variable Frame = rmc_cb_1_f2
+    Variable LineEdit = rmc_cb_1_f2_cpf
+    Variable LineEdit = rmc_cb_1_f2_phone
+```
+![image](https://user-images.githubusercontent.com/100146657/160499512-69c8941e-eac3-4690-8671-16e7fd46ee4b.png)
+```python
+    Variable Frame = rmc_cb_1_f3
+    Variable LineEdit = rmc_cb_1_f3_email
+```
+![image](https://user-images.githubusercontent.com/100146657/160499558-f1dfe806-2ab3-458b-9e04-51ce09cb1e77.png)
+```python
+    Variable Frame = rmc_cb_1_f4
+    Variable LineEdit = rmc_cb_1_f4_card
+```
+![image](https://user-images.githubusercontent.com/100146657/160499623-0f62c631-92dd-4480-b057-806a502600bc.png)
+```python
+    Variable Frame = rmc_cb_1_f5
+    Variable LineEdit = rmc_cb_1_f5_cvv
+    Variable LineEdit = rmc_cb_1_f5_date
+```
+![image](https://user-images.githubusercontent.com/100146657/160499800-6066ed6b-a308-4358-b8a2-a3354972048d.png)
+```python
+    Variable Frame = rmc_btn
+    Variable LineEdit = rmc_btn_b
+    Variable LineEdit = rmc_btn_n
+```
 > END OF PAGE
    
 
