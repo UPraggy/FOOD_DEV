@@ -47,7 +47,7 @@
 ```
 
 ### Client Menu - LMC
-> **This is the Menu directed by clicking on the "client" option from the main menu**
+> **This is the Menu directed by clicking on the "CLIENT" option from the main menu**
 
 ![image](https://user-images.githubusercontent.com/100146657/160430445-9582afaa-b6ff-40c3-ac48-831d95cd389f.png)
 ### OBJECTS
@@ -80,14 +80,44 @@
 ```python
     Variable Name = lmc_btn_m
 ```
-### Order Menu - LMO
 
 ### Product Menu - LMP
+> **This is the Menu directed by clicking on the "PRODUCT" option from the main menu**
+
+### OBJECTS
+![image](https://user-images.githubusercontent.com/100146657/160432089-dad2c740-463c-488a-93da-ddeecff169d0.png)
+```python
+    Variable Name = lmp_lb_p
+```
+![image](https://user-images.githubusercontent.com/100146657/160432125-ba2476cb-24b0-4cd7-b23e-7cd61f09a046.png)
 
 ```python
-    data = [data, nw_data]
-    data = pd.concat(data)
+    Variable Name = lmp_btn_i
 ```
+![image](https://user-images.githubusercontent.com/100146657/160432163-70b8df20-5caf-49d2-a5cf-b77313a19d4a.png)
+
+```python
+    Variable Name = lmp_btn_s
+```
+![image](https://user-images.githubusercontent.com/100146657/160432195-c9184bab-498a-43b2-8828-d403d5f521de.png)
+
+```python
+    Variable Name = lmp_btn_u
+```
+![image](https://user-images.githubusercontent.com/100146657/160432228-12d395ee-bf56-4949-9de0-32e745cd55a8.png)
+
+```python
+    Variable Name = lmp_btn_d
+```
+![image](https://user-images.githubusercontent.com/100146657/160432263-c3127837-30ff-42c7-83eb-c0d500812498.png)
+
+```python
+    Variable Name = lmp_btn_m
+```
+### Order Menu - LMO
+> **This is the Menu directed by clicking on the "ORDER" option from the main menu**
+
+### OBJECTS
 
 
    > END OF PAGE
