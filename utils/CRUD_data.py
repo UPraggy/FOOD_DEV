@@ -1,28 +1,7 @@
 import pandas as pd
-import  time_order as tOrder
 
-def verify_type(file_path):
-    if (file_path[3] == True):
-        file_path = tOrder.current_file_src()
-    else:
-        month = file_path[0]
-        year = file_path[1]
-        file_path = tOrder.file_src(month,year)
-    return file_path
-
-def search_data(data, field_src):
-    input_data = input("Input: ")
-    try:
-       input_data = int(input_data)
-    except ValueError:
-        input_data = str(input_data)
-    input_data = data.loc[data[field_src] == input_data]
-    return input_data
-
-def insert_data(file_path, type_data):
-    if(type_data == 'ORDER'):
-        file_path = verify_type(file_path)       
-    data = pd.read_excel(f'{file_path}')
+def insert_data(file_path_origin, file_path_destination):
+    data = pd.read_excel(f'{file_path_origin}')
     cols = data.columns
     nw_data = [x for x in range(len(cols))]
     print("Insert the dataset")
@@ -33,62 +12,68 @@ def insert_data(file_path, type_data):
     data = [data, nw_data]
     data = pd.concat(data)
     data = data.set_index(f'{cols[0]}')
-    data.to_excel(f'{file_path}')
+    data.to_excel(f'{file_path_destination}')
 
-def select_data(file_path, type_data, field_src):
-    if(type_data == 'ORDER'):
-        file_path = verify_type(file_path)
-        
-    data = pd.read_excel(f'{file_path}')
-    input_data = search_data(data, field_src)
+def select_data(file_path_origin, field_src):
+    data = pd.read_excel(f'{file_path_origin}')
+    input_data = input("Input: ")
+    try:
+       int(input_data)
+    except ValueError:
+        str(input_data)
+    input_data = data.loc[data[field_src] == input_data]
     if(len(input_data) == 0):
         print("ERROR: Invalid Input")
     else:
         print("List of records: \n")
         print(input_data)
 
-def update_data(file_path, type_data, field_src):
-    if(type_data == 'ORDER'):
-        file_path = verify_type(file_path)
-        
-    data = pd.read_excel(f'{file_path}')
+def update_data(file_path_origin, file_path_destination, field_src):
+    data = pd.read_excel(f'{file_path_origin}')
     cols = data.columns
-    input_data = search_data(data, field_src)
+    input_data = input("Input: ")
+    try:
+       int(input_data)
+    except ValueError:
+        str(input_data)
+    input_data = data.loc[data[field_src] == input_data]
     if(len(input_data) == 0):
         print("ERROR: Invalid Input")
+    elif (len(input_data.index) > 1):
+        print("There is more than one record with the parameter passed \nSelect the record to be updated:")
+        print(input_data)
+        input_data = int(input("Input: "))
     else:
-        if (len(input_data.index) > 1):
-            print("There is more than one record with the parameter passed \nSelect the record to be updated:")
-            print(input_data)
-            input_data = int(input("Input: "))
-        else:
-            input_data = input_data.index
-        update_col = field_src
-        update_data = input("Enter the new data: ")
-        new_df = pd.DataFrame({update_col : update_data}, index=[input_data[0]])
-        data.update(new_df)
-        data = data.set_index(f'{cols[0]}')
-        data.to_excel(f'{file_path}')
+        input_data = input_data.index
+    update_col = input("Choose the field to update: ")
+    update_data = input("Enter the new data: ")
+    new_df = pd.DataFrame({update_col : update_data}, index=[input_data[0]])
+    data.update(new_df)
+    data = data.set_index(f'{cols[0]}')
+    data.to_excel(f'{file_path_destination}')
 
 
-def delete_data(file_path, type_data, field_src):
-    if(type_data == 'ORDER'):
-        file_path = verify_type(file_path)
-        
-    data = pd.read_excel(f'{file_path}')
+def delete_data(file_path_origin, file_path_destination, field_src):
+    data = pd.read_excel(f'{file_path_origin}')
     cols = data.columns
-    input_data = search_data(data, field_src)
+    input_data = input("Input: ")
+    try:
+       int(input_data)
+    except ValueError:
+        str(input_data)
+    input_data = data.loc[data[field_src] == input_data]
     if(len(input_data) == 0):
         print("ERROR: Invalid Input")
+    elif (len(input_data.index) > 1):
+        print("There is more than one record with the parameter passed \nSelect the record to be deleted:")
+        print(input_data)
+        record = int(input("Input: "))
+        data = data.drop([record])
     else:
-        if (len(input_data.index) > 1):
-            print("There is more than one record with the parameter passed \nSelect the record to be deleted:")
-            print(input_data)
-            record = int(input("Input: "))
-            data = data.drop([record])
-        else:
-            input_data = input_data.index
-            data = data.drop([input_data[0]])
-        data = data.set_index(f'{cols[0]}')
-        data.to_excel(f'{file_path}')
+        input_data = input_data.index
+        data = data.drop([input_data[0]])
+    data = data.set_index(f'{cols[0]}')
+    data.to_excel(f'{file_path_destination}')
+    
+update_data('0_PROJETOS_PORTIFOLIO/TESTE.xlsx','0_PROJETOS_PORTIFOLIO/TESTE2.xlsx','Client')
 
