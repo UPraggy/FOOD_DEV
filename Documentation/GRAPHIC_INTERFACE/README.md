@@ -148,6 +148,21 @@
 ```python
     Variable Name = lmo_btn_m
 ```
+## Right Menu - RM
+- **[Main Menu - RMM](#main-menu---rmm)** 
+- **[Client Menu - RMC](#client-menu---rmc)**
+- **[Product Menu - RMP](#product-menu---rmp)**
+- **[Order Menu - RMO](#order-menu---rmo)**
+
+### Main Menu - RMM
+> **This is the System Home and/or Main Menu**
+> 
+![image](https://user-images.githubusercontent.com/100146657/160426891-efbfb388-2b23-4444-9ba9-d3361ea2d62d.png)
+
+### OBJECTS
+
+![image](https://user-images.githubusercontent.com/100146657/160483538-6ce1300e-9cf5-4163-97ec-82c0b0043c70.png)
+
 
 > END OF PAGE
    
