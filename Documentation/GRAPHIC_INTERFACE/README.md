@@ -27,9 +27,13 @@
 ![image](https://user-images.githubusercontent.com/100146657/160428211-ca9ed0d6-384d-45b2-903b-2e791afba677.png)
 
 ```python
-    Variable Name = lmm_lb_titel
+    Variable Name = lmm_btn_c
 ```
+![image](https://user-images.githubusercontent.com/100146657/160428415-c4c78378-87cc-404a-8cc0-a2cd4e78ba32.png)
 
+```python
+    Variable Name = lmm_btn_p
+```
 ### Client Menu - LMC
 
 ### Order Menu - LMO
