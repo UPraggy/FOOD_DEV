@@ -1,7 +1,11 @@
 # FOOD_DEV
 Program aimed at storing in excel using python.<br>
-All and any documentation related to the program will be in their proper folders.
+Any and all documentation related to the program will be in their respective folders.<br>
+The project presentation and documentation can be found at the link below.
+### [Link of project](https://upraggy.github.io/FOOD_DEV/) 
+<br>
 
-<img src='https://user-images.githubusercontent.com/100146657/159002929-59d39801-448b-43d4-a8a3-a87f3df912dd.png' alt="FOOD_DEV - PROJECT GOALS" onclick="red()">
-<img src='https://user-images.githubusercontent.com/100146657/159003051-e2424812-61c4-4997-a0e5-73bb65ca5a62.png' alt="FOOD_DEV - ORDERS LIST">
-<img src='https://user-images.githubusercontent.com/100146657/159002758-0f85e57a-4f56-46de-abfb-c45529535b24.png' alt="FOOD_DEV - CLIENT LIST">
+**THIS PROGRAM WAS MADE BY**:<br>
+**Rafael Moreira Ramos de Rezende** 
+
+ [![image](https://user-images.githubusercontent.com/100146657/159492505-d6134d9b-7d19-43ee-9e30-72be719d69f4.png)](https://www.linkedin.com/in/rafael-moreira-ramos-de-rezende-16420b21b/)
