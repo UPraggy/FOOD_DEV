@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="food">
+    <file>FOOD_DEV LOGO 2.png</file>
+  </qresource>
+</RCC>

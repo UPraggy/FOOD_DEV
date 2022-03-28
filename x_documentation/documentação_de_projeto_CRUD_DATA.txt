@@ -1,0 +1,167 @@
+CRUD_data 
+O objetivo deste modulo é fazer as operações basicas de 
+incluir, selecionar, atualizar e deletar.
+As outras funções visam simplificar e melhorar desempenho e 
+visualização, tentando fugir da repetição de linhas.
+
+Funcões:
+
+--> Insert Data - A estrutura tem como entradas o file_path que varia de acordo com 
+o type_data que é a outra entrada, seu objetivo é inserir dados no arquivo selecionado.
+	Entradas:
+		Type_data -> variavel de entrada que verifica qual o tipo de arquivo 
+		que deseja acessar "CLIENT" ou "ORDER". Sua funcão serve para auxiliar o File_path. 
+
+		File_path -> variavel de entrada que recebe o endereçamento de pasta 
+		em que se encontra o arquivo, variando de acordo com o Type_data. Quando o
+		Type_data assume "ORDER" ele recebe o endereço da função Verify_type onde é feito o
+		conjunto de operações em torno de diretórios e arquivos. Já quando assume "CLIENT"
+		ele não precisa passar pela estrutura condicional, pois ele já tem um diretorio 
+		padrão, que foi recebido.
+		Obs.: Ao assumir o valor "ORDER" a variavel tem tambem outros parametros dos quais
+		são usados na função Verify_type, a descrição sobre essas entradas estarão na 
+		descrição da função Verify_Type
+
+	Após descrever e explicar as entradas vamos a função:
+		-> Após setar o valor do File_path é feita a operação de abrir
+		o arquivo em excel atráves do Pandas e armazenamento na variavel Data
+		-> armazenada as colunas na variavel Cols
+		-> Criação de um vetor Nw_data que vai receber os dados de entrada
+		ele foi criado com o tamanho exato de acordo com as colunas.
+		-> após a criação do vetor e entrada de dados o vetor é convertido
+		em uma tupla que é o unico modo para a criação de um Data_frame
+		como é visto logo em seguida
+		->A variavel Data recebe como vetor ela e o novo dataframe para logo
+		em seguida juntar os dados com a função de concatenar em um só DataFrame
+		-> Por fim é feito o set do indice para a primeria coluna de dados para que 
+		a primeira coluna do novo DataFrame não apresente os valores de indice de coluna
+		como 0,1,2... e sim como a primeira coluna, após isso é feito o salvamento
+		do arquivo de dados com todas as alterações no formato de excel.
+
+
+--> Select Data - A estrutura tem como entradas o file_path que varia de acordo com 
+o type_data que é a outra entrada e o Field_src, seu objetivo é selecionar dados no 
+arquivo selecionado.
+	Entradas:
+		Type_data -> variavel de entrada que verifica qual o tipo de arquivo 
+		que deseja acessar "CLIENT" ou "ORDER". Sua funcão serve para auxiliar o File_path. 
+
+		File_path -> variavel de entrada que recebe o endereçamento de pasta 
+		em que se encontra o arquivo, variando de acordo com o Type_data. Quando o
+		Type_data assume "ORDER" ele recebe o endereço da função Verify_type onde é feito o
+		conjunto de operações em torno de diretórios e arquivos. Já quando assume "CLIENT"
+		ele não precisa passar pela estrutura condicional, pois ele já tem um diretorio 
+		padrão, que foi recebido.
+		Obs.: Ao assumir o valor "ORDER" a variavel tem tambem outros parametros dos quais
+		são usados na função Verify_type, a descrição sobre essas entradas e a função 
+		estarão na descrição da função Verify_Type
+		
+		Field_src -> variavel de entrada que recebe o nome da coluna que deseja alterar.
+
+	Após descrever e explicar as entradas vamos a função:
+		-> Após setar o valor do File_path é feita a operação de abrir
+		o arquivo em excel atráves do Pandas e armazenamento na variavel Data
+		-> É executada a função Search_data onde é feita a entrada do dado a ser buscado
+		e retorna a linha em que o dado está, a descrição sobre essas entradas e a função 
+		estarão na descrição da função Search_data.
+		-> Verifica atraves da estutura condicional se algum dado foi recuperado.
+		-> Após o dado ser recuperado é impresso a relação de dados com o mesmo valor
+
+
+--> Update Data - A estrutura tem como entradas o file_path que varia de acordo com 
+o type_data que é a outra entrada e o Field_src, seu objetivo é atualizar dados no 
+arquivo selecionado.
+	Entradas:
+		Type_data -> variavel de entrada que verifica qual o tipo de arquivo 
+		que deseja acessar "CLIENT" ou "ORDER". Sua funcão serve para auxiliar o File_path. 
+
+		File_path -> variavel de entrada que recebe o endereçamento de pasta 
+		em que se encontra o arquivo, variando de acordo com o Type_data. Quando o
+		Type_data assume "ORDER" ele recebe o endereço da função Verify_type onde é feito o
+		conjunto de operações em torno de diretórios e arquivos. Já quando assume "CLIENT"
+		ele não precisa passar pela estrutura condicional, pois ele já tem um diretorio 
+		padrão, que foi recebido.
+		Obs.: Ao assumir o valor "ORDER" a variavel tem tambem outros parametros dos quais
+		são usados na função Verify_type, a descrição sobre essas entradas e a função 
+		estarão na descrição da função Verify_Type
+		
+		Field_src -> variavel de entrada que recebe o nome da coluna que deseja alterar.
+
+	Após descrever e explicar as entradas vamos a função:
+		-> Após setar o valor do File_path é feita a operação de abrir
+		o arquivo em excel atráves do Pandas e armazenamento na variavel Data
+		-> É executada a função Search_data onde é feita a entrada do dado a ser buscado
+		e retorna a linha em que o dado está, a descrição sobre essas entradas e a função 
+		estarão na descrição da função Search_data.
+		-> Verifica atraves da estutura condicional se algum dado foi recuperado e logo
+		após verifica se há mais de um dado recuperado.
+		-> Caso haja mais de um dado será solicitado que selecione qual o dado a 
+		ser atualizado.
+		->A variavel Update_data recebe como o valor atualizado e é direcionada 
+		um novo dataframe com o indice do dado atual para logo em seguida ser
+		modificado no dataframe contendo todos os dados.
+		-> Por fim é feito o set do indice para a primeria coluna de dados para que 
+		a primeira coluna do novo DataFrame não apresente os valores de indice de coluna
+		como 0,1,2... e sim como a primeira coluna, após isso é feito o salvamento
+		do arquivo de dados com todas as alterações no formato de excel.
+	
+--> Delete Data - A estrutura tem como entradas o file_path que varia de acordo com 
+o type_data que é a outra entrada e o Field_src, seu objetivo é deletar dados no 
+arquivo selecionado.
+	Entradas:
+		Type_data -> variavel de entrada que verifica qual o tipo de arquivo 
+		que deseja acessar "CLIENT" ou "ORDER". Sua funcão serve para auxiliar o File_path. 
+
+		File_path -> variavel de entrada que recebe o endereçamento de pasta 
+		em que se encontra o arquivo, variando de acordo com o Type_data. Quando o
+		Type_data assume "ORDER" ele recebe o endereço da função Verify_type onde é feito o
+		conjunto de operações em torno de diretórios e arquivos. Já quando assume "CLIENT"
+		ele não precisa passar pela estrutura condicional, pois ele já tem um diretorio 
+		padrão, que foi recebido.
+		Obs.: Ao assumir o valor "ORDER" a variavel tem tambem outros parametros dos quais
+		são usados na função Verify_type, a descrição sobre essas entradas e a função 
+		estarão na descrição da função Verify_Type
+		
+		Field_src -> variavel de entrada que recebe o nome da coluna que deseja alterar.
+
+	Após descrever e explicar as entradas vamos a função:
+		-> Após setar o valor do File_path é feita a operação de abrir
+		o arquivo em excel atráves do Pandas e armazenamento na variavel Data
+		-> É executada a função Search_data onde é feita a entrada do dado a ser buscado
+		e retorna a linha em que o dado está, a descrição sobre essas entradas e a função 
+		estarão na descrição da função Search_data.
+		-> Verifica atraves da estutura condicional se algum dado foi recuperado e logo
+		após verifica se há mais de um dado recuperado.
+		-> Caso haja mais de um dado será solicitado que selecione qual o dado a 
+		ser deletado.
+		->A variavel Data recebe um novo dataframe sem o dado deletado que foi apagado
+		o selecionando pelo indice.
+		-> Por fim é feito o set do indice para a primeria coluna de dados para que 
+		a primeira coluna do novo DataFrame não apresente os valores de indice de coluna
+		como 0,1,2... e sim como a primeira coluna, após isso é feito o salvamento
+		do arquivo de dados com todas as alterações no formato de excel.
+	
+--> Verify Type - A estrutura tem como entradas o file_path que é um vetor com os 
+seguintes valores [Mês, Ano] ou [Ano atual?(True or False)].
+
+	Após descrever e explicar as entradas vamos a função:
+		-> Basicamente essa estrutura tem como base chamar as funções do modulo
+		Time_order que tem como objetivo capturar a pasta em que se encontra o arquivo.
+		Tudo em função do Ano e Mês respectivo, variando entre o mês atual ou algum registro
+		mais antigo.
+
+-> Search Data - A estrutura tem como entradas: Data e o Field_src.
+
+	Entradas:
+
+		Field_src -> variavel de entrada que recebe o nome da coluna que deseja alterar.
+		
+		Data -> O DataFrame em que contem os registros do arquivo.
+
+	Após descrever e explicar as entradas vamos a função:
+
+		-> Essa estrutura tem como objetivo capturar a ou as linhas em que se encontram
+		os registros com o mesmo campo que o parametro Field_src. 
+		Obs.: A conversão de int e str deve-se ao problema em localizar um dado inteiro
+		por causa da função input que converte as entradas em str. 
+		
