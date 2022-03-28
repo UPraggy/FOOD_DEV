@@ -152,10 +152,10 @@
     Variable Name = lmo_btn_m
 ```
 ## Right Menu - RM
-- **[Main Frame - RMM](#main-menu---rmm)** 
-- **[Client Frame - RMC](#client-menu---rmc)**
-- **[Product Frame - RMP](#product-menu---rmp)**
-- **[Order Frame - RMO](#order-menu---rmo)**
+- **[Main Frame - RMM](#main-frame---rmm)** 
+- **[Client Frame - RMC](#client-frame---rmc)**
+- **[Product Frame - RMP](#product-frame---rmp)**
+- **[Order Frame - RMO](#order-frame---rmo)**
 
 ### Main Frame - RMM
 > **This is the System Home and/or Main Menu**
