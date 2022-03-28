@@ -8,14 +8,19 @@
 > Note: The code referring to the program that performs the backend functions will not be available on this page, in case you need to redirect the previous pages.
 
 # GRAPHIC INTERFACE
-- **[Left Menu](#left-menu)**
-- **[Right Menu](#right-menu)**
+- **[Left Menu - LM](#left-menu---lm)**
+- **[Right Menu - RM](#right-menu---rm)**
 
-## Left Menu
-- **[Main Menu](#main-menu)**
-- **[Client Menu](#main-menu)**
-- **[Order Menu](#main-menu)**
-- **[Product Menu](#main-menu)**
+## Left Menu - LM
+- **[Main Menu - LMM](#main-menu---lmm)** 
+- **[Client Menu - LMC](#client-menu---lmc)**
+- **[Order Menu - LMO](#order-menu---lmo)**
+- **[Product Menu - LMP](#product-menu---lmp)**
+
+### Main Menu - LMM
+
+### Client Menu - LMC
+
 ```python
     data = [data, nw_data]
     data = pd.concat(data)
