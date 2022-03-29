@@ -183,9 +183,13 @@
 
 ### Client Frame - RMC
 > **This is the Frame directed by clicking on the "CLIENT" option from the [main menu](#main-menu---lmm)**
+> **This frame contains sub-options in its menu:**
+> - **[REGISTER - RMC](#register---rmc)**
+> - **[VIEW RECORDS - RMC](#view-records---rmc)**
 
- ![image](https://user-images.githubusercontent.com/100146657/160489735-b29c992e-02bf-4716-8659-11d4748c0f7f.png)
+![image](https://user-images.githubusercontent.com/100146657/160489735-b29c992e-02bf-4716-8659-11d4748c0f7f.png)
 
+#### REGISTER - RMC
 > **This is the Frame directed by clicking on the "REGISTER" option from the [client menu](#client-menu---lmc)**
 
 ![image](https://user-images.githubusercontent.com/100146657/160610929-cd5fd5b7-2cea-40c8-8bb4-d93bdee776b5.png)
@@ -272,9 +276,26 @@
     Variable Frame = rmc_cb_3
     Variable Label = rmc_cb_2_lb_suc
 ```
+#### VIEW RECORDS - RMC
 > **This is the Frame directed by clicking on the "VIEW RECORDS" option from the [client menu](#client-menu---lmc)**
 
+![image](https://user-images.githubusercontent.com/100146657/160656298-968a2863-0c65-4e1c-bba5-ebe875a59b98.png)
 
+```python
+    Variable Frame = rmv
+```
+
+### OBJECTS
+
+![image](https://user-images.githubusercontent.com/100146657/160656738-fbed9aa2-29b1-494c-a9a3-8382ca650d24.png)
+
+```python
+    Variable Frame = rmv_lb_c
+```
+![image](https://user-images.githubusercontent.com/100146657/160656816-daca1303-e496-4742-a405-b9926df7a6d7.png)
+```python
+    Variable Frame = rmv_f_tree
+```
 
 > END OF PAGE
    
