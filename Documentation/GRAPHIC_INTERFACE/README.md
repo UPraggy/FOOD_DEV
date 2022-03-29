@@ -233,6 +233,38 @@
     Variable LineEdit = rmc_btn_b
     Variable LineEdit = rmc_btn_n
 ```
+
+![image](https://user-images.githubusercontent.com/100146657/160606635-f1e5f4dd-d1ef-4bd7-b6f5-9b673640a4c1.png)
+
+>this frame is organized between 3 inner frames which contain "LineEdit" inside
+```python
+    Variable Frame = rmc_cb_2
+```
+![image](https://user-images.githubusercontent.com/100146657/160606696-9d4d0624-98a0-48f8-82ea-af65e1c86bc5.png)
+
+```python
+    Variable Frame = rmc_cb_2_f1
+    Variable LineEdit = rmc_cb_2_f1_add
+```
+![image](https://user-images.githubusercontent.com/100146657/160606784-eec216b5-f1c2-4538-9bb6-8b40471b1630.png)
+
+```python
+    Variable Frame = rmc_cb_2_f2
+    Variable LineEdit = rmc_cb_2_f2_dist
+    Variable LineEdit = rmc_cb_2_f2_num
+```
+![image](https://user-images.githubusercontent.com/100146657/160606811-6047ab0b-223b-4ba6-bf82-d4eaeda340ce.png)
+```python
+    Variable Frame = rmc_cb_2_f3
+    Variable LineEdit = rmc_cb_2_f3_stte
+    Variable LineEdit = rmc_cb_2_f3_cty
+```
+![image](https://user-images.githubusercontent.com/100146657/160608261-a22a003b-0894-4ae6-96b3-713e4544dc75.png)
+
+```python
+    Variable Frame = rmc_cb_3
+    Variable Label = rmc_cb_2_lb_suc
+```
 > END OF PAGE
    
 
