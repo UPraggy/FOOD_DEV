@@ -197,11 +197,11 @@
 ### OBJECTS
 ![image](https://user-images.githubusercontent.com/100146657/160497887-854629e7-3062-4ec8-a7a1-41825f4e8b04.png)
 ```python
-    Variable Name = rmcr_lb_rs
+    Variable Label = rmcr_lb_rs
 ```
 ![image](https://user-images.githubusercontent.com/100146657/160498060-583a0aa9-a7bf-4cda-b0c9-81c8266aa02a.png)
 ```python
-    Variable Name = rmcr_lb_ed
+    Variable Label = rmcr_lb_ed
 ```
 ![image](https://user-images.githubusercontent.com/100146657/160498749-93f368b3-13e0-4a83-b590-0339fa069aaf.png)
 >this frame is organized between 5 inner frames which contain "LineEdit" inside
@@ -240,8 +240,8 @@
 ![image](https://user-images.githubusercontent.com/100146657/160499800-6066ed6b-a308-4358-b8a2-a3354972048d.png)
 ```python
     Variable Frame = rmcr_btn
-    Variable LineEdit = rmcr_btn_b
-    Variable LineEdit = rmcr_btn_n
+    Variable Button = rmcr_btn_b
+    Variable Button = rmcr_btn_n
 ```
 
 ![image](https://user-images.githubusercontent.com/100146657/160606635-f1e5f4dd-d1ef-4bd7-b6f5-9b673640a4c1.png)
@@ -290,11 +290,11 @@
 ![image](https://user-images.githubusercontent.com/100146657/160656738-fbed9aa2-29b1-494c-a9a3-8382ca650d24.png)
 
 ```python
-    Variable Frame = rmcv_lb_c
+    Variable Label = rmcv_lb_c
 ```
 ![image](https://user-images.githubusercontent.com/100146657/160656816-daca1303-e496-4742-a405-b9926df7a6d7.png)
 ```python
-    Variable Frame = rmcv_f_tree
+    Variable Tree = rmcv_f_tree
 ```
 
 > END OF PAGE
