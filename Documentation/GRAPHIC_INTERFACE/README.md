@@ -269,6 +269,10 @@
     Variable Frame = rmc_cb_3
     Variable Label = rmc_cb_2_lb_suc
 ```
+> **This is the Frame directed by clicking on the "VIEW RECORDS" option from the [client menu](#client-menu---lmc)**
+
+
+
 > END OF PAGE
    
 
