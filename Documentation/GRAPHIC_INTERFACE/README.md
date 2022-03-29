@@ -182,8 +182,8 @@
 
 ### Client Frame - RMC
 > **This is the Frame directed by clicking on the "CLIENT" option from the main menu**
-
-![image](https://user-images.githubusercontent.com/100146657/160494659-e3daf4af-5a5e-47b0-a4ac-df97df15028a.png)
+ 
+![image](https://user-images.githubusercontent.com/100146657/160610929-cd5fd5b7-2cea-40c8-8bb4-d93bdee776b5.png)
 
 ### OBJECTS
 ![image](https://user-images.githubusercontent.com/100146657/160497887-854629e7-3062-4ec8-a7a1-41825f4e8b04.png)
