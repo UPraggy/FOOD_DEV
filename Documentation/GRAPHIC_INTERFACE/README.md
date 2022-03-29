@@ -170,6 +170,7 @@
     Variable Name = rmm_logo
 ```
 > This Object is divided into 3 frames, where the image is located in the middle and the other two ends are used to resize the image according to the screen size.
+
 ```python
     Variable Name Frame Left = rmm_logo_lf
     Variable Center Frame = rmm_logo_cf
@@ -200,6 +201,7 @@
 ```
 ![image](https://user-images.githubusercontent.com/100146657/160498749-93f368b3-13e0-4a83-b590-0339fa069aaf.png)
 >this frame is organized between 5 inner frames which contain "LineEdit" inside
+
 ```python
     Variable Frame = rmc_cb_1
 ```
@@ -241,6 +243,7 @@
 ![image](https://user-images.githubusercontent.com/100146657/160606635-f1e5f4dd-d1ef-4bd7-b6f5-9b673640a4c1.png)
 
 >this frame is organized between 3 inner frames which contain "LineEdit" inside
+
 ```python
     Variable Frame = rmc_cb_2
 ```
