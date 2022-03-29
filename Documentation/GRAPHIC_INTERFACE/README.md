@@ -181,8 +181,12 @@
 ```
 
 ### Client Frame - RMC
-> **This is the Frame directed by clicking on the "CLIENT" option from the main menu**
- 
+> **This is the Frame directed by clicking on the "CLIENT" option from the [main menu](#main-menu---lmm)**
+
+ ![image](https://user-images.githubusercontent.com/100146657/160489735-b29c992e-02bf-4716-8659-11d4748c0f7f.png)
+
+> **This is the Frame directed by clicking on the "REGISTER" option from the [client menu](#client-menu---lmc)**
+
 ![image](https://user-images.githubusercontent.com/100146657/160610929-cd5fd5b7-2cea-40c8-8bb4-d93bdee776b5.png)
 
 ### OBJECTS
