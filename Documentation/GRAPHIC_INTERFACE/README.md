@@ -186,6 +186,7 @@
 > **This frame contains sub-options in its menu:**
 > - **[REGISTER - RMCR](#register---rmcr)**
 > - **[VIEW RECORDS - RMCV](#view-records---rmcv)**
+> - **[UPDATE - RMCU](#update---rmcu)**
 
 ![image](https://user-images.githubusercontent.com/100146657/160489735-b29c992e-02bf-4716-8659-11d4748c0f7f.png)
 
@@ -296,6 +297,9 @@
 ```python
     Variable Tree = rmcv_f_tree
 ```
+
+#### UPDATE - RMCU
+> **This is the Frame directed by clicking on the "UPDATE" option from the [client menu](#client-menu---lmc)**
 
 > END OF PAGE
    
