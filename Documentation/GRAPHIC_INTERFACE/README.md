@@ -300,11 +300,12 @@
 
 #### UPDATE - RMCU
 > **This is the Frame directed by clicking on the "UPDATE" option from the [client menu](#client-menu---lmc)**
+![image](https://user-images.githubusercontent.com/100146657/160950075-4843436c-90f6-4f1f-9578-11457843a606.png)
 
 > END OF PAGE
    
 ### OBJECTS
-![image](https://user-images.githubusercontent.com/100146657/160950075-4843436c-90f6-4f1f-9578-11457843a606.png)
+
 
 ```python
     Variable Label = rmcr_lb_rs
