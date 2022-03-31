@@ -303,7 +303,22 @@
 
 > END OF PAGE
    
+### OBJECTS
+![image](https://user-images.githubusercontent.com/100146657/160950075-4843436c-90f6-4f1f-9578-11457843a606.png)
 
+```python
+    Variable Label = rmcr_lb_rs
+```
+![image](https://user-images.githubusercontent.com/100146657/160950108-5c985f28-ba95-47f5-b201-50c41ae63e12.png)
+```python
+    Variable Label = rmcr_lb_ed
+```
+![image](https://user-images.githubusercontent.com/100146657/160949497-66459a86-17cd-4034-90ae-dc79d14cf2c7.png)
+>this frame is organized between 2 inner frames which contain "LineEdit" inside
+
+```python
+    Variable Tree = rmcu_op
+```
 
 **THIS PROGRAM WAS MADE BY**:<br>
 **Rafael Moreira Ramos de Rezende** 
