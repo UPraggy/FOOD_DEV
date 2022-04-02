@@ -20,7 +20,6 @@ Initially the program imports:
 After the imports, the client class is initialized.
 ```python
 from utils import template
-from utils import CRUD_data as cd
 from PyQt5 import QtWidgets
 c = template.Client()
 ```
