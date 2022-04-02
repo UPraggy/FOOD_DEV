@@ -269,24 +269,6 @@ Switch to **Fourth page** and collect the information that was entered to update
 ```python
 elif (current == 2 or current == 3 or current == 4):
 ```
-## RMCU PREVIOUS PAGE
-Settings whenever the **Previous page** button is pressed
-```python
-def rmcu_back_step(self, w, current):
-```
-Switch to the **First page**, change the fonts, hide **back and next** button, an reset treeWidget
-```python
-if (current == 0):
-```
-Switch to the **Second page** and change the fonts
-```python
-else:
-```
-## RMCU FUNCTIONS
-Responsible for initializing the button "capture" process
-```python
-def rmcu_Functions(self, w):
-```
 
 # Delete
 This module is responsible for customer registration.
