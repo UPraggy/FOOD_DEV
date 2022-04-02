@@ -46,26 +46,26 @@ class Register():
 ```
 
 ## Clean data
-> Responsible for resetting all filled fields
+Responsible for resetting all filled fields
 ```python
 def clean_data(self, w):
 ```
 ## Get data page 1
-> Responsible for getting the values of all fields filled in and storing them
+Responsible for getting the values of all fields filled in and storing them
 ```python
 def get_data_pg1(self, w):
 ```
 ## Finish Register
-> Responsible for obtaining the values ​​of all fields filled in, storing them and sending them to the "create customer" function, finalizing the registration
+Responsible for obtaining the values of all fields filled in, storing them and sending them to the "create customer" function, finalizing the registration
 ```python
 def finish_register(self, w):
 ```
 ## RMCR INIT
-> Home page settings
+Home page settings
 ```python
 def rmcr_init(self, w, init):
 ```
-> First, it is directed to the initial registration page, the button **next** are visible again and the fonts and respective texts also return to their initial positions.
+First, it is directed to the initial registration page, the button **next** are visible again and the fonts and respective texts also return to their initial positions.
 ```python
 switch_page(w.rm_stackedWidget,w.rmcr)
         w.rmcr_btn_b.setVisible(True)
@@ -74,7 +74,7 @@ switch_page(w.rm_stackedWidget,w.rmcr)
         w.rmcr_lb_ed.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
         w.rmcr_lb_rs.setText("REGISTER SYSTEM")
 ```
-> Whenever the function is called, the fields will be reset and directed to the home page
+Whenever the function is called, the fields will be reset and directed to the home page
 
 ```python
 self.clean_data(w)
@@ -84,34 +84,34 @@ self.clean_data(w)
 ```
 
 ## RMCR BUTTON 
-> Page buttons settings (BACK AND NEXT)
+Page buttons settings (BACK AND NEXT)
 ```python
 def rmcr_btn(self, w):
 ```
 ## RMCR NEXT PAGE
-> Settings whenever the **Next page** button is pressed
+Settings whenever the **Next page** button is pressed
 ```python
 def rmcr_next_step(self, w, current):
 ```
-> Switch to the **Second page**, collect the data from the first, change the sources and make the button **back** visible
+Switch to the **Second page**, collect the data from the first, change the sources and make the button **back** visible
 ```python
 if (current == 0):
 ```
-> Switch to the **Third page**, collect the data from the second, complete the registration, change the sources and hide the buttons
+Switch to the **Third page**, collect the data from the second, complete the registration, change the sources and hide the buttons
 ```python
 elif (current == 1):
 ```
 ## RMCR PREVIOUS PAGE
-> Settings whenever the **Previous page** button is pressed
+Settings whenever the **Previous page** button is pressed
 ```python
  def rmcr_back_step(self, w, current):
 ```
-> Switch to the **First page**, change the sources and hide **back** button
+Switch to the **First page**, change the sources and hide **back** button
 ```python
 if (current == 0):
 ```
 ## RMCR FUNCTIONS
-> Responsible for initializing the button "capture" process
+Responsible for initializing the button "capture" process
 ```python
 def rmcr_Functions(self, w):
 ```
