@@ -1,7 +1,7 @@
 This page is intended for project documentation. Use it if you need to understand the code and how the functions work.<br>
 ### List with links for each file:<br>
 - [GRAPHIC INTERFACE](https://upraggy.github.io/FOOD_DEV/Documentation/GRAPHIC_INTERFACE)
-- COMING SOON[](https://upraggy.github.io/FOOD_DEV/Documentation/GRAPHIC-INTERFACE)
+- [UTILS](https://upraggy.github.io/FOOD_DEV/Documentation/utils)
 
 > END OF PAGE
    
