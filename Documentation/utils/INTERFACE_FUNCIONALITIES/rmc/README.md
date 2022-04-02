@@ -38,6 +38,7 @@ This module is responsible for customer registration.
 - **[RMCR NEXT PAGE](#rmcr-next-page)**
 - **[RMCR PREVIOUS PAGE](#rmcr-previous-page)**
 - **[RMCR FUNCTIONS](#rmcr-functions)**
+
 ## Initial declaration of variables
 ```python
 class Register():
