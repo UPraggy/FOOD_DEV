@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="img">
+    <file>Interface_files/glass_src.png</file>
+  </qresource>
+</RCC>
