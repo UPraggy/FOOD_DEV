@@ -502,7 +502,7 @@ Variable Label = rmpr_sc_lb_suc
 #### STOCK - RMPV
 > **This is the Frame directed by clicking on the "STOCK" option from the [product menu](#product-menu---lmp)**
 
-![image](https://user-images.githubusercontent.com/100146657/161991464-86128758-392f-431c-a47c-4d2a4b13de9a.png)
+![image](https://user-images.githubusercontent.com/100146657/161995339-f8e9a1a1-ab1e-4457-abb5-a90312b7503a.png)
 ![image](https://user-images.githubusercontent.com/100146657/161991001-8dc87595-2702-41cb-8814-d37686a6027d.png)
 ```python
 Variable Stacked = rmpv
@@ -597,8 +597,8 @@ Variable Frame = rmpv_price_f2
 Variable Central Frame = rmpv_price_f2_img
 ```
 
-#### UPDATE - RMCU
-> **This is the Frame directed by clicking on the "UPDATE" option from the [product menu](#product-menu---lmc)**
+#### UPDATE - RMPU
+> **This is the Frame directed by clicking on the "UPDATE" option from the [product menu](#product-menu---lmp)**
 
 ![image](https://user-images.githubusercontent.com/100146657/161295099-4e1d38fa-fdde-471c-8c37-cb38b09235bd.png)
 ![image](https://user-images.githubusercontent.com/100146657/161295246-bdf16555-09b6-49fb-9456-368a2fda641d.png)
@@ -635,67 +635,67 @@ Variable Label = rmpu_lb_ed
 ![image](https://user-images.githubusercontent.com/100146657/160499800-6066ed6b-a308-4358-b8a2-a3354972048d.png)
 ```python
 Variable Frame = rmpu_btn
-    Variable Button = rmpu_btn_b
-    Variable Button = rmpu_btn_n
+Variable Button = rmpu_btn_b
+Variable Button = rmpu_btn_n
 ```
 ![image](https://user-images.githubusercontent.com/100146657/161994103-8bdf4c35-375e-4d32-b6ad-e54acd5d6ea2.png)
 ```python
-    Variable Stacked = rmpu_slct
+Variable Stacked = rmpu_slct
 ```
 ![image](https://user-images.githubusercontent.com/100146657/161298301-e1d0160f-3f0e-4961-ad8d-37fe6c57fe7a.png)
 ```python
-    Variable Frame = rmpu_slct_f1
-    Variable Button = rmpu_slct_btn
-    Variable LineEdit = rmpu_slct_src
+Variable Frame = rmpu_slct_f1
+Variable Button = rmpu_slct_btn
+Variable LineEdit = rmpu_slct_src
 ```
-![image](https://user-images.githubusercontent.com/100146657/161298487-abab5bbb-f8cc-4841-b49b-c2006f78b485.png)
+![image](https://user-images.githubusercontent.com/100146657/161996373-eabd7c36-43ba-4271-b70d-33f7f739d068.png)
 ```python
-    Variable Frame = rmpu_slct_f2
-    Variable Tree = rmpu_f2_tree
+Variable Frame = rmpu_slct_f2
+Variable Tree = rmpu_f2_tree
 ``` 
 
 ![image](https://user-images.githubusercontent.com/100146657/161298945-354f2d79-6482-4658-b115-d8e5c34c284d.png)
 ```python
-    Variable Stacked = rmpu_gen
-    Variable Frame = rmpu_gen_f1
-    Variable Tree = rmpu_gen_f1_lb
+Variable Stacked = rmpu_gen
+Variable Frame = rmpu_gen_f1
+Variable Tree = rmpu_gen_f1_lb
 ``` 
 ![image](https://user-images.githubusercontent.com/100146657/161994998-76dcdd72-93f3-4667-9386-587bb1622583.png)
 ```python
-    Variable Frame = rmcu_sc
-    Variable Label = rmcu_sc_lb_suc
+Variable Frame = rmcu_sc
+Variable Label = rmcu_sc_lb_suc
 ```
 #### DELETE - RMCD
-> **This is the Frame directed by clicking on the "DELETE" option from the [client menu](#client-menu---lmc)**
+> **This is the Frame directed by clicking on the "DELETE" option from the [product menu](#product-menu---lmp)**
 
 ![image](https://user-images.githubusercontent.com/100146657/161302371-3cb03b3c-3861-4cd3-bb49-6bf0fa52e68a.png)
 
    
 ### OBJECTS
-![image](https://user-images.githubusercontent.com/100146657/161302435-9ad698be-8800-48d6-9f10-9709829170fc.png)
+![image](https://user-images.githubusercontent.com/100146657/161996209-366d8db6-8689-4fa1-8578-c1b3b79c3d78.png)
 ```python
-    Variable Stacked = rmcd_slct
+    Variable Stacked = rmpd_slct
 ``` 
 ![image](https://user-images.githubusercontent.com/100146657/161298301-e1d0160f-3f0e-4961-ad8d-37fe6c57fe7a.png)
 ```python
-    Variable Frame = rmcd_slct_f2
-    Variable Button = rmcd_slct_btn
-    Variable LineEdit = rmcd_slct_src
+    Variable Frame = rmpd_slct_f1
+    Variable Button = rmpd_slct_btn
+    Variable LineEdit = rmpd_slct_src
 ```
-![image](https://user-images.githubusercontent.com/100146657/161298487-abab5bbb-f8cc-4841-b49b-c2006f78b485.png)
+![image](https://user-images.githubusercontent.com/100146657/161996476-d2e89a1f-5457-4f9c-b9e4-65d26c919cc4.png)
 ```python
-    Variable Frame = rmcd_slct_f2
-    Variable Tree = rmcd_f_tree
+    Variable Frame = rmpd_slct_f2
+    Variable Tree = rmpd_f_tree
 ``` 
 ![image](https://user-images.githubusercontent.com/100146657/161303056-0c238d91-df76-4080-a1ef-04341be7c081.png)
 ```python
-    Variable Frame = rmcd_btn
-    Variable Button = rmcd_btn_n
+    Variable Frame = rmpd_btn
+    Variable Button = rmpd_btn_n
 ```
-![image](https://user-images.githubusercontent.com/100146657/161303276-6d127e6d-f872-4872-abd2-09c2746d190a.png)
+![image](https://user-images.githubusercontent.com/100146657/161996683-3b3c5638-f1a8-499e-99f8-9dbf6e87e3be.png)
 ```python
-    Variable Frame = rmcd_sc
-    Variable Label = rmcd_sc_lb_suc
+    Variable Frame = rmpd_sc
+    Variable Label = rmpd_sc_lb_suc
 ```
 
 
