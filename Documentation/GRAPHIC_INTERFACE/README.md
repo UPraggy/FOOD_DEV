@@ -502,7 +502,8 @@ Variable Label = rmpr_sc_lb_suc
 #### STOCK - RMPV
 > **This is the Frame directed by clicking on the "STOCK" option from the [product menu](#product-menu---lmp)**
 
-![image](https://user-images.githubusercontent.com/100146657/160656298-968a2863-0c65-4e1c-bba5-ebe875a59b98.png)
+![image](https://user-images.githubusercontent.com/100146657/161991464-86128758-392f-431c-a47c-4d2a4b13de9a.png)
+![image](https://user-images.githubusercontent.com/100146657/161991001-8dc87595-2702-41cb-8814-d37686a6027d.png)
 ```python
 Variable Stacked = rmpv
 ```
@@ -609,31 +610,30 @@ Variable Central Frame = rmpv_price_f2_img
 >this frame is organized between 2 inner frames which contain "LineEdit" inside
 
 ```python
-    Variable Stacked = rmcu_op
+Variable Stacked = rmcu_op
 ```
 ![image](https://user-images.githubusercontent.com/100146657/161295472-b10ac750-cb81-4b76-9623-a70ef9cc854f.png)
 ```python
-    Variable Frame = rmcr_btn
-    Variable Button if Name =           rmcu_f1_btn_n
-    Variable Button if CPF =            rmcu_f1_btn_cpf
-    Variable Button if Phone Number =   rmcu_f1_btn_pn
-    Variable Button if Address =        rmcu_f2_btn_add
-    Variable Button if Email =          rmcu_f2_btn_email
-    Variable Button if Payment Form =   rmcu_f2_btn_pay
-
+Variable Frame = rmcr_btn
+Variable Button if Name =           rmcu_f1_btn_n
+Variable Button if CPF =            rmcu_f1_btn_cpf
+Variable Button if Phone Number =   rmcu_f1_btn_pn
+Variable Button if Address =        rmcu_f2_btn_add
+Variable Button if Email =          rmcu_f2_btn_email
+Variable Button if Payment Form =   rmcu_f2_btn_pay
 ```
 ![image](https://user-images.githubusercontent.com/100146657/161295770-1a3934f3-1835-4c36-9a94-fe7b75cdfa70.png)
 ```python
-    Variable Label = rmcu_lb_us
+Variable Label = rmcu_lb_us
 ```
 ![image](https://user-images.githubusercontent.com/100146657/161295818-bb9ab0a8-359a-4fa4-bcea-119ead02e143.png)
 ```python
-    Variable Label = rmcu_lb_so
+Variable Label = rmcu_lb_so
 ```
 
 ![image](https://user-images.githubusercontent.com/100146657/160499800-6066ed6b-a308-4358-b8a2-a3354972048d.png)
 ```python
-    Variable Frame = rmcu_btn
+Variable Frame = rmcu_btn
     Variable Button = rmcu_btn_b
     Variable Button = rmcu_btn_n
 ```
