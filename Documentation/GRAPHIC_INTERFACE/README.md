@@ -435,14 +435,14 @@ Variable Label = rmcd_sc_lb_suc
 ### PRODUCT Frame - RMP
 > **This is the Frame directed by clicking on the "PRODUCT" option from the [main menu](#main-menu---lmm)**
 > **This frame contains sub-options in its menu:**
-> - **[REGISTER - RMPR](#register---rmpr)**
+> - **[INSERT - RMPR](#insert---rmpr)**
 > - **[STOCK - RMPV](#stock---rmpv)**
 > - **[UPDATE - RMPU](#update---rmpu)**
 > - **[DELETE - RMPU](#delete---rmpu)**
 
 ![image](https://user-images.githubusercontent.com/100146657/161959179-ad9ad68c-9488-4caa-a8b3-464881bcc79f.png)
 
-#### REGISTER - RMPR
+#### INSERT - RMPR
 > **This is the Frame directed by clicking on the "REGISTER" option from the [product menu](#product-menu---lmp)**
 
 ![image](https://user-images.githubusercontent.com/100146657/161961690-b187c52f-657a-403d-9f09-3bcb951b3b8c.png)
@@ -597,84 +597,70 @@ Variable Frame = rmpv_price_f2
 Variable Central Frame = rmpv_price_f2_img
 ```
 
-
 #### UPDATE - RMCU
-> **This is the Frame directed by clicking on the "UPDATE" option from the [client menu](#client-menu---lmc)**
+> **This is the Frame directed by clicking on the "UPDATE" option from the [product menu](#product-menu---lmc)**
 
 ![image](https://user-images.githubusercontent.com/100146657/161295099-4e1d38fa-fdde-471c-8c37-cb38b09235bd.png)
 ![image](https://user-images.githubusercontent.com/100146657/161295246-bdf16555-09b6-49fb-9456-368a2fda641d.png)
    
 ### OBJECTS
 
-![image](https://user-images.githubusercontent.com/100146657/161293076-cd0996af-178a-434c-8ac1-78c213fbbaed.png)
->this frame is organized between 2 inner frames which contain "LineEdit" inside
+![image](https://user-images.githubusercontent.com/100146657/161993393-d21f1d75-f397-42fc-8b61-0c46e050299b.png)
+>this frame is organized between 3 inner frames which contain "LineEdit" inside
 
 ```python
-Variable Stacked = rmcu_op
+Variable Stacked = rmpu_op
 ```
-![image](https://user-images.githubusercontent.com/100146657/161295472-b10ac750-cb81-4b76-9623-a70ef9cc854f.png)
+![image](https://user-images.githubusercontent.com/100146657/161992420-fbdb0bcf-1655-4856-af35-e026e741601a.png)
 ```python
-Variable Frame = rmcr_btn
-Variable Button if Name =           rmcu_f1_btn_n
-Variable Button if CPF =            rmcu_f1_btn_cpf
-Variable Button if Phone Number =   rmcu_f1_btn_pn
-Variable Button if Address =        rmcu_f2_btn_add
-Variable Button if Email =          rmcu_f2_btn_email
-Variable Button if Payment Form =   rmcu_f2_btn_pay
+Variable Button if ID =             rmpu_f1_btn_id
+Variable Button if NAME =           rmpu_f1_btn_n
+Variable Button if DESCRIPTION =    rmpu_f1_btn_desc
+Variable Button if UNIT =           rmpu_f2_btn_u
+Variable Button if UNIT MEASURE =   rmpu_f2_btn_um
+Variable Button if VALUE =          rmpu_f2_btn_v
+Variable Button if STOCK =          rmpu_f3_btn_stk
 ```
+> The subframe in which the stock button is contained has two hidden buttons to aid alignment.
+
 ![image](https://user-images.githubusercontent.com/100146657/161295770-1a3934f3-1835-4c36-9a94-fe7b75cdfa70.png)
 ```python
-Variable Label = rmcu_lb_us
+Variable Label = rmpu_lb_us
 ```
 ![image](https://user-images.githubusercontent.com/100146657/161295818-bb9ab0a8-359a-4fa4-bcea-119ead02e143.png)
 ```python
-Variable Label = rmcu_lb_so
+Variable Label = rmpu_lb_ed
 ```
 
 ![image](https://user-images.githubusercontent.com/100146657/160499800-6066ed6b-a308-4358-b8a2-a3354972048d.png)
 ```python
-Variable Frame = rmcu_btn
-    Variable Button = rmcu_btn_b
-    Variable Button = rmcu_btn_n
+Variable Frame = rmpu_btn
+    Variable Button = rmpu_btn_b
+    Variable Button = rmpu_btn_n
 ```
-![image](https://user-images.githubusercontent.com/100146657/161297159-42b75688-c749-4515-a16e-a27465beb1bf.png)
+![image](https://user-images.githubusercontent.com/100146657/161994103-8bdf4c35-375e-4d32-b6ad-e54acd5d6ea2.png)
 ```python
-    Variable Stacked = rmcu_slct
+    Variable Stacked = rmpu_slct
 ```
 ![image](https://user-images.githubusercontent.com/100146657/161298301-e1d0160f-3f0e-4961-ad8d-37fe6c57fe7a.png)
 ```python
-    Variable Frame = rmcu_slct_f1
-    Variable Button = rmcu_slct_btn
-    Variable LineEdit = rmcu_slct_src
+    Variable Frame = rmpu_slct_f1
+    Variable Button = rmpu_slct_btn
+    Variable LineEdit = rmpu_slct_src
 ```
 ![image](https://user-images.githubusercontent.com/100146657/161298487-abab5bbb-f8cc-4841-b49b-c2006f78b485.png)
 ```python
-    Variable Frame = rmcu_slct_f2
-    Variable Tree = rmcu_f_tree
+    Variable Frame = rmpu_slct_f2
+    Variable Tree = rmpu_f2_tree
 ``` 
+
 ![image](https://user-images.githubusercontent.com/100146657/161298945-354f2d79-6482-4658-b115-d8e5c34c284d.png)
 ```python
-    Variable Stacked = rmcu_gen
-    Variable Frame = rmcu_gen_f1
-    Variable Tree = rmcu_gen_f1_lb
+    Variable Stacked = rmpu_gen
+    Variable Frame = rmpu_gen_f1
+    Variable Tree = rmpu_gen_f1_lb
 ``` 
-![image](https://user-images.githubusercontent.com/100146657/161299395-c8d7d9e5-764a-4bcb-807f-35a0f7716161.png)
-```python
-    Variable Stacked = rmcu_add
-    Variable Frame / LineEdit if Address = rmcu_add_f1 / rmcu_add_f1_add
-    Variable Frame / LineEdit if Number = rmcu_add_f2 / rmcu_add_f2_num
-    Variable Frame / LineEdit if District = rmcu_add_f2 / rmcu_add_f2_dist
-    Variable Frame / LineEdit if City = rmcu_add_f3 / rmcu_add_f3_cty
-    Variable Frame / LineEdit if State = rmcu_add_f3 / rmcu_add_f3_stte
-``` 
-![image](https://user-images.githubusercontent.com/100146657/161301714-aabb9c08-39d6-4ce8-9066-53ef6766317d.png)
-```python
-    Variable Stacked = rmcu_card
-    Variable Frame / LineEdit if Card Number = rmcu_card_f1 / rmcu_card_f1_card
-    Variable Frame / LineEdit if CVV = rmcu_card_f2 / rmcu_card_f2_cvv
-    Variable Frame / LineEdit if Expiration Date = rmcu_add_f2 / rmcu_card_f2_date
-``` 
-![image](https://user-images.githubusercontent.com/100146657/161301973-c921f65a-8964-4dfc-9a21-28887f06df07.png)
+![image](https://user-images.githubusercontent.com/100146657/161994998-76dcdd72-93f3-4667-9386-587bb1622583.png)
 ```python
     Variable Frame = rmcu_sc
     Variable Label = rmcu_sc_lb_suc
