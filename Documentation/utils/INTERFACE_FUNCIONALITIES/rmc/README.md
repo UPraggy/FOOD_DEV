@@ -113,14 +113,13 @@ Switch to the **Third page**, collect the data from the second, complete the reg
 elif (current == 1):
 ```
 ## RMCR PREVIOUS PAGE
-Settings whenever the **Previous page** button is pressed
-```python
- def rmcr_back_step(self, w, current):
-```
+Settings whenever the **Previous page** button is pressed<br>
 Switch to the **First page**, change the sources and hide **back** button
 ```python
-if (current == 0):
+ def rmcr_back_step(self, w):
 ```
+
+
 ## RMCR FUNCTIONS
 Responsible for initializing the button "capture" process
 ```python
@@ -132,6 +131,7 @@ This module is responsible for customer registration.
 - **[Initial declaration of variables](#initial-declaration-of-variables---rmcv)**
 - **[View init - RMCV](#view-init-rmcv)**
 - **[RMCV BUTTON](#rmcv-button)**
+- - **[RMCV FUNCTIONS](#rmcv-functions)**
 
 ## Initial declaration of variables - RMCV
 ```python
@@ -149,6 +149,11 @@ def rmcv_init(self, w):
 Page buttons settings (SEARCH)
 ```python
 def rmcu_btn(self, w):
+```
+## RMCV FUNCTIONS
+Responsible for initializing the button "capture" process
+```python
+def rmcv_Functions(self, w):
 ```
 
 # Update
@@ -169,8 +174,8 @@ This module is responsible for customer registration.
 class Update():
     def __init__(self):
         data = None
-        filtered_data = None
         slct_data = None
+        slct_data1 = None
         current_Widget = None
 ```
 
@@ -214,10 +219,10 @@ Whenever the function is called, the fields and TreeWidget will be reset and dir
 
 ```python
 self.clean_data(w)
-        w.rmcu_f_tree.clear()
+w.rmcu_f_tree.clear()
 if (init == 0):
-            switch_page(w.rmcu_stackedWidget,w.rmcu_op)
-            init = 1
+       switch_page(w.rmcu_stackedWidget,w.rmcu_op)
+       init = 1
 ```
 
 ## RMCU BUTTON 
