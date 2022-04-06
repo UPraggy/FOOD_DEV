@@ -662,13 +662,13 @@ Variable Tree = rmpu_gen_f1_lb
 ``` 
 ![image](https://user-images.githubusercontent.com/100146657/161994998-76dcdd72-93f3-4667-9386-587bb1622583.png)
 ```python
-Variable Frame = rmcu_sc
-Variable Label = rmcu_sc_lb_suc
+Variable Frame = rmpu_sc
+Variable Label = rmpu_sc_lb_suc
 ```
-#### DELETE - RMCD
+#### DELETE - RMPD
 > **This is the Frame directed by clicking on the "DELETE" option from the [product menu](#product-menu---lmp)**
 
-![image](https://user-images.githubusercontent.com/100146657/161302371-3cb03b3c-3861-4cd3-bb49-6bf0fa52e68a.png)
+![image](https://user-images.githubusercontent.com/100146657/161997357-05cc6744-7084-4c29-91f6-65a0e5f31d6d.png)
 
    
 ### OBJECTS
