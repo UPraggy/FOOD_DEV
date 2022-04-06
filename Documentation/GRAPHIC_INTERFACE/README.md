@@ -286,6 +286,12 @@
 ```python
     Variable Stacked = rmcv
 ```
+![image](https://user-images.githubusercontent.com/100146657/161964074-faa997a3-8f8f-4fcb-b0d8-f114bf97d476.png)
+```python
+    Variable Frame = rmcv_slct_f1
+    Variable Button = rmcv_slct_btn
+    Variable LineEdit = rmcv_slct_src
+```
 
 ### OBJECTS
 
@@ -308,7 +314,7 @@
 ### OBJECTS
 
 ![image](https://user-images.githubusercontent.com/100146657/161293076-cd0996af-178a-434c-8ac1-78c213fbbaed.png)
->this frame is organized between 2 inner frames which contain "LineEdit" inside
+>this frame is organized between 2 inner frames which contain "Buttons" inside
 
 ```python
     Variable Stacked = rmcu_op
@@ -477,11 +483,6 @@
     Variable LineEdit = rmpr_cb_f3_um
     
 ```
-![image](https://user-images.githubusercontent.com/100146657/160499558-f1dfe806-2ab3-458b-9e04-51ce09cb1e77.png)
-```python
-    Variable Frame = rmcr_cb_1_f4
-    Variable LineEdit = rmcr_cb_1_f4_card
-```
 ![image](https://user-images.githubusercontent.com/100146657/161960994-fafb09f5-f3a3-4a03-a299-e5b2f004e15b.png)
 ```python
     Variable Frame = rmcr_cb_1_f5
@@ -499,25 +500,49 @@
     Variable Frame = rmpr_sc
     Variable Label = rmpr_sc_lb_suc
 ```
-#### STOCK - RMCV
+#### STOCK - RMPV
 > **This is the Frame directed by clicking on the "STOCK" option from the [product menu](#product-menu---lmp)**
 
 ![image](https://user-images.githubusercontent.com/100146657/160656298-968a2863-0c65-4e1c-bba5-ebe875a59b98.png)
-
 ```python
-    Variable Stacked = rmcv
+    Variable Stacked = rmpv
 ```
 
 ### OBJECTS
-
-![image](https://user-images.githubusercontent.com/100146657/161962342-60405978-ac78-4f84-a679-0dc8a75e2d03.png)
-
+![image](https://user-images.githubusercontent.com/100146657/161963166-eeb68b2f-70da-4b27-9f6e-2c8961d0aeed.png)
 ```python
-    Variable Label = rmcv_lb_c
+    Variable Frame = rmpv_lb_p
 ```
-![image](https://user-images.githubusercontent.com/100146657/160656816-daca1303-e496-4742-a405-b9926df7a6d7.png)
+![image](https://user-images.githubusercontent.com/100146657/161962342-60405978-ac78-4f84-a679-0dc8a75e2d03.png)
+>this frame is organized between 2 inner frames which contain "Buttons" inside
 ```python
-    Variable Tree = rmcv_f_tree
+    Variable Stacked = rmpv_op
+```
+![image](https://user-images.githubusercontent.com/100146657/161963440-7dbe13b1-0a12-43ff-93be-c324fb55bceb.png)
+```python
+    Variable Frame = rmpv_op
+    Variable Button if Registers =           rmpv_op_f1_btn_reg
+    Variable Button if STOCK =               rmpv_op_f1_btn_stock
+    Variable Button if SELLS =               rmpv_op_f2_btn_sells
+    Variable Button if PRICE ESTIMATIVE =    rmpv_op_f2_btn_price
+
+```
+![image](https://user-images.githubusercontent.com/100146657/161963756-ede094d2-9993-46a9-8fce-a94480cc0fe0.png)
+```python
+    Variable Frame = rmpv_btn
+    Variable Button = rmpv_btn_b
+```
+![image](https://user-images.githubusercontent.com/100146657/161964074-faa997a3-8f8f-4fcb-b0d8-f114bf97d476.png)
+```python
+    Variable Frame = rmpv_slct_f1
+    Variable Button = rmpv_slct_btn
+    Variable LineEdit = rmpv_slct_src
+```
+![image](https://user-images.githubusercontent.com/100146657/161964236-415a9d29-9573-4b30-a118-2bc0b68ad779.png)
+
+```python
+    Variable Frame = rmpv_slct_f2
+    Variable Tree = rmpv_f2_tree
 ```
 
 #### UPDATE - RMCU
