@@ -413,6 +413,232 @@
     Variable Frame = rmcd_sc
     Variable Label = rmcd_sc_lb_suc
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+### PRODUCT Frame - RMP
+> **This is the Frame directed by clicking on the "PRODUCT" option from the [main menu](#main-menu---lmm)**
+> **This frame contains sub-options in its menu:**
+> - **[REGISTER - RMPR](#register---rmpr)**
+> - **[STOCK - RMPV](#stock---rmpv)**
+> - **[UPDATE - RMPU](#update---rmpu)**
+> - **[DELETE - RMPU](#delete---rmpu)**
+
+![image](https://user-images.githubusercontent.com/100146657/161959179-ad9ad68c-9488-4caa-a8b3-464881bcc79f.png)
+
+#### REGISTER - RMPR
+> **This is the Frame directed by clicking on the "REGISTER" option from the [product menu](#product-menu---lmp)**
+
+![image](https://user-images.githubusercontent.com/100146657/161961690-b187c52f-657a-403d-9f09-3bcb951b3b8c.png)
+
+### OBJECTS
+![image](https://user-images.githubusercontent.com/100146657/161961848-9141339b-28f5-4788-abaa-cf255d7719bc.png)
+```python
+    Variable Label = rmpr_lb_rs
+```
+![image](https://user-images.githubusercontent.com/100146657/161960025-e32728dd-874c-4131-b828-1f9d804f336c.png)
+
+```python
+    Variable Label = rmpr_lb_ed
+```
+![image](https://user-images.githubusercontent.com/100146657/161959858-eb9b6b8f-fa4e-443b-92c6-dd170c6bef53.png)
+
+>this frame is organized between 4 inner frames which contain "LineEdit" inside
+
+```python
+    Variable Frame = rmpr_cb
+```
+
+![image](https://user-images.githubusercontent.com/100146657/161960508-eb8396fd-f77c-4bdf-b2ee-fcc5c9fdf4a3.png)
+```python
+    Variable Frame = rmpr_cb_f1
+    Variable LineEdit = rmpr_cb_f1_id
+    Variable LineEdit = rmpr_cb_f1_n
+```
+![image](https://user-images.githubusercontent.com/100146657/161960522-233b5162-6f42-49cb-94a5-cb66579201cb.png)
+```python
+    Variable Frame = rmpr_cb_f2
+    Variable LineEdit = rmpr_cb_f2_desc
+```
+![image](https://user-images.githubusercontent.com/100146657/161960851-c677f8d8-5911-4695-8aba-a6f34214152a.png)
+```python
+    Variable Frame = rmpr_cb_f3
+    Variable LineEdit = rmpr_cb_f3_u
+    Variable LineEdit = rmpr_cb_f3_um
+    
+```
+![image](https://user-images.githubusercontent.com/100146657/160499558-f1dfe806-2ab3-458b-9e04-51ce09cb1e77.png)
+```python
+    Variable Frame = rmcr_cb_1_f4
+    Variable LineEdit = rmcr_cb_1_f4_card
+```
+![image](https://user-images.githubusercontent.com/100146657/161960994-fafb09f5-f3a3-4a03-a299-e5b2f004e15b.png)
+```python
+    Variable Frame = rmcr_cb_1_f5
+    Variable Label = rmpr_cb_f4_lb_v
+    Variable LineEdit = rmpr_cb_f4_v
+```
+![image](https://user-images.githubusercontent.com/100146657/161961067-289b425a-470c-4246-bdcc-85a494c01bca.png)
+```python
+    Variable Frame = rmpr_btn
+    Variable Button = rmpr_btn_n
+```
+![image](https://user-images.githubusercontent.com/100146657/161961362-048d1d48-1320-4d72-b239-68827341ec68.png)
+
+```python
+    Variable Frame = rmpr_sc
+    Variable Label = rmpr_sc_lb_suc
+```
+#### STOCK - RMCV
+> **This is the Frame directed by clicking on the "STOCK" option from the [product menu](#product-menu---lmp)**
+
+![image](https://user-images.githubusercontent.com/100146657/160656298-968a2863-0c65-4e1c-bba5-ebe875a59b98.png)
+
+```python
+    Variable Stacked = rmcv
+```
+
+### OBJECTS
+
+![image](https://user-images.githubusercontent.com/100146657/161962342-60405978-ac78-4f84-a679-0dc8a75e2d03.png)
+
+```python
+    Variable Label = rmcv_lb_c
+```
+![image](https://user-images.githubusercontent.com/100146657/160656816-daca1303-e496-4742-a405-b9926df7a6d7.png)
+```python
+    Variable Tree = rmcv_f_tree
+```
+
+#### UPDATE - RMCU
+> **This is the Frame directed by clicking on the "UPDATE" option from the [client menu](#client-menu---lmc)**
+
+![image](https://user-images.githubusercontent.com/100146657/161295099-4e1d38fa-fdde-471c-8c37-cb38b09235bd.png)
+![image](https://user-images.githubusercontent.com/100146657/161295246-bdf16555-09b6-49fb-9456-368a2fda641d.png)
+   
+### OBJECTS
+
+![image](https://user-images.githubusercontent.com/100146657/161293076-cd0996af-178a-434c-8ac1-78c213fbbaed.png)
+>this frame is organized between 2 inner frames which contain "LineEdit" inside
+
+```python
+    Variable Stacked = rmcu_op
+```
+![image](https://user-images.githubusercontent.com/100146657/161295472-b10ac750-cb81-4b76-9623-a70ef9cc854f.png)
+```python
+    Variable Frame = rmcr_btn
+    Variable Button if Name =           rmcu_f1_btn_n
+    Variable Button if CPF =            rmcu_f1_btn_cpf
+    Variable Button if Phone Number =   rmcu_f1_btn_pn
+    Variable Button if Address =        rmcu_f2_btn_add
+    Variable Button if Email =          rmcu_f2_btn_email
+    Variable Button if Payment Form =   rmcu_f2_btn_pay
+
+```
+![image](https://user-images.githubusercontent.com/100146657/161295770-1a3934f3-1835-4c36-9a94-fe7b75cdfa70.png)
+```python
+    Variable Label = rmcu_lb_us
+```
+![image](https://user-images.githubusercontent.com/100146657/161295818-bb9ab0a8-359a-4fa4-bcea-119ead02e143.png)
+```python
+    Variable Label = rmcu_lb_so
+```
+
+![image](https://user-images.githubusercontent.com/100146657/160499800-6066ed6b-a308-4358-b8a2-a3354972048d.png)
+```python
+    Variable Frame = rmcu_btn
+    Variable Button = rmcu_btn_b
+    Variable Button = rmcu_btn_n
+```
+![image](https://user-images.githubusercontent.com/100146657/161297159-42b75688-c749-4515-a16e-a27465beb1bf.png)
+```python
+    Variable Stacked = rmcu_slct
+```
+![image](https://user-images.githubusercontent.com/100146657/161298301-e1d0160f-3f0e-4961-ad8d-37fe6c57fe7a.png)
+```python
+    Variable Frame = rmcu_slct_f1
+    Variable Button = rmcu_slct_btn
+    Variable LineEdit = rmcu_slct_src
+```
+![image](https://user-images.githubusercontent.com/100146657/161298487-abab5bbb-f8cc-4841-b49b-c2006f78b485.png)
+```python
+    Variable Frame = rmcu_slct_f2
+    Variable Tree = rmcu_f_tree
+``` 
+![image](https://user-images.githubusercontent.com/100146657/161298945-354f2d79-6482-4658-b115-d8e5c34c284d.png)
+```python
+    Variable Stacked = rmcu_gen
+    Variable Frame = rmcu_gen_f1
+    Variable Tree = rmcu_gen_f1_lb
+``` 
+![image](https://user-images.githubusercontent.com/100146657/161299395-c8d7d9e5-764a-4bcb-807f-35a0f7716161.png)
+```python
+    Variable Stacked = rmcu_add
+    Variable Frame / LineEdit if Address = rmcu_add_f1 / rmcu_add_f1_add
+    Variable Frame / LineEdit if Number = rmcu_add_f2 / rmcu_add_f2_num
+    Variable Frame / LineEdit if District = rmcu_add_f2 / rmcu_add_f2_dist
+    Variable Frame / LineEdit if City = rmcu_add_f3 / rmcu_add_f3_cty
+    Variable Frame / LineEdit if State = rmcu_add_f3 / rmcu_add_f3_stte
+``` 
+![image](https://user-images.githubusercontent.com/100146657/161301714-aabb9c08-39d6-4ce8-9066-53ef6766317d.png)
+```python
+    Variable Stacked = rmcu_card
+    Variable Frame / LineEdit if Card Number = rmcu_card_f1 / rmcu_card_f1_card
+    Variable Frame / LineEdit if CVV = rmcu_card_f2 / rmcu_card_f2_cvv
+    Variable Frame / LineEdit if Expiration Date = rmcu_add_f2 / rmcu_card_f2_date
+``` 
+![image](https://user-images.githubusercontent.com/100146657/161301973-c921f65a-8964-4dfc-9a21-28887f06df07.png)
+```python
+    Variable Frame = rmcu_sc
+    Variable Label = rmcu_sc_lb_suc
+```
+#### DELETE - RMCD
+> **This is the Frame directed by clicking on the "DELETE" option from the [client menu](#client-menu---lmc)**
+
+![image](https://user-images.githubusercontent.com/100146657/161302371-3cb03b3c-3861-4cd3-bb49-6bf0fa52e68a.png)
+
+   
+### OBJECTS
+![image](https://user-images.githubusercontent.com/100146657/161302435-9ad698be-8800-48d6-9f10-9709829170fc.png)
+```python
+    Variable Stacked = rmcd_slct
+``` 
+![image](https://user-images.githubusercontent.com/100146657/161298301-e1d0160f-3f0e-4961-ad8d-37fe6c57fe7a.png)
+```python
+    Variable Frame = rmcd_slct_f2
+    Variable Button = rmcd_slct_btn
+    Variable LineEdit = rmcd_slct_src
+```
+![image](https://user-images.githubusercontent.com/100146657/161298487-abab5bbb-f8cc-4841-b49b-c2006f78b485.png)
+```python
+    Variable Frame = rmcd_slct_f2
+    Variable Tree = rmcd_f_tree
+``` 
+![image](https://user-images.githubusercontent.com/100146657/161303056-0c238d91-df76-4080-a1ef-04341be7c081.png)
+```python
+    Variable Frame = rmcd_btn
+    Variable Button = rmcd_btn_n
+```
+![image](https://user-images.githubusercontent.com/100146657/161303276-6d127e6d-f872-4872-abd2-09c2746d190a.png)
+```python
+    Variable Frame = rmcd_sc
+    Variable Label = rmcd_sc_lb_suc
+```
+
+
+
+
+
 > END OF PAGE
 
 **THIS PROGRAM WAS MADE BY**:<br>
