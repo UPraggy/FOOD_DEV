@@ -81,7 +81,6 @@ class Interface():
         
 
     def loading_funcs_main(self, loading_funcs = ' ', w = ' '):
-        print(str(w.position))
         if (loading_funcs == 'c'):
             self.loading_funcs_client(w)
         elif (loading_funcs == 'p'):
