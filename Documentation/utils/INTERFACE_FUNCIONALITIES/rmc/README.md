@@ -13,7 +13,7 @@ This module has been divided into classes for each interface function.
 
 # Initial declarations and imports
 Initially the program imports: 
-- template that is responsible for organizing the client's classes and functions 
+- template that is responsible for organizing the client's classes and functions        
 - CRUD_DATA responsible for some operations with data 
 - QtWidgets that helps in some operations that are not contained in the main interface file.
 
@@ -72,7 +72,7 @@ Responsible for getting the values of all fields filled in and storing them
 def get_data_pg1(self, w):
 ```
 ## Finish Register
-Responsible for obtaining the values of all fields filled in, storing them and sending them to the "create customer" function, finalizing the registration
+Responsible for obtaining the values of all fields filled in, storing them and sending them to the "create client" function, finalizing the registration
 ```python
 def finish_register(self, w):
 ```
