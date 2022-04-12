@@ -270,6 +270,7 @@ def rmcu_Functions(self, w):
 This module is responsible for customer registration.
 - **[Initial declaration of variables - RMCD](#initial-declaration-of-variables---rmcd)**
 - **[INIT TREE WIDGET](#init-tree-widget)**
+- **[Delete data](#delete-data)**
 - **[RMCD INIT](#rmcd-init)**
 - **[RMCD BUTTON](#rmcd-button)**
 - **[RMCD NEXT PAGE](#rmcd-next-page)**
@@ -281,6 +282,7 @@ class Delete():
     def __init__(self):
         data = None
         slct_data = None
+        slct_data1 = None
         current_Widget = None
 ```
 
@@ -289,7 +291,11 @@ Responsible for resetting the TreeWidget and populating it again, and after chan
 ```python
 def init_Tree_widget(self, w):
 ```
-
+## Delete data
+Responsible for deleting the selected record
+```python
+def delete_data(self):
+```
 ## RMCU INIT
 Home page settings
 ```python
