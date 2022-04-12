@@ -169,18 +169,16 @@ def rmcv_Functions(self, w):
 
 # Update
 This module is responsible for customer registration.
-- **[Initial declaration of variables - RMCU](#initial-declaration-of-variables---rmcu)**
-- **[Clean data - RMCU](#clean-data---rmcu)**
+- **[Initial declaration of variables - RMPU](#initial-declaration-of-variables---rmpu)**
+- **[Clean data - RMPU](#clean-data---rmpu)**
 - **[Get data generic](#get-data-generic)**
-- **[Get data card](#get-data-card)**
-- **[Get data address](#get-data-address)**
-- **[RMCU INIT](#rmcu-init)**
-- **[RMCU BUTTON](#rmcu-button)**
-- **[RMCU NEXT PAGE](#rmcu-next-page)**
-- **[RMCU PREVIOUS PAGE](#rmcu-previous-page)**
-- **[RMCU FUNCTIONS](#rmcu-functions)**
+- **[RMPU INIT](#rmpu-init)**
+- **[RMPU BUTTON](#rmpu-button)**
+- **[RMPU NEXT PAGE](#rmpu-next-page)**
+- **[RMPU PREVIOUS PAGE](#rmpu-previous-page)**
+- **[RMPU FUNCTIONS](#rmpu-functions)**
 
-## Initial declaration of variables - RMCU
+## Initial declaration of variables - RMPU
 ```python
 class Update():
     def __init__(self):
@@ -188,60 +186,51 @@ class Update():
         slct_data = None
         slct_data1 = None
         current_Widget = None
+        tool_tip = None #pop up with tips on the fields filled in
 ```
 
-## Clean data - RMCU
+## Clean data - RMPU
 Responsible for resetting all filled fields
 ```python
 def clean_data(self, w):
 ```
 
 ## Get data generic
-Responsible for obtaining the values of a single and/or generic field (Name, CPF, Telephone number and E-mail) filled in and storing it.
+Responsible for obtaining the values of a single and/or generic field filled in and storing it.
 ```python
 def get_data_generic(self, w, field):
 ```
-## Get data card
-Responsible for getting the values of the filled-in address-related fields and storing it.
-```python
-def get_data_card(self, w):
-```
-## Get data address
-Responsible for getting the values of the filled-in card-related fields and storing it
-```python
-def get_data_add(self, w):
-```
 
-## RMCU INIT
+## RMPU INIT
 Home page settings
 ```python
 def rmcu_init(self, w, init):
 ```
 First, it is directed to the home page, the **next and back** buttons are hidden and the fonts and respective texts also return to their initial positions.
 ```python
-switch_page(w.rm_stackedWidget,w.rmcu)
-        w.rmcu_btn_b.setVisible(False)
-        w.rmcu_btn_n.setVisible(False)
-        w.rmcu_lb_ed.setText("SELECT A OPTION")
-        w.rmcu_lb_ed.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
-        w.rmcu_lb_us.setText("UPDATE SYSTEM")
+switch_page(w.rm_stackedWidget,w.rmpu)
+        w.rmpu_btn_b.setVisible(False)
+        w.rmpu_btn_n.setVisible(False)
+        w.rmpu_lb_ed.setText("SELECT A OPTION")
+        w.rmpu_lb_ed.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
+        w.rmpu_lb_us.setText("UPDATE SYSTEM")
 ```
 Whenever the function is called, the fields and TreeWidget will be reset and directed to the home page
 
 ```python
 self.clean_data(w)
-w.rmcu_f_tree.clear()
+w.rmpu_f2_tree.clear()
 if (init == 0):
-       switch_page(w.rmcu_stackedWidget,w.rmcu_op)
-       init = 1
+     switch_page(w.rmpu_stackedWidget,w.rmpu_op)
+     init = 1
 ```
 
-## RMCU BUTTON 
+## RMPU BUTTON 
 Page buttons settings (SEARCH, BACK, NEXT and RESPECTIVES UPDATE OPTIONS)
 ```python
-def rmcu_btn(self, w):
+def rmpu_btn(self, w):
 ```
-## RMCU NEXT PAGE
+## RMPU NEXT PAGE
 Settings whenever the **Next page** button is pressed
 ```python
 def rmcu_next_step(self, w, current):
@@ -256,9 +245,9 @@ elif (current == 1):
 ```
 Before it checks if any records were selected for right after switching to the **Fourth page** and collects the information that was entered to update and change the fonts.
 ```python
-elif (current == 2 or current == 3 or current == 4):
+elif (current == 2):
 ```
-## RMCU PREVIOUS PAGE
+## RMPU PREVIOUS PAGE
 Settings whenever the **Previous page** button is pressed
 ```python
 def rmcu_back_step(self, w, current):
@@ -271,18 +260,10 @@ Switch to the **Second page** and change the fonts
 ```python
 else:
 ```
-## RMCU FUNCTIONS
+## RMPU FUNCTIONS
 Responsible for initializing the button "capture" process
 ```python
 def rmcu_Functions(self, w):
-```
-Switch to the **Third page** (according to the option selected on the first page), collect the data of the selected record from the second, change the fonts and hide the buttons.
-```python
-elif (current == 1):
-```
-Switch to **Fourth page** and collect the information that was entered to update, and change fonts.
-```python
-elif (current == 2 or current == 3 or current == 4):
 ```
 
 # Delete
