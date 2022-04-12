@@ -75,23 +75,22 @@ def finish_register(self, w):
 ## RMCP INIT
 Home page settings
 ```python
-def rmcr_init(self, w, init):
+def rmcp_init(self, w, init):
 ```
 First, it is directed to the initial registration page, the button **next** are visible again and the fonts and respective texts also return to their initial positions.
 ```python
-switch_page(w.rm_stackedWidget,w.rmcr)
-        w.rmcr_btn_b.setVisible(True)
-        w.rmcr_btn_n.setVisible(True)
-        w.rmcr_lb_ed.setText("ENTER THE DATA")
-        w.rmcr_lb_ed.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
-        w.rmcr_lb_rs.setText("REGISTER SYSTEM")
+switch_page(w.rm_stackedWidget,w.rmpr)
+        w.rmpr_btn_n.setVisible(True)
+        w.rmpr_lb_ed.setText("ENTER THE DATA")
+        w.rmpr_lb_ed.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
+        w.rmpr_lb_rs.setText("REGISTER SYSTEM")
 ```
 Whenever the function is called, the fields will be reset and directed to the home page
 
 ```python
 self.clean_data(w)
         if (init == 0):
-            switch_page(w.rmcr_cb_stackedWidget,w.rmcr_cb_1)
+            switch_page(w.rmpr_cb_stackedWidget,w.rmpr_cb)
             init = 1
 ```
 
@@ -101,25 +100,10 @@ Page buttons settings (BACK AND NEXT)
 def rmcr_btn(self, w):
 ```
 ## RMCP NEXT PAGE
-Settings whenever the **Next page** button is pressed
+Settings whenever the **Next page** button is pressed, collect the data, complete the registration, change the sources and hide the buttons
 ```python
 def rmcr_next_step(self, w, current):
 ```
-Switch to the **Second page**, collect the data from the first, change the sources and make the button **back** visible
-```python
-if (current == 0):
-```
-Switch to the **Third page**, collect the data from the second, complete the registration, change the sources and hide the buttons
-```python
-elif (current == 1):
-```
-## RMCP PREVIOUS PAGE
-Settings whenever the **Previous page** button is pressed<br>
-Switch to the **First page**, change the sources and hide **back** button
-```python
- def rmcr_back_step(self, w):
-```
-
 
 ## RMCP FUNCTIONS
 Responsible for initializing the button "capture" process
