@@ -132,7 +132,7 @@ def rmcr_Functions(self, w):
 ```
 
 # View
-This module is responsible for customer registration.
+This module is responsible for presenting client registration data.
 - **[Initial declaration of variables](#initial-declaration-of-variables---rmcv)**
 - **[View init - RMCV](#view-init-rmcv)**
 - **[RMCV BUTTON](#rmcv-button)**
@@ -162,7 +162,7 @@ def rmcv_Functions(self, w):
 ```
 
 # Update
-This module is responsible for customer registration.
+This module is responsible for updating client registration data.
 - **[Initial declaration of variables - RMCU](#initial-declaration-of-variables---rmcu)**
 - **[Clean data - RMCU](#clean-data---rmcu)**
 - **[Get data generic](#get-data-generic)**
@@ -280,7 +280,7 @@ elif (current == 2 or current == 3 or current == 4):
 ```
 
 # Delete
-This module is responsible for customer registration.
+This module is responsible for deleting client registration data.
 - **[Initial declaration of variables - RMCD](#initial-declaration-of-variables---rmcd)**
 - **[INIT TREE WIDGET](#init-tree-widget)**
 - **[RMCD INIT](#rmcd-init)**
