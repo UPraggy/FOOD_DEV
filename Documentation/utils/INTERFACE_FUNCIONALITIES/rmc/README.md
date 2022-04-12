@@ -305,7 +305,7 @@ Home page settings
 ```python
 def rmcd_init(self, w, init):
 ```
-First, it is directed to the home page, hide **back** button, and the respective fonts return to their initial positions.
+First, it is directed to the home page, hide **next** button, and the respective fonts return to their initial positions.
 ```python
 switch_page(w.rm_stackedWidget,w.rmcd)
         w.rmcd_btn_n.setVisible(False)
