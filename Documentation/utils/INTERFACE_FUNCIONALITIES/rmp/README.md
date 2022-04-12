@@ -113,29 +113,48 @@ def rmpr_Functions(self, w):
 
 # View
 This module is responsible for customer registration.
-- **[Initial declaration of variables](#initial-declaration-of-variables---rmcv)**
-- **[View init - RMCV](#view-init-rmcv)**
-- **[RMCV BUTTON](#rmcv-button)**
-- **[RMCV FUNCTIONS](#rmcv-functions)**
+- **[Initial declaration of variables](#initial-declaration-of-variables---rmpv)**
+- **[RMPV BUTTON](#rmpv-button)**
+- **[ANIMATED GRAPHIC](#animated-graphic)**
+- **[PLACE GRAPHIC](#place-graphic)**
+- **[View init - RMPV](#view-init-rmcv)**
+- **[RMPV NEXT PAGE](#rmpv-next-page)**
+- **[RMPV PREVIOUS PAGE](#rmpv-previous-page)**
+- **[RMPV FUNCTIONS](#rmpv-functions)**
 
-## Initial declaration of variables - RMCV
+## Initial declaration of variables - RMPV
 ```python
 class View():
     def __init__(self):
         data = None
+        slct_data = None
 ```
-
-## View init - RMCV
+## RMPV BUTTON
+Back page button settings and those that generate static or animated graphics
+```python
+def rmpv_btn(self, w):
+```
+## ANIMATED GRAPHIC
+Responsible for capturing selected field and generating the respective animated graph, opening an auxiliary window
+```python
+def animated_graphic(self, x , y, grapich_Title):
+```
+## PLACE GRAPHIC
+Responsible for capturing selected field and generating the respective static graph
+```python
+def place_graphic(self, frame,  x , y, grapich_Title):
+```
+## View init - RMPV
 Responsible for resetting the TreeWidget and populating it again
 ```python
 def rmcv_init(self, w):
 ```
-## RMCV BUTTON 
+## RMPV BUTTON 
 Page buttons settings (SEARCH)
 ```python
 def rmcu_btn(self, w):
 ```
-## RMCV FUNCTIONS
+## RMPV FUNCTIONS
 Responsible for initializing the button "capture" process
 ```python
 def rmcv_Functions(self, w):
