@@ -300,7 +300,7 @@ Responsible for deleting the selected record
 ```python
 def delete_data(self):
 ```
-## RMCU INIT
+## RMCD INIT
 Home page settings
 ```python
 def rmcd_init(self, w, init):
@@ -329,7 +329,7 @@ def rmcd_btn(self, w):
 ## RMCD NEXT PAGE
 Settings whenever the **Next Page** button is pressed, before it checks if any records have been selected for right after switching to change fonts and hide the button.
 ```python
-def rmcu_next_step(self, w, current):
+def rmcd_next_step(self, w):
 ```
 
 ## RMCD FUNCTIONS
