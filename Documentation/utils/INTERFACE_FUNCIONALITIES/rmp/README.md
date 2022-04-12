@@ -41,28 +41,28 @@ def insert_tree_data(data, tree):
 
 # Register
 This module is responsible for customer registration.
-- **[Initial declaration of variables - RMCP](#initial-declaration-of-variables---rmcp)**
-- **[Data tratament Error - RMCP](#data-tratament-error---rmcp)**
-- **[Clean data - RMCP](#clean-data---rmcp)**
+- **[Initial declaration of variables - RMPR](#initial-declaration-of-variables---rmpr)**
+- **[Data tratament Error - RMPR](#data-tratament-error---rmpr)**
+- **[Clean data - RMPR](#clean-data---rmpr)**
 - **[Get data](#get-data)**
-- **[RMCP INIT](#rmcp-init)**
-- **[RMCP BUTTON](#rmcp-button)**
-- **[RMCP NEXT PAGE](#rmcp-next-page)**
-- **[RMCP PREVIOUS PAGE](#rmcp-previous-page)**
-- **[RMCP FUNCTIONS](#rmcp-functions)**
+- **[RMPR INIT](#rmpr-init)**
+- **[RMPR BUTTON](#rmpr-button)**
+- **[RMPR NEXT PAGE](#rmpr-next-page)**
+- **[RMPR PREVIOUS PAGE](#rmpr-previous-page)**
+- **[RMPR FUNCTIONS](#rmpr-functions)**
 
-## Initial declaration of variables - RMCP
+## Initial declaration of variables - RMPR
 ```python
 class Register():
     def __init__(self):
         data = None
 ```
-## Data tratament Error - RMCP
+## Data tratament Error - RMPR
 Responsible for monitoring the fields, and verifying that they were duly filled in, if they are not an error window will be triggered to indicate the problem
 ```python
 def data_tratament_error(self, w):
 ```
-## Clean data - RMCP
+## Clean data - RMPR
 Responsible for resetting all filled fields
 ```python
 def clean_data(self, w):
@@ -70,9 +70,9 @@ def clean_data(self, w):
 ## Get data 
 Responsible for obtaining the values of all fields filled in, storing them and sending them to the "create product" function, finalizing the registration
 ```python
-def finish_register(self, w):
+def get_data(self, w):
 ```
-## RMCP INIT
+## RMPR INIT
 Home page settings
 ```python
 def rmcp_init(self, w, init):
@@ -94,21 +94,21 @@ self.clean_data(w)
             init = 1
 ```
 
-## RMCP BUTTON 
+## RMPR BUTTON 
 Page buttons settings (BACK AND NEXT)
 ```python
-def rmcr_btn(self, w):
+def rmpr_btn(self, w):
 ```
-## RMCP NEXT PAGE
+## RMPR NEXT PAGE
 Settings whenever the **Next page** button is pressed, collect the data, complete the registration, change the sources and hide the buttons
 ```python
-def rmcr_next_step(self, w, current):
+def rmpr_next_step(self, w, current):
 ```
 
-## RMCP FUNCTIONS
+## RMPR FUNCTIONS
 Responsible for initializing the button "capture" process
 ```python
-def rmcr_Functions(self, w):
+def rmpr_Functions(self, w):
 ```
 
 # View
