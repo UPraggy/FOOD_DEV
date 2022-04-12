@@ -13,15 +13,17 @@ This module has been divided into classes for each interface function.
 
 # Initial declarations and imports
 Initially the program imports: 
-- template that is responsible for organizing the client's classes and functions 
+- template that is responsible for organizing the product's classes and functions 
 - CRUD_DATA responsible for some operations with data 
 - QtWidgets that helps in some operations that are not contained in the main interface file.
+- Matplotlib is responsible for generating graphs (x,y)
 
-After the imports, the client class is initialized.
+After the imports, the product class is initialized.
 ```python
 from utils import template
 from PyQt5 import QtWidgets
-c = template.Client()
+import matplotlib.pyplot as plt
+p = template.Product()
 ```
 The most used function in the program is declared, responsible for setting or "changing" the current page.
 ```python
@@ -39,44 +41,38 @@ def insert_tree_data(data, tree):
 
 # Register
 This module is responsible for customer registration.
-- **[Initial declaration of variables - RMCR](#initial-declaration-of-variables---rmcr)**
-- **[Data tratament Error - RMCR](#data-tratament-error---rmcr)**
-- **[Clean data - RMCR](#clean-data---rmcr)**
-- **[Get data page 1](#get-data-page-1)**
-- **[Finish Register](#finish-register)**
-- **[RMCR INIT](#rmcr-init)**
-- **[RMCR BUTTON](#rmcr-button)**
-- **[RMCR NEXT PAGE](#rmcr-next-page)**
-- **[RMCR PREVIOUS PAGE](#rmcr-previous-page)**
-- **[RMCR FUNCTIONS](#rmcr-functions)**
+- **[Initial declaration of variables - RMCP](#initial-declaration-of-variables---rmcp)**
+- **[Data tratament Error - RMCP](#data-tratament-error---rmcp)**
+- **[Clean data - RMCP](#clean-data---rmcp)**
+- **[Get data](#get-data)**
+- **[RMCP INIT](#rmcp-init)**
+- **[RMCP BUTTON](#rmcp-button)**
+- **[RMCP NEXT PAGE](#rmcp-next-page)**
+- **[RMCP PREVIOUS PAGE](#rmcp-previous-page)**
+- **[RMCP FUNCTIONS](#rmcp-functions)**
 
-## Initial declaration of variables - RMCR
+## Initial declaration of variables - RMCP
 ```python
 class Register():
     def __init__(self):
         data = None
 ```
-## Data tratament Error - RMCR
+## Data tratament Error - RMCP
 Responsible for monitoring the fields, and verifying that they were duly filled in, if they are not an error window will be triggered to indicate the problem
 ```python
-def data_tratament_error(self, step, w):
+def data_tratament_error(self, w):
 ```
-## Clean data - RMCR
+## Clean data - RMCP
 Responsible for resetting all filled fields
 ```python
 def clean_data(self, w):
 ```
-## Get data page 1
-Responsible for getting the values of all fields filled in and storing them
-```python
-def get_data_pg1(self, w):
-```
-## Finish Register
-Responsible for obtaining the values of all fields filled in, storing them and sending them to the "create customer" function, finalizing the registration
+## Get data 
+Responsible for obtaining the values of all fields filled in, storing them and sending them to the "create product" function, finalizing the registration
 ```python
 def finish_register(self, w):
 ```
-## RMCR INIT
+## RMCP INIT
 Home page settings
 ```python
 def rmcr_init(self, w, init):
@@ -99,12 +95,12 @@ self.clean_data(w)
             init = 1
 ```
 
-## RMCR BUTTON 
+## RMCP BUTTON 
 Page buttons settings (BACK AND NEXT)
 ```python
 def rmcr_btn(self, w):
 ```
-## RMCR NEXT PAGE
+## RMCP NEXT PAGE
 Settings whenever the **Next page** button is pressed
 ```python
 def rmcr_next_step(self, w, current):
@@ -117,7 +113,7 @@ Switch to the **Third page**, collect the data from the second, complete the reg
 ```python
 elif (current == 1):
 ```
-## RMCR PREVIOUS PAGE
+## RMCP PREVIOUS PAGE
 Settings whenever the **Previous page** button is pressed<br>
 Switch to the **First page**, change the sources and hide **back** button
 ```python
@@ -125,7 +121,7 @@ Switch to the **First page**, change the sources and hide **back** button
 ```
 
 
-## RMCR FUNCTIONS
+## RMCP FUNCTIONS
 Responsible for initializing the button "capture" process
 ```python
 def rmcr_Functions(self, w):
