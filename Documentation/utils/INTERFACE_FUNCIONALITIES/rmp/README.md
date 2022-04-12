@@ -145,15 +145,22 @@ Responsible for capturing selected field and generating the respective static gr
 def place_graphic(self, frame,  x , y, grapich_Title):
 ```
 ## View init - RMPV
-Responsible for resetting the TreeWidget and populating it again
+First, it is directed to the home page, the **back** button is hidden and the fonts and respective texts also return to their initial positions.
 ```python
 def rmcv_init(self, w):
 ```
-## RMPV BUTTON 
-Page buttons settings (SEARCH)
+## RMPV NEXT PAGE
+Settings whenever the **Next page** button is pressed, change the fonts and make the **back** button visible and **Next** hidden, after that it filters through the button (OPTION) that was pressed and chooses which type of registration or graph will present
 ```python
-def rmcu_btn(self, w):
+def rmpv_next_step(self, w, btn):
 ```
+
+## RMPV PREVIOUS PAGE
+Settings whenever the **Previous page** button is pressed, switch to the **First page**, change the fonts, hide **back** button, an reset treeWidget
+```python
+def rmpv_back_step(self, w, current):
+```
+
 ## RMPV FUNCTIONS
 Responsible for initializing the button "capture" process
 ```python
