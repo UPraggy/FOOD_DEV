@@ -270,14 +270,6 @@ Responsible for initializing the button "capture" process
 ```python
 def rmcu_Functions(self, w):
 ```
-Switch to the **Third page** (according to the option selected on the first page), collect the data of the selected record from the second, change the fonts and hide the buttons.
-```python
-elif (current == 1):
-```
-Switch to **Fourth page** and collect the information that was entered to update, and change fonts.
-```python
-elif (current == 2 or current == 3 or current == 4):
-```
 
 # Delete
 This module is responsible for deleting client registration data.
