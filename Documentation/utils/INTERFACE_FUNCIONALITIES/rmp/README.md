@@ -299,38 +299,38 @@ def delete_data(self):
 ## RMCU INIT
 Home page settings
 ```python
-def rmcd_init(self, w, init):
+def rmpd_init(self, w, init):
 ```
-First, it is directed to the home page, hide **back** button, and the respective fonts return to their initial positions.
+First, it is directed to the home page, hide **next** button, and the respective fonts return to their initial positions.
 ```python
-switch_page(w.rm_stackedWidget,w.rmcd)
-        w.rmcd_btn_n.setVisible(False)
-        w.rmcd_lb_ds.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
-        w.rmcd_lb_so.setText("DELETE SYSTEM")
+switch_page(w.rm_stackedWidget,w.rmpd)
+        w.rmpd_btn_n.setVisible(False)
+        w.rmpd_lb_ds.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
+        w.rmpd_lb_so.setText("DELETE SYSTEM")
 ```
 Whenever the function is called the TreeWidget will be reset and directed to the home page.
 ```python
-w.rmcd_f_tree.clear()
+w.rmpd_f_tree.clear()
         self.init_Tree_widget(w)
         if (init == 0):
-            switch_page(w.rmcd_stackedWidget,w.rmcd_slct)
+            switch_page(w.rmpd_stackedWidget,w.rmpd_slct)
             init = 1
 ```
 
 ## RMCD BUTTON 
 Page buttons settings (SEARCH and NEXT)
 ```python
-def rmcd_btn(self, w):
+def rmpd_btn(self, w):
 ```
 ## RMCD NEXT PAGE
 Settings whenever the **Next Page** button is pressed, before it checks if any records have been selected for right after switching to change fonts and hide the button.
 ```python
-def rmcu_next_step(self, w, current):
+def rmpd_next_step(self, w):
 ```
 
 ## RMCD FUNCTIONS
 Responsible for initializing the button "capture" process
 ```python
-def rmcd_Functions(self, w):
+def rmpd_Functions(self, w):
 ```
 
