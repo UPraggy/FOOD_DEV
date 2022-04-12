@@ -40,6 +40,7 @@ def insert_tree_data(data, tree):
 # Register
 This module is responsible for customer registration.
 - **[Initial declaration of variables - RMCR](#initial-declaration-of-variables---rmcr)**
+- **[Data tratament Error - RMCR](#data-tratament-error---rmcr)**
 - **[Clean data - RMCR](#clean-data---rmcr)**
 - **[Get data page 1](#get-data-page-1)**
 - **[Finish Register](#finish-register)**
@@ -55,7 +56,11 @@ class Register():
     def __init__(self):
         data = None
 ```
-
+## Data tratament Error - RMCR
+Responsible for monitoring the fields, and verifying that they were duly filled in, if they are not an error window will be triggered to indicate the problem
+```python
+def data_tratament_error(self, step, w):
+```
 ## Clean data - RMCR
 Responsible for resetting all filled fields
 ```python
@@ -131,7 +136,7 @@ This module is responsible for customer registration.
 - **[Initial declaration of variables](#initial-declaration-of-variables---rmcv)**
 - **[View init - RMCV](#view-init-rmcv)**
 - **[RMCV BUTTON](#rmcv-button)**
-- - **[RMCV FUNCTIONS](#rmcv-functions)**
+- **[RMCV FUNCTIONS](#rmcv-functions)**
 
 ## Initial declaration of variables - RMCV
 ```python
@@ -243,7 +248,7 @@ Switch to the **Third page** (according to the option selected on the first page
 ```python
 elif (current == 1):
 ```
-Switch to **Fourth page** and collect the information that was entered to update, and change fonts.
+Before it checks if any records were selected for right after switching to the **Fourth page** and collects the information that was entered to update and change the fonts.
 ```python
 elif (current == 2 or current == 3 or current == 4):
 ```
@@ -325,7 +330,7 @@ Page buttons settings (SEARCH and NEXT)
 def rmcd_btn(self, w):
 ```
 ## RMCD NEXT PAGE
-Settings whenever the **Next page** button is pressed, change the fonts and hide the button.
+Settings whenever the **Next Page** button is pressed, before it checks if any records have been selected for right after switching to change fonts and hide the button.
 ```python
 def rmcu_next_step(self, w, current):
 ```
