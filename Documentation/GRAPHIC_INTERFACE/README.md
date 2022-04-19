@@ -187,7 +187,7 @@ Variable Name = rmm_lb_logo
 > - **[REGISTER - RMCR](#register---rmcr)**
 > - **[VIEW RECORDS - RMCV](#view-records---rmcv)**
 > - **[UPDATE - RMCU](#update---rmcu)**
-> - **[DELETE - RMCU](#delete---rmcu)**
+> - **[DELETE - RMCD](#delete---rmcd)**
 
 ![image](https://user-images.githubusercontent.com/100146657/160489735-b29c992e-02bf-4716-8659-11d4748c0f7f.png)
 
@@ -421,24 +421,13 @@ Variable Label = rmcd_sc_lb_suc
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
 ### PRODUCT Frame - RMP
 > **This is the Frame directed by clicking on the "PRODUCT" option from the [main menu](#main-menu---lmm)**
 > **This frame contains sub-options in its menu:**
 > - **[INSERT - RMPR](#insert---rmpr)**
 > - **[STOCK - RMPV](#stock---rmpv)**
 > - **[UPDATE - RMPU](#update---rmpu)**
-> - **[DELETE - RMPU](#delete---rmpu)**
+> - **[DELETE - RMPD](#delete---rmpd)**
 
 ![image](https://user-images.githubusercontent.com/100146657/161959179-ad9ad68c-9488-4caa-a8b3-464881bcc79f.png)
 
@@ -699,6 +688,143 @@ Variable Label = rmpu_sc_lb_suc
 ```
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Order Frame - RMO
+> **This is the Frame directed by clicking on the "ORDER" option from the [main menu](#main-menu---lmm)**
+> **This frame contains sub-options in its menu:**
+> - **[REGISTER - RMOR](#register---rmor)**
+> - **[VIEW RECORDS - RMOV](#view-records---rmov)**
+> - **[UPDATE - RMOU](#update---rmou)**
+> - **[DELETE - RMOD](#delete---rmod)**
+
+![image](https://user-images.githubusercontent.com/100146657/160489735-b29c992e-02bf-4716-8659-11d4748c0f7f.png)
+
+#### REGISTER - RMOR
+> **This is the Frame directed by clicking on the "REGISTER" option from the [order menu](#order-menu---lmc)**
+
+![image](https://user-images.githubusercontent.com/100146657/160610929-cd5fd5b7-2cea-40c8-8bb4-d93bdee776b5.png)
+
+### OBJECTS
+![image](https://user-images.githubusercontent.com/100146657/160497887-854629e7-3062-4ec8-a7a1-41825f4e8b04.png)
+```python
+Variable Label = rmcr_lb_rs
+```
+![image](https://user-images.githubusercontent.com/100146657/160498060-583a0aa9-a7bf-4cda-b0c9-81c8266aa02a.png)
+```python
+Variable Label = rmcr_lb_ed
+```
+![image](https://user-images.githubusercontent.com/100146657/160498749-93f368b3-13e0-4a83-b590-0339fa069aaf.png)
+>this frame is organized between 5 inner frames which contain "LineEdit" inside
+
+```python
+Variable Frame = rmcr_cb_1
+```
+
+![image](https://user-images.githubusercontent.com/100146657/160499486-d77dba79-9ee6-4c16-95ac-43ac480ec196.png)
+```python
+Variable Frame = rmcr_cb_1_f1
+Variable LineEdit = rmcr_cb_1_f1_name
+```
+![image](https://user-images.githubusercontent.com/100146657/160499283-f0aee672-38a0-46db-ac6a-f3c5b388781a.png)
+```python
+Variable Frame = rmcr_cb_1_f2
+Variable LineEdit = rmcr_cb_1_f2_cpf
+Variable LineEdit = rmcr_cb_1_f2_phone
+```
+![image](https://user-images.githubusercontent.com/100146657/160499512-69c8941e-eac3-4690-8671-16e7fd46ee4b.png)
+```python
+Variable Frame = rmcr_cb_1_f3
+Variable LineEdit = rmcr_cb_1_f3_email
+```
+![image](https://user-images.githubusercontent.com/100146657/160499558-f1dfe806-2ab3-458b-9e04-51ce09cb1e77.png)
+```python
+Variable Frame = rmcr_cb_1_f4
+Variable LineEdit = rmcr_cb_1_f4_card
+```
+![image](https://user-images.githubusercontent.com/100146657/160499623-0f62c631-92dd-4480-b057-806a502600bc.png)
+```python
+Variable Frame = rmcr_cb_1_f5
+Variable LineEdit = rmcr_cb_1_f5_cvv
+Variable LineEdit = rmcr_cb_1_f5_date
+```
+![image](https://user-images.githubusercontent.com/100146657/160499800-6066ed6b-a308-4358-b8a2-a3354972048d.png)
+```python
+Variable Frame = rmcr_btn
+Variable Button = rmcr_btn_b
+Variable Button = rmcr_btn_n
+```
+
+![image](https://user-images.githubusercontent.com/100146657/160606635-f1e5f4dd-d1ef-4bd7-b6f5-9b673640a4c1.png)
+
+>this frame is organized between 3 inner frames which contain "LineEdit" inside
+
+```python
+Variable Frame = rmcr_cb_2
+```
+![image](https://user-images.githubusercontent.com/100146657/160606696-9d4d0624-98a0-48f8-82ea-af65e1c86bc5.png)
+
+```python
+Variable Frame = rmcr_cb_2_f1
+Variable LineEdit = rmcr_cb_2_f1_add
+```
+![image](https://user-images.githubusercontent.com/100146657/160606784-eec216b5-f1c2-4538-9bb6-8b40471b1630.png)
+
+```python
+Variable Frame = rmcr_cb_2_f2
+Variable LineEdit = rmcr_cb_2_f2_dist
+Variable LineEdit = rmcr_cb_2_f2_num
+```
+![image](https://user-images.githubusercontent.com/100146657/160606811-6047ab0b-223b-4ba6-bf82-d4eaeda340ce.png)
+```python
+Variable Frame = rmcr_cb_2_f3
+Variable LineEdit = rmcr_cb_2_f3_stte
+Variable LineEdit = rmcr_cb_2_f3_cty
+```
+![image](https://user-images.githubusercontent.com/100146657/160608261-a22a003b-0894-4ae6-96b3-713e4544dc75.png)
+
+```python
+Variable Frame = rmcr_cb_3
+Variable Label = rmcr_cb_2_lb_suc
 
 
 
