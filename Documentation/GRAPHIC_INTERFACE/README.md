@@ -737,7 +737,10 @@ Variable Label = rmpu_sc_lb_suc
 > - **[UPDATE - RMOU](#update---rmou)**
 > - **[DELETE - RMOD](#delete---rmod)**
 
-![image](https://user-images.githubusercontent.com/100146657/164007744-a8b0164f-dffc-4f3c-9bc2-83c91014d273.png)
+![image](https://user-images.githubusercontent.com/100146657/164013825-470ffd6f-cd08-4b62-8d9d-abeb6cc8e302.png)
+![image](https://user-images.githubusercontent.com/100146657/164013866-61fbc4e7-5649-486f-9f8b-34e2d976fad4.png)
+![image](https://user-images.githubusercontent.com/100146657/164013928-0d78695b-1df7-42dd-8127-b1fe50cebd9a.png)
+
 
 #### REGISTER - RMOR
 > **This is the Frame directed by clicking on the "REGISTER" option from the [order menu](#order-menu---lmc)**
