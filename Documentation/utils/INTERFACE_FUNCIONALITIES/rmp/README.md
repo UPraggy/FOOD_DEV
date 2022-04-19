@@ -268,15 +268,15 @@ def rmcu_Functions(self, w):
 
 # Delete
 This module is responsible for customer registration.
-- **[Initial declaration of variables - RMCD](#initial-declaration-of-variables---rmcd)**
+- **[Initial declaration of variables - RMPD](#initial-declaration-of-variables---rmpd)**
 - **[INIT TREE WIDGET](#init-tree-widget)**
 - **[Delete data](#delete-data)**
-- **[RMCD INIT](#rmcd-init)**
-- **[RMCD BUTTON](#rmcd-button)**
-- **[RMCD NEXT PAGE](#rmcd-next-page)**
-- **[RMCD FUNCTIONS](#rmcd-functions)**
+- **[RMPD INIT](#rmpd-init)**
+- **[RMPD BUTTON](#rmcd-button)**
+- **[RMPD NEXT PAGE](#rmpd-next-page)**
+- **[RMPD FUNCTIONS](#rmpd-functions)**
 
-## Initial declaration of variables - RMCD
+## Initial declaration of variables - RMPD
 ```python
 class Delete():
     def __init__(self):
@@ -296,7 +296,7 @@ Responsible for deleting the selected record
 ```python
 def delete_data(self):
 ```
-## RMCU INIT
+## RMPU INIT
 Home page settings
 ```python
 def rmpd_init(self, w, init):
@@ -317,18 +317,18 @@ w.rmpd_f_tree.clear()
             init = 1
 ```
 
-## RMCD BUTTON 
+## RMPD BUTTON 
 Page buttons settings (SEARCH and NEXT)
 ```python
 def rmpd_btn(self, w):
 ```
-## RMCD NEXT PAGE
+## RMPD NEXT PAGE
 Settings whenever the **Next Page** button is pressed, before it checks if any records have been selected for right after switching to change fonts and hide the button.
 ```python
 def rmpd_next_step(self, w):
 ```
 
-## RMCD FUNCTIONS
+## RMPD FUNCTIONS
 Responsible for initializing the button "capture" process
 ```python
 def rmpd_Functions(self, w):
