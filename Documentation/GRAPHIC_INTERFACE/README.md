@@ -841,6 +841,7 @@ Variable Label = rmor_slct_pay_f_f3_v
 ![image](https://user-images.githubusercontent.com/100146657/164012265-539fd9ad-3f4b-4648-a9b0-684c142b36fb.png)
 
 >this Widget (page) is organized between 1 inner frame which contain "Label" inside
+
 ![image](https://user-images.githubusercontent.com/100146657/164011972-2bdbe4c2-7304-4c07-b811-747388cfb95a.png)
 ```python
 Variable Label = rmor_slct_pay_pg2_f_v
