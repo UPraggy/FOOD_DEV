@@ -737,95 +737,137 @@ Variable Label = rmpu_sc_lb_suc
 > - **[UPDATE - RMOU](#update---rmou)**
 > - **[DELETE - RMOD](#delete---rmod)**
 
-![image](https://user-images.githubusercontent.com/100146657/160489735-b29c992e-02bf-4716-8659-11d4748c0f7f.png)
+![image](https://user-images.githubusercontent.com/100146657/164007744-a8b0164f-dffc-4f3c-9bc2-83c91014d273.png)
 
 #### REGISTER - RMOR
 > **This is the Frame directed by clicking on the "REGISTER" option from the [order menu](#order-menu---lmc)**
 
-![image](https://user-images.githubusercontent.com/100146657/160610929-cd5fd5b7-2cea-40c8-8bb4-d93bdee776b5.png)
+IMAGE
 
 ### OBJECTS
-![image](https://user-images.githubusercontent.com/100146657/160497887-854629e7-3062-4ec8-a7a1-41825f4e8b04.png)
+![image](https://user-images.githubusercontent.com/100146657/164008791-452ef181-939a-4953-aee9-2633a07cd2c5.png)
 ```python
-Variable Label = rmcr_lb_rs
+Variable Label = rmor_lb_rs
 ```
-![image](https://user-images.githubusercontent.com/100146657/160498060-583a0aa9-a7bf-4cda-b0c9-81c8266aa02a.png)
+![image](https://user-images.githubusercontent.com/100146657/164008879-a2995977-12ed-43a0-a911-4fbebf2aaf8c.png)
 ```python
-Variable Label = rmcr_lb_ed
+Variable Label = rmor_lb_ed
 ```
-![image](https://user-images.githubusercontent.com/100146657/160498749-93f368b3-13e0-4a83-b590-0339fa069aaf.png)
->this frame is organized between 5 inner frames which contain "LineEdit" inside
+![image](https://user-images.githubusercontent.com/100146657/164008985-428f0bed-13e1-4d06-87c8-cc678fea0ccc.png)
+```python
+Variable Btton if BACK =   rmor_btn_b
+Variable Btton if NEXT =   rmor_btn_n
+Variable Btton if ADD =    rmor_btn_a
+Variable Btton if REMOVE = rmor_btn_r
+```
+![image](https://user-images.githubusercontent.com/100146657/164008356-25617f30-836f-4ab1-aecb-08f361abeab6.png)
+```python
+Variable Frame = rmor_slct_c_f2
+Variable Tree = rmor_slct_c_f2_tree
+```
+![image](https://user-images.githubusercontent.com/100146657/164008592-6d7b55ff-f695-4a85-9aa8-11f43146731a.png)
+```python
+Variable Label = rmor_slct_c_f1_src
+```
+![image](https://user-images.githubusercontent.com/100146657/164008727-1db50b68-21bb-4901-80ea-2931b7d69982.png)
+```python
+Variable Button = rmor_slct_c_f1_btn
+```
+![image](https://user-images.githubusercontent.com/100146657/164009254-4c6b869f-9632-4e20-996b-858d1aa07f60.png)
+> this Widget (page) is organized between 3 inner frames which contain "LineEdit" inside
 
 ```python
-Variable Frame = rmcr_cb_1
+Variable Widget = rmor_slct_a
 ```
 
-![image](https://user-images.githubusercontent.com/100146657/160499486-d77dba79-9ee6-4c16-95ac-43ac480ec196.png)
+![image](https://user-images.githubusercontent.com/100146657/164009795-570bdaeb-db12-46ed-b670-0c6e68499df3.png)
 ```python
-Variable Frame = rmcr_cb_1_f1
-Variable LineEdit = rmcr_cb_1_f1_name
+Variable Frame = rmor_slct_a_f1
+Variable LineEdit = rmor_slct_a_f1_add
 ```
-![image](https://user-images.githubusercontent.com/100146657/160499283-f0aee672-38a0-46db-ac6a-f3c5b388781a.png)
+![image](https://user-images.githubusercontent.com/100146657/164009911-ffdaf722-c0b9-45a7-bffc-d3e2b4fb47a3.png)
 ```python
-Variable Frame = rmcr_cb_1_f2
-Variable LineEdit = rmcr_cb_1_f2_cpf
-Variable LineEdit = rmcr_cb_1_f2_phone
+Variable Frame = rmor_slct_a_f2
+Variable LineEdit = rmor_slct_a_f2_num
+Variable LineEdit = rmor_slct_a_f2_dist
 ```
-![image](https://user-images.githubusercontent.com/100146657/160499512-69c8941e-eac3-4690-8671-16e7fd46ee4b.png)
+![image](https://user-images.githubusercontent.com/100146657/164009911-ffdaf722-c0b9-45a7-bffc-d3e2b4fb47a3.png)
 ```python
-Variable Frame = rmcr_cb_1_f3
-Variable LineEdit = rmcr_cb_1_f3_email
+Variable Frame = rmor_slct_a_f2
+Variable LineEdit = rmor_slct_a_f2_num
+Variable LineEdit = rmor_slct_a_f2_dist
 ```
-![image](https://user-images.githubusercontent.com/100146657/160499558-f1dfe806-2ab3-458b-9e04-51ce09cb1e77.png)
+![image](https://user-images.githubusercontent.com/100146657/164010031-628107ec-6d55-4d56-9659-a3cbfc4ef5e3.png)
 ```python
-Variable Frame = rmcr_cb_1_f4
-Variable LineEdit = rmcr_cb_1_f4_card
+Variable Frame = rmor_slct_a_f3
+Variable LineEdit = rmor_slct_a_f3_cty
+Variable LineEdit = rmor_slct_a_f3_stte
 ```
-![image](https://user-images.githubusercontent.com/100146657/160499623-0f62c631-92dd-4480-b057-806a502600bc.png)
+![image](https://user-images.githubusercontent.com/100146657/164011147-8afb27f5-dbfb-4d83-ae7f-3744ec847fca.png)
 ```python
-Variable Frame = rmcr_cb_1_f5
-Variable LineEdit = rmcr_cb_1_f5_cvv
-Variable LineEdit = rmcr_cb_1_f5_date
+Variable Frame = rmor_slct_p_f2
+Variable Tree = rmor_slct_p_f2_tree
 ```
-![image](https://user-images.githubusercontent.com/100146657/160499800-6066ed6b-a308-4358-b8a2-a3354972048d.png)
+![image](https://user-images.githubusercontent.com/100146657/164011378-d0e87cba-0049-439e-aec9-5b7dd1b7a936.png)
 ```python
-Variable Frame = rmcr_btn
-Variable Button = rmcr_btn_b
-Variable Button = rmcr_btn_n
+Variable Frame = rmor_slct_pay_f1
+Variable Label = rmor_slct_pay_f1_lb
+Variable Radio Button if CARD = rmor_slct_pay_f1_rbc
+Variable Radio Button if MONEY = rmor_slct_pay_f1_rbm
 ```
+![image](https://user-images.githubusercontent.com/100146657/164011697-4a000526-9032-42c3-addc-5f7dd4e6f19c.png)
 
-![image](https://user-images.githubusercontent.com/100146657/160606635-f1e5f4dd-d1ef-4bd7-b6f5-9b673640a4c1.png)
-
->this frame is organized between 3 inner frames which contain "LineEdit" inside
-
-```python
-Variable Frame = rmcr_cb_2
-```
-![image](https://user-images.githubusercontent.com/100146657/160606696-9d4d0624-98a0-48f8-82ea-af65e1c86bc5.png)
+>this Widget (page) is organized between 3 inner frames which contain "LineEdit" inside
 
 ```python
-Variable Frame = rmcr_cb_2_f1
-Variable LineEdit = rmcr_cb_2_f1_add
+Variable Widget = rmor_slct_pay_pg1
 ```
-![image](https://user-images.githubusercontent.com/100146657/160606784-eec216b5-f1c2-4538-9bb6-8b40471b1630.png)
-
+![image](https://user-images.githubusercontent.com/100146657/164011789-e7849883-62a1-40bb-a416-99d20fee5c58.png)
 ```python
-Variable Frame = rmcr_cb_2_f2
-Variable LineEdit = rmcr_cb_2_f2_dist
-Variable LineEdit = rmcr_cb_2_f2_num
+Variable LineEdit = rmor_slct_pay_f_f1_card
 ```
-![image](https://user-images.githubusercontent.com/100146657/160606811-6047ab0b-223b-4ba6-bf82-d4eaeda340ce.png)
+![image](https://user-images.githubusercontent.com/100146657/164011880-c0270481-c924-4227-84ec-206d456e113a.png)
 ```python
-Variable Frame = rmcr_cb_2_f3
-Variable LineEdit = rmcr_cb_2_f3_stte
-Variable LineEdit = rmcr_cb_2_f3_cty
+Variable LineEdit = rmor_slct_pay_f_f2_ex
+Variable LineEdit = rmor_slct_pay_f_f2_cvv
 ```
-![image](https://user-images.githubusercontent.com/100146657/160608261-a22a003b-0894-4ae6-96b3-713e4544dc75.png)
-
+![image](https://user-images.githubusercontent.com/100146657/164011972-2bdbe4c2-7304-4c07-b811-747388cfb95a.png)
 ```python
-Variable Frame = rmcr_cb_3
-Variable Label = rmcr_cb_2_lb_suc
+Variable Label = rmor_slct_pay_f_f3_v
+```
+![image](https://user-images.githubusercontent.com/100146657/164012265-539fd9ad-3f4b-4648-a9b0-684c142b36fb.png)
 
+>this Widget (page) is organized between 1 inner frame which contain "Label" inside
+![image](https://user-images.githubusercontent.com/100146657/164011972-2bdbe4c2-7304-4c07-b811-747388cfb95a.png)
+```python
+Variable Label = rmor_slct_pay_pg2_f_v
+```
+![image](https://user-images.githubusercontent.com/100146657/164012603-280584ca-e8e3-4973-b5cf-043f5a61d91f.png)
+```python
+Variable Frame = rmor_conf_f1
+Variable Label = rmor_conf_f1_c
+Variable Label = rmor_conf_f1_p
+```
+![image](https://user-images.githubusercontent.com/100146657/164012825-17a517a6-03ca-49cf-970d-7ee41a6cdacc.png)
+```python
+Variable Frame = rmor_conf_f2
+Variable Label = rmor_conf_f2_add_2
+```
+![image](https://user-images.githubusercontent.com/100146657/164012880-230d237d-ce52-40fa-aa25-7c7818dd9471.png)
+```python
+Variable Frame = rmor_conf_f3
+Variable Tree = rmor_conf_f3_tree
+```
+![image](https://user-images.githubusercontent.com/100146657/164013201-93375a44-ae3f-43d6-bbe2-f66f5e5ac102.png)
+```python
+Variable Frame = rmor_conf_f4
+Variable Label = rmor_conf_f4_v
+```
+![image](https://user-images.githubusercontent.com/100146657/164013386-dc5413a5-80b6-4060-95fd-975c60d62a51.png)
+```python
+Variable Frame = rmor_suc
+Variable Label = rmor_suc_lb
+```
 
 
 > END OF PAGE
