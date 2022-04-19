@@ -1,6 +1,6 @@
 # Project Presentation
 This page aims to present and document the project. The presentation can and will change as the project progresses.
-
+The idealized and designed system does not have many functions, because its objective is to be a basic system.
 **PROJECT STATUS: IN PROGRESS / PROGRAMMING AND DOCUMENTING STEP**
 <br>
 
@@ -12,7 +12,7 @@ This page aims to present and document the project. The presentation can and wil
 
 
 > [**Documentation**](https://upraggy.github.io/FOOD_DEV/Documentation/)
-> 
+
 **THIS PROGRAM WAS MADE BY**:<br>
 **Rafael Moreira Ramos de Rezende** 
 
