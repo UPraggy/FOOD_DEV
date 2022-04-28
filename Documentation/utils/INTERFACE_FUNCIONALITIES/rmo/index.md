@@ -1,159 +1,180 @@
-# Raciocínio Automático em Situações de Incerteza e Imprecisão
-
-# SUMÁRIO
-
-- **[INTRODUÇÃO](#introdução)**
-- **[MODULO 1](#modulo-1)**
-- **[MODULO 2](#modulo-2)**
-
-
-# INTRODUÇÃO
-Neste Módulo, tem como objetivo resumir os conceitos de Representação de Conhecimento, Raciocínio Automático e Aprendizado.<br>
-**Ele será resumido em topicos simples com base em alguns conceitos e atividades que constam no Conteúdo digital.**
-
-# MODULO 1
-- **[ATIVIDADES MOD 1](#atividades-mod-1)**
-- **[CONCEITOS MOD 1](#conceitos-mod-1)**
-
-## ATIVIDADES MOD 1
-![image](https://user-images.githubusercontent.com/100146657/165299375-48ee3ed7-a87f-4b99-b5e2-eace54184d23.png)
-![image](https://user-images.githubusercontent.com/100146657/165299929-50790840-1197-4bd6-a902-fda773f33eab.png)
-![image](https://user-images.githubusercontent.com/100146657/165300158-55afc623-1926-4f26-81f3-eac1a7237a59.png)
-![image](https://user-images.githubusercontent.com/100146657/165300182-3ee75c42-fd81-44a2-8188-71d23f8477b8.png)
-
-Nessa etapa ele chegou a formula em que **Grama molhada (G)** depende de **Chuva (C)**
-
-![image](https://user-images.githubusercontent.com/100146657/165300346-d2d9db69-828c-492e-83ba-78b9fc1757a3.png)
-
-Como o problema não cita o Regador (R), ele é "descartado" das operações<br>
-Esse "descarte" ver em forma de soma como afirmação do **r** de um lado da soma e negação do **r** no outro lado.
-Assim ele começa a fazer a devida analise e operações na tabela.
-
-![image](https://user-images.githubusercontent.com/100146657/165300653-3b64d9ff-232c-4f6b-bd97-cebbac258e1a.png)
-![image](https://user-images.githubusercontent.com/100146657/165300676-ad5a3dfe-a95c-4365-bc67-7180c8511ee7.png)
-
-Assim como acima no numerador no denominador, não é diferente, a operação de "descarte" também é feita, porém com o **r** e o **c**,
-pois oque queremos agora é apenas o **g**
-
-![image](https://user-images.githubusercontent.com/100146657/165301577-ef4e61b1-bacb-49e2-9efd-ae28b3eecd64.png)
-![image](https://user-images.githubusercontent.com/100146657/165301645-25db8fef-2d2e-4410-b181-c59d9badad7d.png)
-![image](https://user-images.githubusercontent.com/100146657/165301675-9db6f90f-fb25-466c-9ae9-d11d4534f617.png)
-![image](https://user-images.githubusercontent.com/100146657/165301716-c60878b6-64de-453a-8f0d-47cf5a87f171.png)
-
-Ao final é verificado:
-
-![image](https://user-images.githubusercontent.com/100146657/165301805-51ae714d-86b5-40c1-86bc-e21dbdfd0bd1.png)
-
-## CONCEITOS MOD 1
-### Variaveis
-- **Variaveis aleatorias bolenanas** - podem assumir o valor verdadeiro e falso.<br>
-- **Variaveis aleatorias discretas** - composto por um conjunto de valores enumeráveis, uma possível variável aleatória discreta seria Tempo, em que os valores possíveis poderiam ser ensolarado, chuvoso, nublado e nevoeiro.<br>
-- **Variaveis aleatorias continuas** - é formado por números reais compreendidos em um intervalo, de forma que entre quaisquer dois valores desse intervalo, há sempre uma quantidade infinita de valores.<br><br>
-### Probabilidade
-- **Probabilidade incondicional** - em resumo é o grau de crença (probabilidade) que se atribui a um fato, sem haver qualquer informação adicional sobre ele.<br>
-- **Probabilidade condicional** - em resumo é o grau de crença (probabilidade) que se atribui a um fato e havendo alguma informação adicional (evidência) sobre ele.<br>
-#### Probabilidade condicional - FORMULA
-![image](https://user-images.githubusercontent.com/100146657/165290194-2b8762a3-57cc-43c5-adc7-06f50d96a131.png)
-
-![image](https://user-images.githubusercontent.com/100146657/165290261-cfb81a23-520b-4730-8e14-44b71613b8f7.png)
-
-**A PARTIR DESSAS EQUAÇÕES É POSSIVEL DERIVAR A EQUAÇÃO ABAIXO CONHECIDA COMO REGRA DE BAYERS**<br>
-#### REGRA DE BAYERS (Regra Bayesiana) - FORMULA
-![image](https://user-images.githubusercontent.com/100146657/165291391-6ad25b0a-25e5-40f6-ae0f-25af24333e7c.png)
-
-**OBS.:** Essa formula é aplicada quando é invertida a ordem pois **b** depende de **a (a|b)**, mas no caso de inversão **b|a** é aplicada essa formula
-#### INDEPENDENCIA
-Para situações como essa, a probabilidade condicional é dada pela equação:
-
-![image](https://user-images.githubusercontent.com/100146657/165291627-8f542bd3-518f-4402-8731-91a7c2b881f4.png)
-
-**OBS.:** O sinal | significa dependencia EX: a|b - **b** depende de **a** para que ele ocorra ou assuma um valor logico (V ou F).x
-Com isso, a **regra do produto** passa a ser definida conforme a equação:
-
-![image](https://user-images.githubusercontent.com/100146657/165291644-aef5216d-ecd2-4801-ba36-e9faed4e7cd9.png)
-
-### Inferência com distribuições conjuntas totais - EXEMPLO BASICO
-Dada a tabela:
-
-![image](https://user-images.githubusercontent.com/100146657/165291945-6eb72878-9fb5-4491-bfcf-bd18ddddf53e.png)
-
-É possível calcular tanto probabilidades incondicionais quanto condicionais.
-
-#### Probabilidades Incondicionais
-![image](https://user-images.githubusercontent.com/100146657/165292124-a7163e1d-1f35-4631-9628-e5805e871676.png)
-
-![image](https://user-images.githubusercontent.com/100146657/165292149-470c0270-bcca-4e01-82e7-f975a6b1fef5.png)
-
-![image](https://user-images.githubusercontent.com/100146657/165292169-9f05a03d-04aa-4d18-8b85-960368adeb85.png)
-
-#### Probabilidades Condicionais
-![image](https://user-images.githubusercontent.com/100146657/165292266-b14715f3-c214-4722-b9e5-3b5eb37c8574.png)
-
-### Inferência com a regra de Bayes - EXEMPLO
-![image](https://user-images.githubusercontent.com/100146657/165292512-4fff10f1-6779-4dd6-b30a-df5ba15df0eb.png)
-
-![image](https://user-images.githubusercontent.com/100146657/165292524-af0fa8d0-1abf-4d65-9c2c-3c0a33891d43.png)
-
-![image](https://user-images.githubusercontent.com/100146657/165292536-04d6d67b-76d6-4f26-aaaa-2508a3d4c260.png)
-
-#### Redes bayesianas (REDE DE BAYERS)
-**Rede bayesiana** - é um grafo direcionado e acíclico, em que os nós representam as variáveis aleatórias tanto de evidência quanto de hipótese (diagnóstico), e as arestas representam as dependências que existem entre as variáveis.<br>
-**OBS.:**
-![image](https://user-images.githubusercontent.com/100146657/165299751-dac5215f-42f6-4c6d-bf00-c4f810bede5f.png)
-
-![image](https://user-images.githubusercontent.com/100146657/165299476-1d1d7bed-4d7c-4c40-9c78-9392846c151e.png)
-
-A cada P é necessario verificar a condicão ex: **c|a** que valor **c** assume quando a for **V**
-
-# MODULO 2
-- **[ATIVIDADES MOD 2](#atividades-mod-2)**
-- **[CONCEITOS MOD 2](#conceitos-mod-2)**
-
-## ATIVIDADES MOD 2
+# Sumary
+- **[Introduction](#introduction)**
+- **[Initial declarations and imports](#initial-declarations-and-imports)**
+- **[Class Register](#register)**
+- **[Class View](#view)**
+- **[Class Update](#update)**
+- **[Class Delete](#delete)**
 
 
-## CONCEITOS MOD 2
-**Eventos de incerteza** - São eventos que podem ou não acontecer com alguma chance, dada por uma medida de probabilidade que varia entre 0 e 1.<br>
-**Eventos imprecisos** - Quando se trata de eventos imprecisos, não estamos falando de algo que pode ou não acontecer, mas que acontece de fato, com determinada intensidade que varia entre 0 e 1.
+# Introduction
+This module has been divided into classes for each interface function.
+> The explanation of the functions will be objective or detailed according to the complexity.
 
-![image](https://user-images.githubusercontent.com/100146657/165302667-08c6d28e-be64-4098-827a-2f65aac051aa.png)
+# Initial declarations and imports
+Initially the program imports: 
+- **Template** that is responsible for organizing the product's classes and functions 
+- **QtWidgets** that helps in some operations that are not contained in the main interface file.
+- **Datetime** and dateutil that is responsible for operations with dates and time
+- **Matplotlib** is responsible for generating graphs (x,y)
+- **Pandas** is responsible for dataframe operations
 
-**0** - Quando o elemento não pertence ao conjunto.
+After the imports, the product class is initialized.
+```python
+from utils import template
+from PyQt5 import QtWidgets
+import datetime as dtime
+from dateutil import rrule
+import matplotlib.pyplot as plt
+import pandas as pd
 
-**1** - Quando o elemento pertence ao conjunto.
+c = template.Client()
+p = template.Product()
+o = template.Order()
+```
+The most used function in the program is declared, responsible for setting or "changing" the current page.
+```python
+def switch_page(stacked, page):
+        stacked.setCurrentWidget(page)
+```
+Filter the data and insert them in the respective TreeWidget, inside it contains operations to search in more than one field, and order columns
+```python
+def search_data(src_field_data, tree, data):
+```
+Enter all data in QTreeWidget, and filter according to selected period
+```python
+def insert_tree_data(data, tree):
+```
 
-### Propriedades das operações com conjuntos tradicionais
-![image](https://user-images.githubusercontent.com/100146657/165302624-1219571a-57b4-4825-9f7e-1b8c9071e6ae.png)
+# Register
+This module is responsible for customer registration.
+- **[Initial declaration of variables - RMPR](#initial-declaration-of-variables---rmpr)**
+- **[Data tratament Error - RMPR](#data-tratament-error---rmpr)**
+- **[Clean data - RMPR](#clean-data---rmpr)**
+- **[Get data](#get-data)**
+- **[RMPR INIT](#rmpr-init)**
+- **[RMPR BUTTON](#rmpr-button)**
+- **[RMPR NEXT PAGE](#rmpr-next-page)**
+- **[RMPR PREVIOUS PAGE](#rmpr-previous-page)**
+- **[RMPR FUNCTIONS](#rmpr-functions)**
+
+## Initial declaration of variables - RMPR
+```python
+class Register():
+    def __init__(self):
+        data = None
+```
+## Data tratament Error - RMPR
+Responsible for monitoring the fields, and verifying that they were duly filled in, if they are not an error window will be triggered to indicate the problem
+```python
+def data_tratament_error(self, w):
+```
+## Clean data - RMPR
+Responsible for resetting all filled fields
+```python
+def clean_data(self, w):
+```
+## Get data 
+Responsible for obtaining the values of all fields filled in, storing them and sending them to the "create product" function, finalizing the registration
+```python
+def get_data(self, w):
+```
+## RMPR INIT
+Home page settings
+```python
+def rmcp_init(self, w, init):
+```
+First, it is directed to the initial registration page, the button **next** are visible again and the fonts and respective texts also return to their initial positions.
+```python
+switch_page(w.rm_stackedWidget,w.rmpr)
+        w.rmpr_btn_n.setVisible(True)
+        w.rmpr_lb_ed.setText("ENTER THE DATA")
+        w.rmpr_lb_ed.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
+        w.rmpr_lb_rs.setText("REGISTER SYSTEM")
+```
+Whenever the function is called, the fields will be reset and directed to the home page
+
+```python
+self.clean_data(w)
+        if (init == 0):
+            switch_page(w.rmpr_cb_stackedWidget,w.rmpr_cb)
+            init = 1
+```
+
+## RMPR BUTTON 
+Page buttons settings (BACK AND NEXT)
+```python
+def rmpr_btn(self, w):
+```
+## RMPR NEXT PAGE
+Settings whenever the **Next page** button is pressed, collect the data, complete the registration, change the sources and hide the buttons
+```python
+def rmpr_next_step(self, w, current):
+```
+
+## RMPR FUNCTIONS
+Responsible for initializing the button "capture" process
+```python
+def rmpr_Functions(self, w):
+```
+
+# View
+This module is responsible for customer registration.
+- **[Initial declaration of variables](#initial-declaration-of-variables---rmpv)**
+- **[RMPV BUTTON](#rmpv-button)**
+- **[ANIMATED GRAPHIC](#animated-graphic)**
+- **[PLACE GRAPHIC](#place-graphic)**
+- **[View init - RMPV](#view-init-rmcv)**
+- **[RMPV NEXT PAGE](#rmpv-next-page)**
+- **[RMPV PREVIOUS PAGE](#rmpv-previous-page)**
+- **[RMPV FUNCTIONS](#rmpv-functions)**
+
+## Initial declaration of variables - RMPV
+```python
+class View():
+    def __init__(self):
+        data = None
+        slct_data = None
+```
+## RMPV BUTTON
+Back page button settings and those that generate static or animated graphics
+```python
+def rmpv_btn(self, w):
+```
+## ANIMATED GRAPHIC
+Responsible for capturing selected field and generating the respective animated graph, opening an auxiliary window
+```python
+def animated_graphic(self, x , y, grapich_Title):
+```
+## PLACE GRAPHIC
+Responsible for capturing selected field and generating the respective static graph
+```python
+def place_graphic(self, frame,  x , y, grapich_Title):
+```
+## View init - RMPV
+First, it is directed to the home page, the **back** button is hidden and the fonts and respective texts also return to their initial positions.
+```python
+def rmcv_init(self, w):
+```
+## RMPV NEXT PAGE
+Settings whenever the **Next page** button is pressed, change the fonts and make the **back** button visible and **Next** hidden, after that it filters through the button (OPTION) that was pressed and chooses which type of registration or graph will present
+```python
+def rmpv_next_step(self, w, btn):
+```
+
+## RMPV PREVIOUS PAGE
+Settings whenever the **Previous page** button is pressed, switch to the **First page**, change the fonts, hide **back** button, an reset treeWidget
+```python
+def rmpv_back_step(self, w, current):
+```
+
+## RMPV FUNCTIONS
+Responsible for initializing the button "capture" process
+```python
+def rmcv_Functions(self, w):
+```
 
 
-### Conjuntos nebulosos
-De acordo com os conjuntos tradicionais é possivel determinar um conjunto e/ou os elementos que o compõe, normalmente é algo preciso, se você retira um elemento
-aquele conjunto deixa de ser o mesmo. Entretando, para aqueles conjuntos imprecisos em que não é facil determinar alguma caracteristica, seja seu conteudo ou propriedades ele é chamado de conjunto nebuloso.<br>
-
-#### Situação precisa: conjunto de laranjas
-Uma laranja lima faz parte do conjunto de laranjas? Obviamente que sim. E quanto a uma maçã? Você certamente não hesitou em responder que não. Podemos dizer com precisão que uma maçã não faz parte do conjunto de laranjas. Estamos diante de uma situação precisa.
-
-#### Situação imprecisa: conjunto de pessoas altas
-Quando uma pessoa começa a ser alta? Podemos dizer que uma pessoa de 1,80 é alta? E se ela estiver ao lado de uma pessoa de 1,95? E uma pessoa de 1,60 pode ser considerada alta? E se essa pessoa de 1,60 tiver 10 anos de idade? A ideia de pessoa alta já não parece tão precisa quanto o conjunto de laranjas, certo?
-
-### Operações com conjuntos nebulosos
-![image](https://user-images.githubusercontent.com/100146657/165304187-12a8d230-6b9e-43e8-8a5a-31aadcfe116a.png)
-![image](https://user-images.githubusercontent.com/100146657/165304127-a91d90bc-e591-42eb-968d-694d5fd40c3f.png)
-
-![image](https://user-images.githubusercontent.com/100146657/165304260-39cf07cf-e2dc-4abd-baef-53ca3ff08678.png)
-![image](https://user-images.githubusercontent.com/100146657/165304286-08af5d49-fb95-45f9-9785-2273635740a7.png)
-
-![image](https://user-images.githubusercontent.com/100146657/165304326-edbc24bc-ecd8-4c18-b411-20e850e16427.png)
-![image](https://user-images.githubusercontent.com/100146657/165304353-d05a45ce-04d8-445f-bcf0-a0e8fe179447.png)
-
-![image](https://user-images.githubusercontent.com/100146657/165304379-142eb793-01bb-4980-8c28-cef91d0b94af.png)
-![image](https://user-images.githubusercontent.com/100146657/165304408-7414e0a5-df98-4623-ba37-faef219306f3.png)
-
-#### Propriedades das operações com conjuntos nebulosos
-**EX:**
-
-![image](https://user-images.githubusercontent.com/100146657/165304477-d5d6c45a-8135-48f1-8c11-a73399347804.png)
-![image](https://user-images.githubusercontent.com/100146657/165304517-a6777e34-9cb9-42e5-957e-36c8903f5a00.png)
 
 
 
@@ -161,4 +182,178 @@ Quando uma pessoa começa a ser alta? Podemos dizer que uma pessoa de 1,80 é al
 
 
 
+
+
+
+
+
+
+
+
+# Update
+This module is responsible for customer registration.
+- **[Initial declaration of variables - RMPU](#initial-declaration-of-variables---rmpu)**
+- **[Clean data - RMPU](#clean-data---rmpu)**
+- **[Get data generic](#get-data-generic)**
+- **[RMPU INIT](#rmpu-init)**
+- **[RMPU BUTTON](#rmpu-button)**
+- **[RMPU NEXT PAGE](#rmpu-next-page)**
+- **[RMPU PREVIOUS PAGE](#rmpu-previous-page)**
+- **[RMPU FUNCTIONS](#rmpu-functions)**
+
+## Initial declaration of variables - RMPU
+```python
+class Update():
+    def __init__(self):
+        data = None
+        slct_data = None
+        slct_data1 = None
+        current_Widget = None
+        tool_tip = None #pop up with tips on the fields filled in
+```
+
+## Clean data - RMPU
+Responsible for resetting all filled fields
+```python
+def clean_data(self, w):
+```
+
+## Get data generic
+Responsible for obtaining the values of a single and/or generic field filled in and storing it.
+```python
+def get_data_generic(self, w, field):
+```
+
+## RMPU INIT
+Home page settings
+```python
+def rmcu_init(self, w, init):
+```
+First, it is directed to the home page, the **next and back** buttons are hidden and the fonts and respective texts also return to their initial positions.
+```python
+switch_page(w.rm_stackedWidget,w.rmpu)
+        w.rmpu_btn_b.setVisible(False)
+        w.rmpu_btn_n.setVisible(False)
+        w.rmpu_lb_ed.setText("SELECT A OPTION")
+        w.rmpu_lb_ed.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
+        w.rmpu_lb_us.setText("UPDATE SYSTEM")
+```
+Whenever the function is called, the fields and TreeWidget will be reset and directed to the home page
+
+```python
+self.clean_data(w)
+w.rmpu_f2_tree.clear()
+if (init == 0):
+     switch_page(w.rmpu_stackedWidget,w.rmpu_op)
+     init = 1
+```
+
+## RMPU BUTTON 
+Page buttons settings (SEARCH, BACK, NEXT and RESPECTIVES UPDATE OPTIONS)
+```python
+def rmpu_btn(self, w):
+```
+## RMPU NEXT PAGE
+Settings whenever the **Next page** button is pressed
+```python
+def rmcu_next_step(self, w, current):
+```
+Switch to **Second page**, change fonts and make **back and next** button visible
+```python
+if (current == 0):
+```
+Switch to the **Third page** (according to the option selected on the first page), collect the data of the selected record from the second, change the fonts and hide the buttons.
+```python
+elif (current == 1):
+```
+Before it checks if any records were selected for right after switching to the **Fourth page** and collects the information that was entered to update and change the fonts.
+```python
+elif (current == 2):
+```
+## RMPU PREVIOUS PAGE
+Settings whenever the **Previous page** button is pressed
+```python
+def rmcu_back_step(self, w, current):
+```
+Switch to the **First page**, change the fonts, hide **back and next** button, an reset treeWidget
+```python
+if (current == 0):
+```
+Switch to the **Second page** and change the fonts
+```python
+else:
+```
+## RMPU FUNCTIONS
+Responsible for initializing the button "capture" process
+```python
+def rmcu_Functions(self, w):
+```
+
+# Delete
+This module is responsible for customer registration.
+- **[Initial declaration of variables - RMPD](#initial-declaration-of-variables---rmpd)**
+- **[INIT TREE WIDGET](#init-tree-widget)**
+- **[Delete data](#delete-data)**
+- **[RMPD INIT](#rmpd-init)**
+- **[RMPD BUTTON](#rmcd-button)**
+- **[RMPD NEXT PAGE](#rmpd-next-page)**
+- **[RMPD FUNCTIONS](#rmpd-functions)**
+
+## Initial declaration of variables - RMPD
+```python
+class Delete():
+    def __init__(self):
+        data = None
+        slct_data = None
+        slct_data1 = None
+        current_Widget = None
+```
+
+## INIT TREE WIDGET
+Responsible for resetting the TreeWidget and populating it again, and after change fonts
+```python
+def init_Tree_widget(self, w):
+```
+## Delete data
+Responsible for deleting the selected record
+```python
+def delete_data(self):
+```
+## RMPU INIT
+Home page settings
+```python
+def rmpd_init(self, w, init):
+```
+First, it is directed to the home page, hide **next** button, and the respective fonts return to their initial positions.
+```python
+switch_page(w.rm_stackedWidget,w.rmpd)
+        w.rmpd_btn_n.setVisible(False)
+        w.rmpd_lb_ds.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
+        w.rmpd_lb_so.setText("DELETE SYSTEM")
+```
+Whenever the function is called the TreeWidget will be reset and directed to the home page.
+```python
+w.rmpd_f_tree.clear()
+        self.init_Tree_widget(w)
+        if (init == 0):
+            switch_page(w.rmpd_stackedWidget,w.rmpd_slct)
+            init = 1
+```
+
+## RMPD BUTTON 
+Page buttons settings (SEARCH and NEXT)
+```python
+def rmpd_btn(self, w):
+```
+## RMPD NEXT PAGE
+Settings whenever the **Next Page** button is pressed, before it checks if any records have been selected for right after switching to change fonts and hide the button.
+```python
+def rmpd_next_step(self, w):
+```
+
+## RMPD FUNCTIONS
+Responsible for initializing the button "capture" process
+```python
+def rmpd_Functions(self, w):
+```
 
