@@ -51,7 +51,17 @@ This module is responsible for customer registration.
 - **[Initial declaration of variables - RMPR](#initial-declaration-of-variables---rmpr)**
 - **[Data tratament Error - RMPR](#data-tratament-error---rmpr)**
 - **[Clean data - RMPR](#clean-data---rmpr)**
-- **[Get data](#get-data)**
+- **[Set cad default - RMPR](#set-cad-default   ---rmpr)**
+- **[Get data client](#get-data-client)**
+- **[Get data address](#get-data-client)**
+- **[Get data card](#get-data-client)**
+- **[RMPR Add Win](#rmpr-init)**
+- **[RMPR Add](#rmpr-init)**
+- **[RMPR Remove](#rmpr-init)**
+- **[RMPR Add qt](#rmpr-init)**
+- **[RMPR Remove qt](#rmpr-init)**
+- **[RMPR Set confirm](#rmpr-init)**
+- **[RMPR Finish Reg](#rmpr-init)**
 - **[RMPR INIT](#rmpr-init)**
 - **[RMPR BUTTON](#rmpr-button)**
 - **[RMPR NEXT PAGE](#rmpr-next-page)**
