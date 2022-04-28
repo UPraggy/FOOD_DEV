@@ -72,7 +72,14 @@ This module is responsible for customer registration.
 ```python
 class Register():
     def __init__(self):
-        data = None
+        self.data = [[],[]]
+        self.data_order = [[],[],[],[],[],[],[],[],[]]
+        self.data_products = []
+        self.prod_qt = [0]
+        self.curr_prod_qt = 0
+        self.add_format = ''
+        self.total_value = 0
+        self.op_pay = 'CARD'
 ```
 ## Data tratament Error - RMOR
 Responsible for monitoring the fields, and verifying that they were duly filled in, if they are not an error window will be triggered to indicate the problem
@@ -84,10 +91,25 @@ Responsible for resetting all filled fields
 ```python
 def clean_data(self, w):
 ```
-## Get data 
-Responsible for obtaining the values of all fields filled in, storing them and sending them to the "create product" function, finalizing the registration
+## Set cad default - RMOR
+Responsible for filling in the fields based on the client's pre-registration
 ```python
-def get_data(self, w):
+def clean_data(self, w):
+```
+## Get data client
+Responsible for getting the values of all fields filled in and storing them
+```python
+def get_data_client(self, w):
+```
+## Get data address
+Responsible for getting the values of all fields filled in and storing them
+```python
+def get_data_add(self, w):
+```
+## Get data card 
+Responsible for getting the values of all fields filled in and storing them
+```python
+def get_data_card(self, w):
 ```
 ## RMOR INIT
 Home page settings
