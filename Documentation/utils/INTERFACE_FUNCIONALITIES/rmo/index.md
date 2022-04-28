@@ -111,6 +111,31 @@ Responsible for getting the values of all fields filled in and storing them
 ```python
 def get_data_card(self, w):
 ```
+## RMOR Add Win
+Responsible for opening the product selection screen
+```python
+def rmor_add_win(self, w):
+```
+## RMOR Add
+Responsible for handling errors in product selection, it also calculates product value and adds it to the treewidget, in addition to updating the vector where all selected products will be stored
+```python
+def rmor_add(self, w):
+```
+## RMOR Remove
+Responsible for removing the deleted product from the vector of selected products and removing it from the treewidget, in addition to calculating the new total value
+```python
+def rmor_add_win(self, w):
+```
+## RMOR Add qt
+Responsible for updating by adding 1 unit quantity of the selected product
+```python
+def rmor_add_win(self, w):
+```
+## RMOR Remove qt
+Responsible for updating by removing 1 unit quantity of the selected product
+```python
+def rmor_add_win(self, w):
+```
 ## RMOR INIT
 Home page settings
 ```python
