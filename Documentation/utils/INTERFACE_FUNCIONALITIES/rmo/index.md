@@ -48,38 +48,38 @@ def insert_tree_data(data, tree):
 
 # Register
 This module is responsible for customer registration.
-- **[Initial declaration of variables - RMPR](#initial-declaration-of-variables---rmpr)**
-- **[Data tratament Error - RMPR](#data-tratament-error---rmpr)**
-- **[Clean data - RMPR](#clean-data---rmpr)**
-- **[Set cad default - RMPR](#set-cad-default   ---rmpr)**
+- **[Initial declaration of variables - RMOR](#initial-declaration-of-variables---rmor)**
+- **[Data tratament Error - RMOR](#data-tratament-error---rmor)**
+- **[Clean data - RMOR](#clean-data---rmor)**
+- **[Set cad default - RMOR](#set-cad-default---rmor)**
 - **[Get data client](#get-data-client)**
-- **[Get data address](#get-data-client)**
-- **[Get data card](#get-data-client)**
-- **[RMPR Add Win](#rmpr-init)**
-- **[RMPR Add](#rmpr-init)**
-- **[RMPR Remove](#rmpr-init)**
-- **[RMPR Add qt](#rmpr-init)**
-- **[RMPR Remove qt](#rmpr-init)**
-- **[RMPR Set confirm](#rmpr-init)**
-- **[RMPR Finish Reg](#rmpr-init)**
-- **[RMPR INIT](#rmpr-init)**
-- **[RMPR BUTTON](#rmpr-button)**
-- **[RMPR NEXT PAGE](#rmpr-next-page)**
-- **[RMPR PREVIOUS PAGE](#rmpr-previous-page)**
-- **[RMPR FUNCTIONS](#rmpr-functions)**
+- **[Get data address](#get-data-address)**
+- **[Get data card](#get-data-card)**
+- **[RMOR Add Win](#rmor-add-win)**
+- **[RMOR Add](#rmor-add)**
+- **[RMOR Remove](#rmor-remove)**
+- **[RMOR Add qt](#rmor-add-qt)**
+- **[RMOR Remove qt](#rmor-remove-qt)**
+- **[RMOR Set confirm](#rmor-set-confirm)**
+- **[RMOR Finish Reg](#rmor-finish-reg)**
+- **[RMOR INIT](#rmor-init)**
+- **[RMOR BUTTON](#rmor-button)**
+- **[RMOR NEXT PAGE](#rmor-next-page)**
+- **[RMOR PREVIOUS PAGE](#rmor-previous-page)**
+- **[RMOR FUNCTIONS](#rmor-functions)**
 
-## Initial declaration of variables - RMPR
+## Initial declaration of variables - RMOR
 ```python
 class Register():
     def __init__(self):
         data = None
 ```
-## Data tratament Error - RMPR
+## Data tratament Error - RMOR
 Responsible for monitoring the fields, and verifying that they were duly filled in, if they are not an error window will be triggered to indicate the problem
 ```python
 def data_tratament_error(self, w):
 ```
-## Clean data - RMPR
+## Clean data - RMOR
 Responsible for resetting all filled fields
 ```python
 def clean_data(self, w):
@@ -89,7 +89,7 @@ Responsible for obtaining the values of all fields filled in, storing them and s
 ```python
 def get_data(self, w):
 ```
-## RMPR INIT
+## RMOR INIT
 Home page settings
 ```python
 def rmcp_init(self, w, init):
@@ -111,22 +111,48 @@ self.clean_data(w)
             init = 1
 ```
 
-## RMPR BUTTON 
+## RMOR BUTTON 
 Page buttons settings (BACK AND NEXT)
 ```python
 def rmpr_btn(self, w):
 ```
-## RMPR NEXT PAGE
+## RMOR NEXT PAGE
 Settings whenever the **Next page** button is pressed, collect the data, complete the registration, change the sources and hide the buttons
 ```python
 def rmpr_next_step(self, w, current):
 ```
 
-## RMPR FUNCTIONS
+## RMOR FUNCTIONS
 Responsible for initializing the button "capture" process
 ```python
 def rmpr_Functions(self, w):
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # View
 This module is responsible for customer registration.
@@ -183,6 +209,16 @@ Responsible for initializing the button "capture" process
 ```python
 def rmcv_Functions(self, w):
 ```
+
+
+
+
+
+
+
+
+
+
 
 
 
