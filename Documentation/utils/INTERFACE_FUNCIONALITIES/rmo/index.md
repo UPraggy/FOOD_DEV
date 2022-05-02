@@ -212,11 +212,17 @@ Switch to **Sixth page**, collect Farm data, complete registration, change fonts
 ```python
 elif (current == 4):
 ```
+## RMOR PREVIOUS PAGE
+Settings whenever the **Previous page** button is pressed<br>
+Change to the previous page, change the fonts and hide the button or make it visible according to the page and reset some fields and variables if necessary
+```python
+def rmor_back_step(self, w, current):
+```
 
 ## RMOR FUNCTIONS
 Responsible for initializing the button "capture" process
 ```python
-def rmpr_Functions(self, w):
+def rmor_Functions(self, w):
 ```
 
 
