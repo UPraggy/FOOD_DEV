@@ -84,19 +84,19 @@ def rmcr_init(self, w, init):
 First, it is directed to the initial registration page, the button **next** are visible again and the fonts and respective texts also return to their initial positions.
 ```python
 switch_page(w.rm_stackedWidget,w.rmcr)
-        w.rmcr_btn_b.setVisible(True)
-        w.rmcr_btn_n.setVisible(True)
-        w.rmcr_lb_ed.setText("ENTER THE DATA")
-        w.rmcr_lb_ed.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
-        w.rmcr_lb_rs.setText("REGISTER SYSTEM")
+w.rmcr_btn_b.setVisible(True)
+w.rmcr_btn_n.setVisible(True)
+w.rmcr_lb_ed.setText("ENTER THE DATA")
+w.rmcr_lb_ed.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
+w.rmcr_lb_rs.setText("REGISTER SYSTEM")
 ```
 Whenever the function is called, the fields will be reset and directed to the home page
 
 ```python
 self.clean_data(w)
-        if (init == 0):
-            switch_page(w.rmcr_cb_stackedWidget,w.rmcr_cb_1)
-            init = 1
+if (init == 0):
+    switch_page(w.rmcr_cb_stackedWidget,w.rmcr_cb_1)
+    init = 1
 ```
 
 ## RMCR BUTTON 
@@ -214,11 +214,11 @@ def rmcu_init(self, w, init):
 First, it is directed to the home page, the **next and back** buttons are hidden and the fonts and respective texts also return to their initial positions.
 ```python
 switch_page(w.rm_stackedWidget,w.rmcu)
-        w.rmcu_btn_b.setVisible(False)
-        w.rmcu_btn_n.setVisible(False)
-        w.rmcu_lb_ed.setText("SELECT A OPTION")
-        w.rmcu_lb_ed.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
-        w.rmcu_lb_us.setText("UPDATE SYSTEM")
+w.rmcu_btn_b.setVisible(False)
+w.rmcu_btn_n.setVisible(False)
+w.rmcu_lb_ed.setText("SELECT A OPTION")
+w.rmcu_lb_ed.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
+w.rmcu_lb_us.setText("UPDATE SYSTEM")
 ```
 Whenever the function is called, the fields and TreeWidget will be reset and directed to the home page
 
@@ -308,17 +308,17 @@ def rmcd_init(self, w, init):
 First, it is directed to the home page, hide **next** button, and the respective fonts return to their initial positions.
 ```python
 switch_page(w.rm_stackedWidget,w.rmcd)
-        w.rmcd_btn_n.setVisible(False)
-        w.rmcd_lb_ds.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
-        w.rmcd_lb_so.setText("DELETE SYSTEM")
+w.rmcd_btn_n.setVisible(False)
+w.rmcd_lb_ds.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
+w.rmcd_lb_so.setText("DELETE SYSTEM")
 ```
 Whenever the function is called the TreeWidget will be reset and directed to the home page.
 ```python
 w.rmcd_f_tree.clear()
-        self.init_Tree_widget(w)
-        if (init == 0):
-            switch_page(w.rmcd_stackedWidget,w.rmcd_slct)
-            init = 1
+self.init_Tree_widget(w)
+if (init == 0):
+    switch_page(w.rmcd_stackedWidget,w.rmcd_slct)
+    init = 1
 ```
 
 ## RMCD BUTTON 
