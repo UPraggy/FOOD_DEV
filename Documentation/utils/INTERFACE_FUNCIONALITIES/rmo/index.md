@@ -157,32 +157,60 @@ Home page settings
 ```python
 def rmor_init(self, w, init):
 ```
-First, it is directed to the initial registration page, the button **next** are visible again and the fonts and respective texts also return to their initial positions.
+First, it is directed to the registration homepage, the **next** button and the spacer is visible again, the other hidden buttons and the fonts and respective texts also return to their initial positions, in addition to resetting the treeWidget.
 ```python
-switch_page(w.rm_stackedWidget,w.rmpr)
-        w.rmpr_btn_n.setVisible(True)
-        w.rmpr_lb_ed.setText("ENTER THE DATA")
-        w.rmpr_lb_ed.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
-        w.rmpr_lb_rs.setText("REGISTER SYSTEM")
+switch_page(w.rm_stackedWidget,w.rmor)
+w.rmor_btn_n.setVisible(True)
+w.rmor_Spacer_btts.setVisible(True)
+w.rmor_btn_b.setVisible(False)
+w.rmor_btn_a.setVisible(False)
+w.rmor_btn_r.setVisible(False)
+w.rmpr_lb_ed.setText("SELECT THE CLIENT")
+w.rmpr_lb_ed.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
+w.rmpr_lb_rs.setText("REGISTER SYSTEM")
+w.rmor_slct_c_f2_tree.clear()
+self.data[0] = c.view()
+insert_tree_data(self.data[0], w.rmor_slct_c_f2_tree, 'Client')
+w.rmor_slct_p_f1_tv.setText(f'TOTAL VALUE: 0')
 ```
 Whenever the function is called, the fields will be reset and directed to the home page
 
 ```python
 self.clean_data(w)
-        if (init == 0):
-            switch_page(w.rmpr_cb_stackedWidget,w.rmpr_cb)
-            init = 1
+if (init == 0):
+    switch_page(w.rmor_stackedWidget,w.rmor_slct_c)
+    init = 1
 ```
 
 ## RMOR BUTTON 
-Page buttons settings (BACK AND NEXT)
+Page buttons settings (BACK, NEXT, TREE PRODUCT, SEARCH, POP-UP AND PAYMENT)
 ```python
-def rmpr_btn(self, w):
+def rmor_btn(self, w):
 ```
 ## RMOR NEXT PAGE
-Settings whenever the **Next page** button is pressed, collect the data, complete the registration, change the sources and hide the buttons
+Settings whenever the **Next page** button is pressed
 ```python
-def rmpr_next_step(self, w, current):
+def rmor_next_step(self, w, current):
+```
+Change to the **Second page**, collect the data from the first, change the fonts and make the **back** button visible and the button spacer also, if no record is selected on the previous page, it does not change anything and gives an error
+```python
+if (current == 0):
+```
+Switch to the **Third page**, collect the data from the second, change the fonts, hide the spacer and make the **Remove and Add** buttons visible, reset the treeWidgets, the total value and fill in the treeWidget products
+```python
+elif (current == 1):
+```
+Switch to the **Fourth page**, collect the data from the Third, change the fonts, hide the **Remove and Add** buttons and make the spacer visible
+```python
+elif (current == 2):
+```
+Switch to **Fifth page**, collect data from fourth, change sources
+```python
+elif (current == 3):
+```
+Switch to **Sixth page**, collect Farm data, complete registration, change fonts, hide buttons, reset treeWidgets
+```python
+elif (current == 4):
 ```
 
 ## RMOR FUNCTIONS
