@@ -60,6 +60,7 @@ This module is responsible for customer registration.
 - **[RMOR Remove](#rmor-remove)**
 - **[RMOR Add qt](#rmor-add-qt)**
 - **[RMOR Remove qt](#rmor-remove-qt)**
+- **[RMOR radio toggle](#rmor-radio-toggle)**
 - **[RMOR Set confirm](#rmor-set-confirm)**
 - **[RMOR Finish Reg](#rmor-finish-reg)**
 - **[RMOR INIT](#rmor-init)**
@@ -136,10 +137,25 @@ Responsible for updating by removing 1 unit quantity of the selected product
 ```python
 def rmor_add_win(self, w):
 ```
+## RMOR radio toggle
+Responsible for capturing the payment method selected by the 'radio buttons'
+```python
+def radio_toggle(self, w):
+```
+## RMOR Set confirm
+Responsible for the presentation of values and request for order confirmation
+```python
+def set_conf_form(self, w):
+```
+## RMOR Finish Reg
+After confirming the order, this function is responsible for processing the data and registrations in addition to resetting the variables
+```python
+def finish_reg(self):
+```
 ## RMOR INIT
 Home page settings
 ```python
-def rmcp_init(self, w, init):
+def rmor_init(self, w, init):
 ```
 First, it is directed to the initial registration page, the button **next** are visible again and the fonts and respective texts also return to their initial positions.
 ```python
