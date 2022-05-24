@@ -20,6 +20,7 @@ def create_DF(type_class, address_file, name_file):
 
 temp = 0
 temp2 = 0
+address_file = ''
 try:
     temp = sys.path[0]
     temp2 = temp.split(r'AppData')
