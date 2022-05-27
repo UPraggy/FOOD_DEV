@@ -1,7 +1,10 @@
 # Project Presentation
 This page aims to present and document the project. The presentation can and will change as the project progresses.<br>
 The idealized and designed system does not have many functions, because its objective is to be a basic system.<br>
-Check the dropbox link to access the program **executable** :  **[LINK](https://www.dropbox.com/sh/h6rknwswrynkj4m/AAA9T_bWKJXiDA0FWNfyksvOa?dl=0)**
+Check the dropbox link to access the program **executable** : 
+
+**[LINK](https://www.dropbox.com/sh/h6rknwswrynkj4m/AAA9T_bWKJXiDA0FWNfyksvOa?dl=0)**
+
 **PROJECT STATUS: IN PROGRESS / PROGRAMMING AND DOCUMENTING STEP**
 <br>
 
