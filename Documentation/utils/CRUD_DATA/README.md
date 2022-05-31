@@ -1,9 +1,8 @@
 # Sumary
 - **[Introduction](#introduction)**
 - **[Initial declarations and imports](#initial-declarations-and-imports)**
-- **[Create_DF](#create_df)**
-- **[Operations Path](#operations-path)**
-- **[Classes](#classes)**
+- **[TIME FUNCTIONS FOR ORDER](#time-functions-for-order)**
+- **[CRUD FUNCTIONS](#crud-functions)**
 
 
 
