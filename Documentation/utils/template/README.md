@@ -1,7 +1,7 @@
 # Sumary
 - **[Introduction](#introduction)**
 - **[Initial declarations and imports](#initial-declarations-and-imports)**
-- **[Register](#register)**
+- **[Create_DF](#create-df)**
 - **[Operations Path](#register)**
 - **[Class Order](#register)**
 - **[Class Client](#register)**
@@ -29,24 +29,25 @@ from os.path import realpath
 ```
 
 
-# Register
-This module is responsible for customer registration.
-- **[RMPR INIT](#rmpr-init)**
-
-
-## Initial declaration of variables - RMPR
+# create_DF
+This module is responsible for creating the files in excel, according to the standard of columns defined by class in the **typeclass** variable, naming the file according to **name_file**, saving in the address **address_file**
 ```python
-class Register():
-    def __init__(self):
-        data = None
+def create_DF(type_class, address_file, name_file):
+    if (type_class == 'Order'):
+        d = ['number_order', 'client', 'address', 'status', 'products/qnt/value', 'value', 'payment_form', 'card_number', 'date']
+    elif (type_class == 'Client'):
+        d = ['Name', 'CPF', 'Phone Number', 'Email', 'Card Number', 'CVV', 'Expiration Date', 'Address', 'Number', 'District', 'City', 'State']
+    elif (type_class == 'Product'):
+        d = ['ID', 'PRODUCT', 'DESCRIPTION', 'measure', 'VALUE', 'STOCK', 'SELLS', 'PRICE']
+       
+    d = DataFrame(columns=d)
+    cols = d.columns
+    d = d.set_index(f'{cols[0]}')
+    try:
+        d = read_excel(f'{address_file}/{name_file}')
+    except:
+        d.to_excel(f'{address_file}/{name_file}')
 ```
-
-## RMPR FUNCTIONS
-Responsible for initializing the button "capture" process
-```python
-def rmpr_Functions(self, w):
-```
-
 
 
 
