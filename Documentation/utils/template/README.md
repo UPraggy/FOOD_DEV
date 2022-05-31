@@ -1,7 +1,7 @@
 # Sumary
 - **[Introduction](#introduction)**
 - **[Initial declarations and imports](#initial-declarations-and-imports)**
-- **[Create_DF](#create-df)**
+- **[Create_DF](#create_df)**
 - **[Operations Path](#operations-path)**
 - **[Class Order](#class-order)**
 - **[Class Client](#class-client)**
@@ -29,27 +29,36 @@ from os.path import realpath
 ```
 
 
-# create_DF
+# Create_DF
 This module is responsible for creating the files in excel, according to the standard of columns defined by class in the **typeclass** variable, naming the file according to **name_file**, saving in the address **address_file**
 ```python
 def create_DF(type_class, address_file, name_file):
-    if (type_class == 'Order'):
-        d = ['number_order', 'client', 'address', 'status', 'products/qnt/value', 'value', 'payment_form', 'card_number', 'date']
-    elif (type_class == 'Client'):
-        d = ['Name', 'CPF', 'Phone Number', 'Email', 'Card Number', 'CVV', 'Expiration Date', 'Address', 'Number', 'District', 'City', 'State']
-    elif (type_class == 'Product'):
-        d = ['ID', 'PRODUCT', 'DESCRIPTION', 'measure', 'VALUE', 'STOCK', 'SELLS', 'PRICE']
-       
-    d = DataFrame(columns=d)
-    cols = d.columns
-    d = d.set_index(f'{cols[0]}')
-    try:
-        d = read_excel(f'{address_file}/{name_file}')
-    except:
-        d.to_excel(f'{address_file}/{name_file}')
 ```
 
+# Operations Path
+This module is responsible for checking and searching the path where the program is, after that it checks if the folders where the excel files exist, if they don't exist, it creates and calls the **create_DF** function
 
+```python
+temp = 0
+temp2 = 0
+address_file = ''
+temp = sys.path[0]
+temp2 = temp.find(r'AppData')
+if (temp2 == -1):
+    address_file = temp
+else:
+    temp = getcwd() 
+    temp2 = temp.find(r'AppData')
+
+  ...
+  
+try:
+    mkdir(f'{address_file_p}')
+    mkdir(f'{address_file_p}/GRAPHICS')
+    create_DF('Product', address_file_p, 'PRODUCTS.xlsx')
+except:
+    pass
+```
 
 **THIS PROGRAM WAS MADE BY**:<br>
 **Rafael Moreira Ramos de Rezende** 
