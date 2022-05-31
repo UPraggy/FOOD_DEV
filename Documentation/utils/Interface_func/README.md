@@ -43,6 +43,33 @@ Module responsible for initializing the buttons of each Class in addition to cha
 According to the called operation (clicked button) it initializes the class and calls the initial function.
 **Note:** the "initial run" check is used to initialize the buttons of each operation only once, the ```if``` is being called because of a bug when initializing the buttons more than once. buttons
 
+# setzoom
+Controls the variable responsible for zooming in the web page
+
+# zoom_scale
+Responsible for zooming on the web page
+
+# loading_funcs_about
+Responsible for web page settings
+
+
+# loading_funcs_main
+Responsible for loading the functions of each Class
+
+# switch_page
+Responsible for loading pages
+
+# switch_main
+Responsible for switching the page to the home menu
+
+# Functionalties
+Responsible for initializing the side menu buttons (lm - left menu)
+
+
+
+
+
+
 **THIS PROGRAM WAS MADE BY**:<br>
 **Rafael Moreira Ramos de Rezende** 
 
