@@ -2,10 +2,10 @@
 - **[Introduction](#introduction)**
 - **[Initial declarations and imports](#initial-declarations-and-imports)**
 - **[Create_DF](#create-df)**
-- **[Operations Path](#register)**
-- **[Class Order](#register)**
-- **[Class Client](#register)**
-- **[Class Product](#register)**
+- **[Operations Path](#operations-path)**
+- **[Class Order](#class-order)**
+- **[Class Client](#class-client)**
+- **[Class Product](#class-product)**
 
 
 
