@@ -1,9 +1,18 @@
 # Sumary
 - **[Introduction](#introduction)**
 - **[Initial declarations and imports](#initial-declarations-and-imports)**
-- **[Create_DF](#create_df)**
-- **[Operations Path](#operations-path)**
-- **[Classes](#classes)**
+- **[loading_funcs_client](#loading_funcs_client)**
+- **[loading_funcs_product](#loading_funcs_product-path)**
+- **[loading_funcs_order](#loading_funcs_order)**
+- **[load_rm](#load_rm)**
+- **[setzoom](#setzoom)**
+- **[zoom_scale](#zoom_scale)**
+- **[loading_funcs_about](#loading_funcs_about)**
+- **[loading_funcs_main](#loading_funcs_main)**
+- **[switch_page](#switch_page)**   
+- **[switch_main](#switch_main)** 
+- **[functionalties](#functionalties)** 
+
 
 
 
