@@ -1,27 +1,31 @@
 # Sumary
 - **[Introduction](#introduction)**
 - **[Initial declarations and imports](#initial-declarations-and-imports)**
-- **[Class Register](#register)**
+- **[Register](#register)**
+- **[Operations Path](#register)**
+- **[Class Order](#register)**
+- **[Class Client](#register)**
+- **[Class Product](#register)**
 
 
 
 # Introduction
-This module has been divided into classes for each interface function.
-> The explanation of the functions will be objective or detailed according to the complexity.
+This module has been divided into classes for each function and class.
+> The explanation will be objective or detailed according to the complexity.
 
 # Initial declarations and imports
-Initially the program imports: 
-- template that is responsible for organizing the product's classes and functions 
-- CRUD_DATA responsible for some operations with data 
-- QtWidgets that helps in some operations that are not contained in the main interface file.
-- Matplotlib is responsible for generating graphs (x,y)
+Initially the program imports:
+- CRUD_DATA responsible for some operations with data
+- Pandas for operations with dataframe and excel files
+- "sys" and "os" for some directory operations
 
-After the imports, the product class is initialized.
 ```python
-from utils import template
-from PyQt5 import QtWidgets
-import matplotlib.pyplot as plt
-p = template.Product()
+import utils.CRUD_data as cd
+from pandas import DataFrame, read_excel
+import sys
+from os import getcwd
+from os import mkdir
+from os.path import realpath 
 ```
 
 
