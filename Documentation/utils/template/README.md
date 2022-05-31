@@ -60,7 +60,7 @@ except:
 
 
 # Classes
-This Chapter summarizes the functions of the classes: Order, Customer Products
+This Chapter summarizes the functions of the classes: Order, Client, Products
 
 ### Src Path
 This function aims to capture the file address in excel, with differences in the Order class where it will be checked if the file refers to the current month or not and will call the respective Crud functions for directories and files.
