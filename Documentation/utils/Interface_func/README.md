@@ -1,9 +1,7 @@
 # Sumary
 - **[Introduction](#introduction)**
 - **[Initial declarations and imports](#initial-declarations-and-imports)**
-- **[loading_funcs_client](#loading_funcs_client)**
-- **[loading_funcs_product](#loading_funcs_product-path)**
-- **[loading_funcs_order](#loading_funcs_order)**
+- **[loading_funcs_client, product, order](#loading_funcs_client-product-order)**
 - **[load_rm](#load_rm)**
 - **[setzoom](#setzoom)**
 - **[zoom_scale](#zoom_scale)**
@@ -38,55 +36,12 @@ This module is responsible for creating the files in excel, according to the sta
 ```python
 def create_DF(type_class, address_file, name_file):
 ```
+# Loading_funcs_client, product, order
+Module responsible for initializing the buttons of each Class in addition to changing the side menu (lm - left menu).
 
-# Operations Path
-This module is responsible for checking and searching the path where the program is, after that it checks if the folders where the excel files exist, if they don't exist, it creates and calls the **create_DF** function
-
-```python
-temp = 0
-temp2 = 0
-address_file = ''
-temp = sys.path[0]
-temp2 = temp.find(r'AppData')
-if (temp2 == -1):
-    address_file = temp
-else:
-    temp = getcwd() 
-    temp2 = temp.find(r'AppData')
-
-  ...
-  
-try:
-    mkdir(f'{address_file_p}')
-    mkdir(f'{address_file_p}/GRAPHICS')
-    create_DF('Product', address_file_p, 'PRODUCTS.xlsx')
-except:
-    pass
-```
-
-
-# Classes
-This Chapter summarizes the functions of the classes: Order, Client, Products
-
-### Src Path
-This function aims to capture the file address in excel, with differences in the Order class where it will be checked if the file refers to the current month or not and will call the respective Crud functions for directories and files.
-
-### Create
-Responsible for entering the data in the excel file, receiving the filled data as a parameter.
-
-### View
-Responsible for fetching data from an excel file.
-
-### Update
-Responsible for updating the data of a given column, receiving the data from the file, directory, the column to be updated, the row to be updated, and the new data.
-
-### Delete
-Responsible for Deleting a line, when receiving it as a parameter.
-
-
-
-
-
+# Load_rm
+According to the called operation (clicked button) it initializes the class and calls the initial function.
+**Note:** the "initial run" check is used to initialize the buttons of each operation only once, the ```if``` is being called because of a bug when initializing the buttons more than once. buttons
 
 **THIS PROGRAM WAS MADE BY**:<br>
 **Rafael Moreira Ramos de Rezende** 
