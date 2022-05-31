@@ -1,11 +1,49 @@
-# FOOD_DEV
-Program aimed at storing in excel using python.<br>
-Any and all documentation related to the program will be in their respective folders.<br>
-The project presentation and documentation can be found at the link below.
-### [Link of project](https://upraggy.github.io/FOOD_DEV/) 
+# Sumary
+- **[Introduction](#introduction)**
+- **[Initial declarations and imports](#initial-declarations-and-imports)**
+- **[Class Register](#register)**
 
 
-Check the dropbox link to access the program **executable** :  **[LINK](https://www.dropbox.com/sh/h6rknwswrynkj4m/AAA9T_bWKJXiDA0FWNfyksvOa?dl=0)**
+
+# Introduction
+This module has been divided into classes for each interface function.
+> The explanation of the functions will be objective or detailed according to the complexity.
+
+# Initial declarations and imports
+Initially the program imports: 
+- template that is responsible for organizing the product's classes and functions 
+- CRUD_DATA responsible for some operations with data 
+- QtWidgets that helps in some operations that are not contained in the main interface file.
+- Matplotlib is responsible for generating graphs (x,y)
+
+After the imports, the product class is initialized.
+```python
+from utils import template
+from PyQt5 import QtWidgets
+import matplotlib.pyplot as plt
+p = template.Product()
+```
+
+
+# Register
+This module is responsible for customer registration.
+- **[RMPR INIT](#rmpr-init)**
+
+
+## Initial declaration of variables - RMPR
+```python
+class Register():
+    def __init__(self):
+        data = None
+```
+
+## RMPR FUNCTIONS
+Responsible for initializing the button "capture" process
+```python
+def rmpr_Functions(self, w):
+```
+
+
 
 
 **THIS PROGRAM WAS MADE BY**:<br>
