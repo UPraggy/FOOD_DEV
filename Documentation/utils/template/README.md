@@ -3,9 +3,7 @@
 - **[Initial declarations and imports](#initial-declarations-and-imports)**
 - **[Create_DF](#create_df)**
 - **[Operations Path](#operations-path)**
-- **[Class Order](#class-order)**
-- **[Class Client](#class-client)**
-- **[Class Product](#class-product)**
+- **[Classes](#classes)**
 
 
 
@@ -59,6 +57,30 @@ try:
 except:
     pass
 ```
+
+
+# Classes
+This Chapter summarizes the functions of the classes: Order, Customer Products
+
+### Src Path
+This function aims to capture the file address in excel, with differences in the Order class where it will be checked if the file refers to the current month or not and will call the respective Crud functions for directories and files.
+
+### Create
+Responsible for entering the data in the excel file, receiving the filled data as a parameter.
+
+### View
+Responsible for fetching data from an excel file.
+
+### Update
+Responsible for updating the data of a given column, receiving the data from the file, directory, the column to be updated, the row to be updated, and the new data.
+
+### Delete
+Responsible for Deleting a line, when receiving it as a parameter.
+
+
+
+
+
 
 **THIS PROGRAM WAS MADE BY**:<br>
 **Rafael Moreira Ramos de Rezende** 
