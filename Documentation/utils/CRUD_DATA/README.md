@@ -26,14 +26,62 @@ from os.path import realpath
 ```
 
 
-# Create_DF
-This module is responsible for creating the files in excel, according to the standard of columns defined by class in the **typeclass** variable, naming the file according to **name_file**, saving in the address **address_file**
+# TIME FUNCTIONS FOR ORDER
+This module is responsible for checking if there is (file_src) the directory and excel of a certain period (month and year) if it does not exist it creates it (create_file), there is also a check for the current month (current_file_src)
 ```python
-def create_DF(type_class, address_file, name_file):
+def file_src(address_file, month, year):
+
+def current_file_src(address_file):
+
+def create_file(address_file, month, year):
 ```
 
+# CRUD FUNCTIONS
+Module responsible for inserting data, searching, updating and deleting
 
+## Data_processing
+Responsible for converting the search or input data, so that the error does not occur when looking for the data in the dataframe (excel)
+```python
+def data_processing(input_data):
+```
 
+## View_data
+Responsible for fetching excel data
+```python
+def view_data(file_path):
+```
+
+## Search_data
+Responsible for fetching row or rows of excel data
+```python
+def search_data(data, field_src, input_data):
+```
+
+## Insert_data
+Responsible for inserting a new row in excel
+```python
+def insert_data(file_path, input_data):
+```
+
+## Insert_data
+Responsible for inserting a new row in excel
+```python
+def insert_data(file_path, input_data):
+```
+
+## Update_data
+Responsible for updating a row in excel
+```python
+def update_data(data, file_path, field_up, input_data, update_data):
+```
+
+## Delete_data
+Responsible for deleting a row in excel
+```python
+def delete_data(data, file_path, input_data):
+```
+
+ 
 **THIS PROGRAM WAS MADE BY**:<br>
 **Rafael Moreira Ramos de Rezende** 
 
