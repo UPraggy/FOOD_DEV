@@ -2,7 +2,7 @@
 - **[Introduction](#introduction)**
 - **[Initial declarations and imports](#initial-declarations-and-imports)**
 - **[Switch_page](#switch_page)**
-- **[CLASSES FOR CLIENT - RMC_FUNCTIONS](#classes-for-client---rmc-functions)**
+- **[CLASSES FOR CLIENT - RMC_FUNCTIONS AND SUBCLASSES](#classes-for-client---rmc-functions-and-subclasses)**
 - **[CLASSES FOR PRODUCT - RMP_FUNCTIONS](#classes-for-product---rmp-functions)**
 - **[CLASSES FOR ORDER - RMO_FUNCTIONS](#classes-for-order---rmo-functions)**
 
@@ -44,22 +44,48 @@ Responsible for changing pages
 def switch_page(stacked, page):
 ```
 
-# CLASSES FOR CLIENT - RMC_FUNCTIONS
-- **[search_data](#search_data)**
-- **[insert_tree_data](#insert_tree_data)**
+# CLASSES FOR CLIENT - RMC_FUNCTIONS AND SUBCLASSES
+- **[Search_data](#search_data)**
+- **[Insert_tree_data](#insert_tree_data)**
 - **[Rmc_Register](#rmc_register)**
 - **[Rmc_View](#rmc_view)**
 - **[Rmc_Update](#rmc_update)**
 - **[Rmc_Delete](#rmc_delete)**
 
 
-## search_data
-Responsible by 
+## Search_data
+Responsible by fetch data by a string insert in search field and insert into QTreeWidget, formating the field Address:
+```python
+def search_data(self, self2, src_field_data, tree):
+```
+## Insert_tree_data
+Responsible by insert the data in QTreeWidget, formating the field Address:
+```python
+def insert_tree_data(self, data, tree):
+```
+## Rmc_Register
+- **[Data_tratament_error](#data_tratament_error)**
+- **[Clean_data](#clean_data)**
+- **[Get_data_pg1](#get_data_pg1)**
+- **[Rmc](#rmc)**
+- **[Rmc](#rmc)**
+
+### Data_tratament_error
+Responsible by notify the client case insert the data of incorrect form
+```python
+def data_tratament_error(self, step, w):
+```
+
+### Clean_data
+Responsible by cleaning fields
+```python
+def clean_data(self, w):
+```
+
+### Get_data_pg1
 
 
 
-
- 
 **THIS PROGRAM WAS MADE BY**:<br>
 **Rafael Moreira Ramos de Rezende** 
 
