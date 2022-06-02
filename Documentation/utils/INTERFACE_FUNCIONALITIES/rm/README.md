@@ -67,8 +67,13 @@ def insert_tree_data(self, data, tree):
 - **[Data_tratament_error](#data_tratament_error)**
 - **[Clean_data](#clean_data)**
 - **[Get_data_pg1](#get_data_pg1)**
-- **[Rmc](#rmc)**
-- **[Rmc](#rmc)**
+- **[Finish_register](#finish_register)**
+- **[Rmcr_init](#rmcr_init)**
+- **[Rmcr_btn](#rmcr_btn)**
+- **[Rmcr_next_step](#rmcr_next_step)**
+- **[Rmcr_back_step](#rmcr_back_step)**
+- **[Rmcr_Functions](#rmcr_Functions)**
+
 
 ### Data_tratament_error
 Responsible by notify the client case insert the data of incorrect form
@@ -83,6 +88,86 @@ def clean_data(self, w):
 ```
 
 ### Get_data_pg1
+Responsible by  get data in the fields of first page
+```python
+def get_data_pg1(self, w):
+```
+### Finish_register
+Responsible by  get data in the fields of second page and finish register
+```python
+def finish_register(self, w):
+```
+### Rmcr_init
+Responsible by  initialize fields and set the main page
+```python
+def rmcr_init(self, w, init):
+```
+### Rmcr_btn
+Responsible by  initialize buttons
+```python
+def rmcr_btn(self, w):
+```
+### Rmcr_next_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
+```python
+def rmcr_next_step(self, w, current):
+```
+### Rmcr_back_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **BACK** button is pressed
+```python
+def rmcr_back_step(self, w):
+```
+### Rmcr_init
+Responsável por chamar as funções dos botões
+```python
+def rmcr_Functions(self, w):
+```
+
+
+
+## Rmc_View
+- **[Rmcv_init](#rmcv_init)**
+- **[Rmcv_btn](#rmcv_btn)**
+- **[Rmcv_Functions](#rmcv_Functions)**
+
+
+### Data_tratament_error
+Responsible by notify the client case insert the data of incorrect form
+```python
+def data_tratament_error(self, step, w):
+```
+
+### Rmcr_init
+Responsible by  initialize fields and set the main page
+```python
+def rmcr_init(self, w, init):
+```
+### Rmcr_btn
+Responsible by  initialize buttons
+```python
+def rmcr_btn(self, w):
+```
+### Rmcv_Functions
+Responsável por chamar as funções dos botões
+```python
+def rmcv_Functions(self, w):
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
