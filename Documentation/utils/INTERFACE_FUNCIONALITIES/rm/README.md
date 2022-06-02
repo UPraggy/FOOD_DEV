@@ -118,7 +118,7 @@ Responsible for changing fonts, pages and getting data, according to the current
 def rmcr_back_step(self, w):
 ```
 ### Rmcr_init
-Responsável por chamar as funções dos botões
+Responsible for calling button function
 ```python
 def rmcr_Functions(self, w):
 ```
@@ -130,25 +130,18 @@ def rmcr_Functions(self, w):
 - **[Rmcv_btn](#rmcv_btn)**
 - **[Rmcv_Functions](#rmcv_Functions)**
 
-
-### Data_tratament_error
-Responsible by notify the client case insert the data of incorrect form
+### Rmcv_init
+Responsible by  initialize fields, get data, fill the TreeWidget and set the main page
 ```python
-def data_tratament_error(self, step, w):
+def rmcv_init(self, w, init):
 ```
-
-### Rmcr_init
-Responsible by  initialize fields and set the main page
-```python
-def rmcr_init(self, w, init):
-```
-### Rmcr_btn
+### Rmcv_btn
 Responsible by  initialize buttons
 ```python
-def rmcr_btn(self, w):
+def rmcv_btn(self, w):
 ```
 ### Rmcv_Functions
-Responsável por chamar as funções dos botões
+Responsible for calling button function
 ```python
 def rmcv_Functions(self, w):
 ```
