@@ -131,7 +131,7 @@ def rmcr_Functions(self, w):
 - **[Rmcv_Functions](#rmcv_Functions)**
 
 ### Rmcv_init
-Responsible by  initialize fields, get data, fill the TreeWidget and set the main page
+Responsible by  initialize TreeWidget, get data and set the main page
 ```python
 def rmcv_init(self, w, init):
 ```
@@ -170,7 +170,7 @@ Responsible by  get data in the fields and update data:
 def get_data_...(self, w):
 ```
 ### Rmcu_init
-Responsible by  initialize fields and set the main page
+Responsible by  initialize TreeWidget and fields and set the main page
 ```python
 def rmcu_init(self, w, init):
 ```
@@ -195,7 +195,46 @@ Responsible for calling button function
 def rmcu_Functions(self, w):
 ```
 
+## Rmc_Delete
+- **[Delete_data](#delete_data)**
+- **[Init_Tree_widget](#init_tree_widget)**
+- **[Rmcd_init](#rmcd_init)**
+- **[Rmcd_btn](#rmcd_btn)**
+- **[Rmcd_next_step](#rmcd_next_step)**
+- **[Rmcd_Functions](#rmcd_Functions)**
 
+
+
+### Delete_data
+Responsible by delete data
+```python
+def delete_data(self):
+```
+### Init_Tree_widget
+Responsible by fill the TreeWidget and change some fonts:
+```python
+def init_Tree_widget(self, w):
+```
+### Rmcd_init
+Responsible by  initialize TreeWidget and set the main page
+```python
+def rmcd_init(self, w, init):
+```
+### Rmcd_btn
+Responsible by  initialize buttons
+```python
+def rmcd_btn(self, w):
+```
+### Rmcd_next_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
+```python
+def rmcd_next_step(self, w, current):
+```
+### Rmcd_Functions
+Responsible for calling button function
+```python
+def rmcu_Functions(self, w):
+```
 
 
 
