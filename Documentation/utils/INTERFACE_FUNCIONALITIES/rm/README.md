@@ -117,7 +117,7 @@ Responsible for changing fonts, pages and getting data, according to the current
 ```python
 def rmcr_back_step(self, w):
 ```
-### Rmcr_init
+### Rmcr_Functions
 Responsible for calling button function
 ```python
 def rmcr_Functions(self, w):
@@ -146,7 +146,54 @@ Responsible for calling button function
 def rmcv_Functions(self, w):
 ```
 
+## Rmc_Update
+- **[Clean_data](#clean_data)**
+- **[Get_data_...](#get_data_)**
+- **[Rmcu_init](#rmcu_init)**
+- **[Rmcu_btn](#rmcu_btn)**
+- **[Rmcu_next_step](#rmcu_next_step)**
+- **[Rmcu_back_step](#rmcu_back_step)**
+- **[Rmcu_Functions](#rmcu_Functions)**
 
+
+
+### Clean_data
+Responsible by cleaning fields
+```python
+def clean_data(self, w):
+```
+
+### Get_data_...
+```get_data_generic, get_data_card and get_data_add```<br>
+Responsible by  get data in the fields and update data:
+```python
+def get_data_...(self, w):
+```
+### Rmcu_init
+Responsible by  initialize fields and set the main page
+```python
+def rmcu_init(self, w, init):
+```
+### Rmcu_btn
+Responsible by  initialize buttons
+```python
+def rmcu_btn(self, w):
+```
+### Rmcu_next_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
+```python
+def rmcu_next_step(self, w, current):
+```
+### Rmcu_back_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **BACK** button is pressed
+```python
+def rmcu_back_step(self, w):
+```
+### Rmcu_Functions
+Responsible for calling button function
+```python
+def rmcu_Functions(self, w):
+```
 
 
 
