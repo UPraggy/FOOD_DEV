@@ -327,106 +327,99 @@ def rmcu_Functions(self, w):
 # CLASSES FOR PRODUCT - RMP_FUNCTIONS
 - **[Search_data - RMP](#search_data---rmp)**
 - **[Insert_tree_data - RMP](#insert_tree_data---rmp)**
-- **[Rmc_Register](#rmc_register)**
-- **[Rmc_View](#rmc_view)**
-- **[Rmc_Update](#rmc_update)**
-- **[Rmc_Delete](#rmc_delete)**
+- **[Rmp_Register](#rmp_register)**
+- **[Rmp_View](#rmp_view)**
+- **[Rmp_Update](#rmp_update)**
+- **[Rmp_Delete](#rmp_delete)**
 
 
-## Search_data
+## Search_data - RMP
 Responsible by fetch data by a string insert in search field and insert into QTreeWidget, formating the field Address:
 ```python
-def search_data(self, self2, src_field_data, tree):
+def search_data(self, src_field_data, tree, data):
 ```
-## Insert_tree_data
+## Insert_tree_data - RMP
 Responsible by insert the data in QTreeWidget, formating the field Address:
 ```python
 def insert_tree_data(self, data, tree):
 ```
-## Rmc_Register
-- **[Data_tratament_error](#data_tratament_error)**
-- **[Clean_data](#clean_data)**
-- **[Get_data_pg1](#get_data_pg1)**
-- **[Finish_register](#finish_register)**
-- **[Rmcr_init](#rmcr_init)**
-- **[Rmcr_btn](#rmcr_btn)**
-- **[Rmcr_next_step](#rmcr_next_step)**
-- **[Rmcr_back_step](#rmcr_back_step)**
-- **[Rmcr_Functions](#rmcr_Functions)**
+## Rmp_Register
+- **[Data_tratament_error - RMPR](#data_tratament_error---rmpr)**
+- **[Clean_data - RMPR](#clean_data---rmpr)**
+- **[Get_data - RMPR](#get_data---rmpr)**
+- **[Rmpr_init](#rmpr_init)**
+- **[Rmpr_btn](#rmpr_btn)**
+- **[Rmpr_next_step](#rmpr_next_step)**
+- **[Rmpr_Functions](#rmpr_Functions)**
 
 
-### Data_tratament_error
+### Data_tratament_error - RMPR
 Responsible by notify the client case insert the data of incorrect form
 ```python
-def data_tratament_error(self, step, w):
+def data_tratament_error(self, w):
 ```
 
-### Clean_data
+### Clean_data - RMPR
 Responsible by cleaning fields
 ```python
 def clean_data(self, w):
 ```
 
-### Get_data_pg1
-Responsible by  get data in the fields of first page
+### Get_data - RMPR
+Responsible by get data in the fields and finish register
 ```python
-def get_data_pg1(self, w):
+def get_data(self, w): 
 ```
-### Finish_register
-Responsible by  get data in the fields of second page and finish register
-```python
-def finish_register(self, w):
-```
+
 ### Rmcr_init
 Responsible by  initialize fields and set the main page
 ```python
-def rmcr_init(self, w, init):
+def rmpr_init(self, w, init):
 ```
 ### Rmcr_btn
 Responsible by  initialize buttons
 ```python
-def rmcr_btn(self, w):
+def rmpr_btn(self, w):
 ```
 ### Rmcr_next_step
 Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
 ```python
-def rmcr_next_step(self, w, current):
-```
-### Rmcr_back_step
-Responsible for changing fonts, pages and getting data, according to the current page, when the **BACK** button is pressed
-```python
-def rmcr_back_step(self, w):
+def rmpr_next_step(self, w):
 ```
 ### Rmcr_Functions
 Responsible for calling button function
 ```python
-def rmcr_Functions(self, w):
+def rmpr_Functions(self, w):
 ```
 
 
 
 ## Rmc_View
-- **[Rmcv_init](#rmcv_init)**
-- **[Rmcv_btn](#rmcv_btn)**
-- **[Rmcv_Functions](#rmcv_Functions)**
+- **[Rmpv_init](#rmpv_init)**
+- **[Rmpv_btn](#rmpv_btn)**
+- **[animated_graphic](#rmpv_btn)**
+- **[place_graphic](#rmpv_btn)**
+- **[rmpv_back_step](#rmpv_btn)**
+- **[rmpv_next_step](#rmpv_btn)**
+- **[Rmpv_Functions](#rmpv_Functions)**
 
-### Rmcv_init
+### Rmpv_init
 Responsible by  initialize TreeWidget, get data and set the main page
 ```python
-def rmcv_init(self, w, init):
+def rmpv_init(self, w, init):
 ```
-### Rmcv_btn
+### Rmpv_btn
 Responsible by  initialize buttons
 ```python
-def rmcv_btn(self, w):
+def rmpv_btn(self, w):
 ```
-### Rmcv_Functions
+### Rmpv_Functions
 Responsible for calling button function
 ```python
-def rmcv_Functions(self, w):
+def rmpv_Functions(self, w):
 ```
 
-## Rmc_Update
+## Rmp_Update
 - **[Clean_data](#clean_data)**
 - **[Get_data_...](#get_data_)**
 - **[Rmcu_init](#rmcu_init)**
