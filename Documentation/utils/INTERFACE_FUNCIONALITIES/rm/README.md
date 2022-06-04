@@ -371,22 +371,22 @@ Responsible by get data in the fields and finish register
 def get_data(self, w): 
 ```
 
-### Rmcr_init
+### Rmpr_init
 Responsible by  initialize fields and set the main page
 ```python
 def rmpr_init(self, w, init):
 ```
-### Rmcr_btn
+### Rmpr_btn
 Responsible by  initialize buttons
 ```python
 def rmpr_btn(self, w):
 ```
-### Rmcr_next_step
+### Rmpr_next_step
 Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
 ```python
 def rmpr_next_step(self, w):
 ```
-### Rmcr_Functions
+### Rmpr_Functions
 Responsible for calling button function
 ```python
 def rmpr_Functions(self, w):
@@ -397,8 +397,8 @@ def rmpr_Functions(self, w):
 ## Rmc_View
 - **[Rmpv_init](#rmpv_init)**
 - **[Rmpv_btn](#rmpv_btn)**
-- **[animated_graphic](#rmpv_btn)**
-- **[place_graphic](#rmpv_btn)**
+- **[Animated_graphic - RMPV](#animated_graphic---rmpv)**
+- **[place_graphic - RMPV](#place_graphic---rmpv)**
 - **[rmpv_back_step](#rmpv_btn)**
 - **[rmpv_next_step](#rmpv_btn)**
 - **[Rmpv_Functions](#rmpv_Functions)**
@@ -412,6 +412,26 @@ def rmpv_init(self, w, init):
 Responsible by  initialize buttons
 ```python
 def rmpv_btn(self, w):
+```
+### Animated_graphic - RMPV
+Responsible for creating an animated graph, using the matplotlib library
+```python
+def animated_graphic(self, x , y, grapich_Title):
+```
+### Animated_graphic - RMPV
+Responsible for generate and place an graph in png, using the matplotlib library
+```python
+def place_graphic(self, frame,  x , y, grapich_Title):
+```
+### Rmcu_next_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
+```python
+def rmpu_next_step(self, w, current):
+```
+### Rmpu_back_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **BACK** button is pressed
+```python
+def rmpu_back_step(self, w):
 ```
 ### Rmpv_Functions
 Responsible for calling button function
