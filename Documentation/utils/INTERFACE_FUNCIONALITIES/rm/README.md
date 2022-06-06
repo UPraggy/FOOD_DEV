@@ -245,85 +245,6 @@ def rmcu_Functions(self, w):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # CLASSES FOR PRODUCT - RMP_FUNCTIONS
 - **[Search_data - RMP](#search_data---rmp)**
 - **[Insert_tree_data - RMP](#insert_tree_data---rmp)**
@@ -441,12 +362,12 @@ def rmpv_Functions(self, w):
 
 ## Rmp_Update
 - **[Clean_data](#clean_data)**
-- **[Get_data_...](#get_data_)**
-- **[Rmpu_init](#rmcu_init)**
-- **[Rmpu_btn](#rmcu_btn)**
-- **[Rmpu_next_step](#rmcu_next_step)**
-- **[Rmpu_back_step](#rmcu_back_step)**
-- **[Rmcu_Functions](#rmcu_Functions)**
+- **[Get_data_generic](#get_data_generic)**
+- **[Rmpu_init](#rmpu_init)**
+- **[Rmpu_btn](#rmpu_btn)**
+- **[Rmpu_next_step](#rmpu_next_step)**
+- **[Rmpu_back_step](#rmpu_back_step)**
+- **[Rmpu_Functions](#rmpu_Functions)**
 
 
 
@@ -456,7 +377,296 @@ Responsible by cleaning fields
 def clean_data(self, w):
 ```
 
-### Get_data_...
+### Get_data_generic
+Responsible by get data in the fields and update data:
+```python
+def get_data_generic(self, w, field):
+```
+### Rmpu_init
+Responsible by  initialize TreeWidget and fields and set the main page
+```python
+def rmpu_init(self, w, init):
+```
+### Rmpu_btn
+Responsible by  initialize buttons
+```python
+def rmpu_btn(self, w):
+```
+### Rmpu_next_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
+```python
+def rmpu_next_step(self, w, current, widget):
+```
+### Rmpu_back_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **BACK** button is pressed
+```python
+def rmpu_back_step(self, w, current):
+```
+### Rmpu_Functions
+Responsible for calling button function
+```python
+def rmpu_Functions(self, w):
+```
+
+## Rmp_Delete
+- **[Delete_data - RMPD](#delete_data---rmpd)**
+- **[Init_Tree_widget - RMPD](#init_tree_widget---rmpd)**
+- **[Rmpd_init](#rmpd_init)**
+- **[Rmpd_btn](#rmpd_btn)**
+- **[Rmpd_next_step](#rmpd_next_step)**
+- **[Rmpd_Functions](#rmpd_Functions)**
+
+
+
+### Delete_data - RMPD
+Responsible by delete data
+```python
+def delete_data(self):
+```
+### Init_Tree_widget - RMPD
+Responsible by fill the TreeWidget and change some fonts:
+```python
+def init_Tree_widget(self, w):
+```
+### Rmpd_init
+Responsible by  initialize TreeWidget and set the main page
+```python
+def rmpd_init(self, w, init):
+```
+### Rmpd_btn
+Responsible by  initialize buttons
+```python
+def rmpd_btn(self, w):
+```
+### Rmpd_next_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
+```python
+def rmpd_next_step(self, w, current):
+```
+### Rmpd_Functions
+Responsible for calling button function
+```python
+def rmpu_Functions(self, w):
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CLASSES FOR ORDER - RMO_FUNCTIONS AND SUBCLASSES
+- **[Search_data - RMO](#search_data---rmo)**
+- **[Insert_tree_data - RMO](#insert_tree_data---rmo)**
+- **[Rmo_Register](#rmo_register)**
+- **[Rmo_View](#rmo_view)**
+- **[Rmo_Update](#rmo_update)**
+- **[Rmo_Delete](#rmo_delete)**
+
+
+## Search_data - RMO
+Responsible by fetch data by a string insert in search field and insert into QTreeWidget, formating the field Address:
+```python
+def search_data(self, self2, src_field_data, tree):
+```
+## Insert_tree_data - RMO
+Responsible by insert the data in QTreeWidget, formating the field Address:
+```python
+def insert_tree_data(self, data, tree):
+```
+## Rmc_Register
+- **[Data_tratament_error - RMOR](#data_tratament_error---rmor)**
+- **[Clean_data - RMCR](#clean_data---rmcr)**
+- **[Get_data_pg1 - RMCR](#get_data_pg1---rmcr)**
+- **[Finish_register - RMCR](#finish_register---rmcr)**
+- **[Rmcr_init](#rmcr_init)**
+- **[Rmcr_btn](#rmcr_btn)**
+- **[Rmcr_next_step](#rmcr_next_step)**
+- **[Rmcr_back_step](#rmcr_back_step)**
+- **[Rmcr_Functions](#rmcr_Functions)**
+
+
+### Data_tratament_error - RMCR
+Responsible by notify the client case insert the data of incorrect form
+```python
+def data_tratament_error(self, step, w):
+```
+
+### Clean_data - RMCR
+Responsible by cleaning fields
+```python
+def clean_data(self, w):
+```
+
+### Get_data_pg1 - RMCR
+Responsible by  get data in the fields of first page
+```python
+def get_data_pg1(self, w):
+```
+### Finish_register - RMCR
+Responsible by  get data in the fields of second page and finish register
+```python
+def finish_register(self, w):
+```
+### Rmcr_init
+Responsible by  initialize fields and set the main page
+```python
+def rmcr_init(self, w, init):
+```
+### Rmcr_btn
+Responsible by  initialize buttons
+```python
+def rmcr_btn(self, w):
+```
+### Rmcr_next_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
+```python
+def rmcr_next_step(self, w, current):
+```
+### Rmcr_back_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **BACK** button is pressed
+```python
+def rmcr_back_step(self, w):
+```
+### Rmcr_Functions
+Responsible for calling button function
+```python
+def rmcr_Functions(self, w):
+```
+
+
+
+## Rmc_View
+- **[Rmcv_init](#rmcv_init)**
+- **[Rmcv_btn](#rmcv_btn)**
+- **[Rmcv_Functions](#rmcv_Functions)**
+
+### Rmcv_init
+Responsible by  initialize TreeWidget, get data and set the main page
+```python
+def rmcv_init(self, w, init):
+```
+### Rmcv_btn
+Responsible by  initialize buttons
+```python
+def rmcv_btn(self, w):
+```
+### Rmcv_Functions
+Responsible for calling button function
+```python
+def rmcv_Functions(self, w):
+```
+
+## Rmc_Update
+- **[Clean_data - RMCU](#clean_data---rmcu)**
+- **[Get_data_... - RMCU](#get_data_---rmcu)**
+- **[Rmcu_init](#rmcu_init)**
+- **[Rmcu_btn](#rmcu_btn)**
+- **[Rmcu_next_step](#rmcu_next_step)**
+- **[Rmcu_back_step](#rmcu_back_step)**
+- **[Rmcu_Functions](#rmcu_Functions)**
+
+
+
+### Clean_data - RMCU
+Responsible by cleaning fields
+```python
+def clean_data(self, w):
+```
+
+### Get_data_... - RMCU
 ```get_data_generic, get_data_card and get_data_add```<br>
 Responsible by  get data in the fields and update data:
 ```python
@@ -489,8 +699,8 @@ def rmcu_Functions(self, w):
 ```
 
 ## Rmc_Delete
-- **[Delete_data](#delete_data)**
-- **[Init_Tree_widget](#init_tree_widget)**
+- **[Delete_data - RMCD](#delete_data---rmcd)**
+- **[Init_Tree_widget - RMCD](#init_tree_widget---rmcd)**
 - **[Rmcd_init](#rmcd_init)**
 - **[Rmcd_btn](#rmcd_btn)**
 - **[Rmcd_next_step](#rmcd_next_step)**
@@ -498,12 +708,12 @@ def rmcu_Functions(self, w):
 
 
 
-### Delete_data
+### Delete_data - RMCD
 Responsible by delete data
 ```python
 def delete_data(self):
 ```
-### Init_Tree_widget
+### Init_Tree_widget - RMCD
 Responsible by fill the TreeWidget and change some fonts:
 ```python
 def init_Tree_widget(self, w):
@@ -528,7 +738,6 @@ Responsible for calling button function
 ```python
 def rmcu_Functions(self, w):
 ```
-
 
 
 
