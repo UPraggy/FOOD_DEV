@@ -550,6 +550,11 @@ def rmpu_Functions(self, w):
 # CLASSES FOR ORDER - RMO_FUNCTIONS AND SUBCLASSES
 - **[Search_data - RMO](#search_data---rmo)**
 - **[Insert_tree_data - RMO](#insert_tree_data---rmo)**
+- **[Switch_data - RMO](#switch_data---rmo)**      
+- **[Rmo_add_win](#rmo_add_win)**
+- **[Rmo add and remove](#rmo-add-and-remove)**
+- **[Rmo add_qt and remove_qt](#rmo-add_qt-and-remove_qt)**
+- **[Tree_update_data - RMO](#tree_update_data---rmo)**
 - **[Rmo_Register](#rmo_register)**
 - **[Rmo_View](#rmo_view)**
 - **[Rmo_Update](#rmo_update)**
@@ -566,6 +571,37 @@ Responsible by insert the data in QTreeWidget, formating the field Address:
 ```python
 def insert_tree_data(self, data, tree):
 ```
+## Switch_data - RMO
+Responsible for formatting and fetching orders according to a period of time:
+```python
+def switch_data(self, self2, w, date, operation = None, tree = None): 
+```
+### Data_tratament_error - RMO
+Responsible by notify the client case insert the data of incorrect form:
+```python
+def data_tratament_error(self, self2, page, w, data, tree_reg = None, stack_reg = None, page_reg = None):
+```
+### Rmo_add_win
+Responsible by show the products windown:
+```python
+def rmo_add_win(self,w):
+```
+### Rmo add and remove
+Responsible by add or remove the selected product in the TreeWidget:
+```python
+def rmo_add(self, self2, w, tree_products, total_value_lb, operation = None):
+```
+### Rmo add_qt and remove_qt
+Responsible by add or remove a quantity of the selected product in the TreeWidget:
+```python
+def rmo_add_qt(self, self2, w):
+```
+### Tree_update_data - RMO
+Responsible for updating the QTreeWidget, the function exists because of a bug with the data:
+```python
+def tree_update_data(self):
+```
+
 ## Rmc_Register
 - **[Data_tratament_error - RMOR](#data_tratament_error---rmor)**
 - **[Clean_data - RMCR](#clean_data---rmcr)**
