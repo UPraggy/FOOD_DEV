@@ -603,33 +603,37 @@ def tree_update_data(self):
 ```
 
 ## Rmc_Register
-- **[Data_tratament_error - RMOR](#data_tratament_error---rmor)**
-- **[Clean_data - RMCR](#clean_data---rmcr)**
-- **[Get_data_pg1 - RMCR](#get_data_pg1---rmcr)**
-- **[Finish_register - RMCR](#finish_register---rmcr)**
-- **[Rmcr_init](#rmcr_init)**
-- **[Rmcr_btn](#rmcr_btn)**
-- **[Rmcr_next_step](#rmcr_next_step)**
-- **[Rmcr_back_step](#rmcr_back_step)**
-- **[Rmcr_Functions](#rmcr_Functions)**
+- **[Data_tratament_error_rmor](#data_tratament_error_rmor)**
+- **[Clean_data - RMOR](#clean_data---rmor)**
+- **[Set_cad_default](#set_cad_default)**
+- **[Get_data_... - RMOR](#get_data_...---rmor)**
+- **[Radio_toggle - RMOR](#radio_toggle---rmor)**
+- **[Set_conf_form - RMOR](#set_conf_form---rmor)**
+- **[Finish_reg - RMOR](#finish_reg---rmor)**
+- **[Rmor_init](#rmor_init)**
+- **[Rmor_btn](#rmor_btn)**
+- **[Rmor_next_step](#rmor_next_step)**
+- **[Rmor_back_step](#rmor_back_step)**
+- **[Rmor_Functions](#rmor_Functions)**
 
 
-### Data_tratament_error - RMCR
+### Data_tratament_error_rmor
 Responsible by notify the client case insert the data of incorrect form
 ```python
-def data_tratament_error(self, step, w):
+def data_tratament_error_rmor(self, page, w, data):
 ```
 
-### Clean_data - RMCR
+### Clean_data - RMOR
 Responsible by cleaning fields
 ```python
 def clean_data(self, w):
 ```
 
-### Get_data_pg1 - RMCR
-Responsible by  get data in the fields of first page
+### Get_data_... - RMCU
+```get_data_client, get_data_card and get_data_add```<br>
+Responsible by get data in the fields:
 ```python
-def get_data_pg1(self, w):
+def get_data_...(self, w):
 ```
 ### Finish_register - RMCR
 Responsible by  get data in the fields of second page and finish register
