@@ -315,13 +315,13 @@ def rmpr_Functions(self, w):
 
 
 
-## Rmc_View
+## Rmp_View
 - **[Rmpv_init](#rmpv_init)**
 - **[Rmpv_btn](#rmpv_btn)**
 - **[Animated_graphic - RMPV](#animated_graphic---rmpv)**
-- **[place_graphic - RMPV](#place_graphic---rmpv)**
-- **[rmpv_back_step](#rmpv_btn)**
-- **[rmpv_next_step](#rmpv_btn)**
+- **[Place_graphic - RMPV](#place_graphic---rmpv)**
+- **[Rmpv_back_step](#rmpv_btn)**
+- **[Rmpv_next_step](#rmpv_btn)**
 - **[Rmpv_Functions](#rmpv_Functions)**
 
 ### Rmpv_init
@@ -339,20 +339,20 @@ Responsible for creating an animated graph, using the matplotlib library
 ```python
 def animated_graphic(self, x , y, grapich_Title):
 ```
-### Animated_graphic - RMPV
+### Place_graphic - RMPV
 Responsible for generate and place an graph in png, using the matplotlib library
 ```python
 def place_graphic(self, frame,  x , y, grapich_Title):
 ```
-### Rmcu_next_step
+### Rmpv_next_step
 Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
 ```python
-def rmpu_next_step(self, w, current):
+def rmpv_next_step(self, w, current):
 ```
-### Rmpu_back_step
+### Rmpv_back_step
 Responsible for changing fonts, pages and getting data, according to the current page, when the **BACK** button is pressed
 ```python
-def rmpu_back_step(self, w):
+def rmpv_back_step(self, w):
 ```
 ### Rmpv_Functions
 Responsible for calling button function
@@ -629,7 +629,7 @@ Responsible by cleaning fields
 def clean_data(self, w):
 ```
 
-### Get_data_... - RMCU
+### Get_data_... - RMOR
 ```get_data_client, get_data_card and get_data_add```<br>
 Responsible by get data in the fields:
 ```python
@@ -640,7 +640,7 @@ Responsible for getting option from "radio buttons":
 ```python
 def radio_toggle(self, w):
 ```
-### Set_conf_form - RMCR
+### Set_conf_form - RMOR
 Responsible for requesting confirmation from the client about the data entered:
 ```python
 def set_conf_form(self, w):
@@ -678,25 +678,68 @@ def rmor_Functions(self, w):
 
 
 
-## Rmc_View
-- **[Rmcv_init](#rmcv_init)**
-- **[Rmcv_btn](#rmcv_btn)**
-- **[Rmcv_Functions](#rmcv_Functions)**
+## Rmo_View
+- **[Pg_date](#pg_date)**
+- **[Get_date](#get_date)**
+- **[Animated_graphic - RMOV](#animated_graphic---rmov)**
+- **[Place_graphic - RMOV](#place_graphic---rmov)**
+- **[Date_tratament - RMOV](#date_tratament---rmov)**
+- **[Rmov_init](#rmov_init)**
+- **[Rmov_btn](#rmov_btn)** 
+- **[Rmov_back_step](#rmov_btn)**
+- **[Rmov_next_step](#rmov_btn)**
+- **[Rmov_Functions](#rmov_Functions)**
 
-### Rmcv_init
+
+### Pg_date
+Responsible by switch page to select date:
+```python
+def pg_date(self, w, page):
+```
+### Get_date
+Responsible by get selected date:
+```python
+def get_date(self, w, page):
+```
+### Animated_graphic - RMOV
+Responsible for creating an animated graph, using the matplotlib library
+```python
+def animated_graphic(self, x , y, grapich_Title):
+```
+### Place_graphic - RMOV
+Responsible for generate and place an graph in png, using the matplotlib library
+```python
+def place_graphic(self, frame,  x , y, grapich_Title):
+```
+### Data_tratament - ROMOV
+Responsible for getting the updated data. Obs.: this function exists because of an interface bug that takes old data:
+```python
+def date_tratament(self, month = None):
+```
+### Rmov_init   
 Responsible by  initialize TreeWidget, get data and set the main page
 ```python
-def rmcv_init(self, w, init):
+def rmpv_init(self, w, init):
 ```
-### Rmcv_btn
+### Rmov_btn
 Responsible by  initialize buttons
 ```python
-def rmcv_btn(self, w):
+def rmov_btn(self, w):
 ```
-### Rmcv_Functions
+### Rmov_next_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
+```python
+def rmov_next_step(self, w, btn):
+```
+### Rmou_back_step
+Responsible for changing fonts, pages and getting data, according to the current page, when the **BACK** button is pressed
+```python
+def rmov_back_step(self, w):
+```
+### Rmov_Functions
 Responsible for calling button function
 ```python
-def rmcv_Functions(self, w):
+def rmov_Functions(self, w):
 ```
 
 ## Rmc_Update
