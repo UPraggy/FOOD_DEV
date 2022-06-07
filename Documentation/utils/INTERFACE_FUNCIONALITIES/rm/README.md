@@ -635,35 +635,45 @@ Responsible by get data in the fields:
 ```python
 def get_data_...(self, w):
 ```
-### Finish_register - RMCR
-Responsible by  get data in the fields of second page and finish register
+### Radio_toggle - RMOR
+Responsible for getting option from "radio buttons":
 ```python
-def finish_register(self, w):
+def radio_toggle(self, w):
 ```
-### Rmcr_init
+### Set_conf_form - RMCR
+Responsible for requesting confirmation from the client about the data entered:
+```python
+def set_conf_form(self, w):
+```
+### Finish_register - RMOR
+Responsible by get data in the fields of second page and finish register
+```python
+def finish_reg(self):
+```
+### Rmor_init
 Responsible by  initialize fields and set the main page
 ```python
-def rmcr_init(self, w, init):
+def rmor_init(self, w, init):
 ```
-### Rmcr_btn
+### Rmor_btn
 Responsible by  initialize buttons
 ```python
-def rmcr_btn(self, w):
+def rmor_btn(self, w):
 ```
-### Rmcr_next_step
+### Rmor_next_step
 Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
 ```python
-def rmcr_next_step(self, w, current):
+def rmor_next_step(self, w, current):
 ```
-### Rmcr_back_step
+### Rmor_back_step
 Responsible for changing fonts, pages and getting data, according to the current page, when the **BACK** button is pressed
 ```python
-def rmcr_back_step(self, w):
+def rmor_back_step(self, w):
 ```
-### Rmcr_Functions
+### Rmor_Functions
 Responsible for calling button function
 ```python
-def rmcr_Functions(self, w):
+def rmor_Functions(self, w):
 ```
 
 
