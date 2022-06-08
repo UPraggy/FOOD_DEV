@@ -2,9 +2,9 @@
 - **[Introduction](#introduction)**
 - **[Initial declarations and imports](#initial-declarations-and-imports)**
 - **[Switch_page](#switch_page)**
-- **[CLASSES FOR CLIENT - RMC_FUNCTIONS AND SUBCLASSES](#classes-for-client---rmc-functions-and-subclasses)**
-- **[CLASSES FOR PRODUCT - RMP_FUNCTIONS](#classes-for-product---rmp-functions)**
-- **[CLASSES FOR ORDER - RMO_FUNCTIONS](#classes-for-order---rmo-functions)**
+- **[CLASSES FOR CLIENT - RMC_FUNCTIONS AND SUBCLASSES](#classes-for-client---rmc_functions-and-subclasses)**
+- **[CLASSES FOR PRODUCT - RMP_FUNCTIONS AND SUBCLASSES](#classes-for-product---rmp_functions-and-subclasses)**
+- **[CLASSES FOR ORDER - RMO_FUNCTIONS AND SUBCLASSES](#classes-for-order---rmo_functions-and-subclasses)**
 
 
 
@@ -239,7 +239,7 @@ def rmcd_Functions(self, w):
 
 
 
-# CLASSES FOR PRODUCT - RMP_FUNCTIONS
+# CLASSES FOR PRODUCT - RMP_FUNCTIONS AND SUBCLASSES
 - **[Search_data - RMP](#search_data---rmp)**
 - **[Insert_tree_data - RMP](#insert_tree_data---rmp)**
 - **[Rmp_Register](#rmp_register)**
