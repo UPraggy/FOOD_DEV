@@ -314,8 +314,8 @@ def rmpr_Functions(self, w):
 - **[Rmpv_btn](#rmpv_btn)**
 - **[Animated_graphic - RMPV](#animated_graphic---rmpv)**
 - **[Place_graphic - RMPV](#place_graphic---rmpv)**
-- **[Rmpv_back_step](#rmpv_btn)**
-- **[Rmpv_next_step](#rmpv_btn)**
+- **[Rmpv_back_step](#rmpv_next_step)**
+- **[Rmpv_next_step](#rmpv_back_step)**
 - **[Rmpv_Functions](#rmpv_Functions)**
 
 ### Rmpv_init
