@@ -233,14 +233,8 @@ def rmcd_next_step(self, w, current):
 ### Rmcd_Functions
 Responsible for calling button function
 ```python
-def rmcu_Functions(self, w):
+def rmcd_Functions(self, w):
 ```
-
-
-
-
-
-
 
 
 
@@ -446,105 +440,8 @@ def rmpd_next_step(self, w, current):
 ### Rmpd_Functions
 Responsible for calling button function
 ```python
-def rmpu_Functions(self, w):
+def rmpd_Functions(self, w):
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # CLASSES FOR ORDER - RMO_FUNCTIONS AND SUBCLASSES
@@ -602,7 +499,7 @@ Responsible for updating the QTreeWidget, the function exists because of a bug w
 def tree_update_data(self):
 ```
 
-## Rmc_Register
+## Rmo_Register
 - **[Data_tratament_error_rmor](#data_tratament_error_rmor)**
 - **[Clean_data - RMOR](#clean_data---rmor)**
 - **[Set_cad_default](#set_cad_default)**
@@ -742,94 +639,99 @@ Responsible for calling button function
 def rmov_Functions(self, w):
 ```
 
-## Rmc_Update
-- **[Clean_data - RMCU](#clean_data---rmcu)**
-- **[Get_data_... - RMCU](#get_data_---rmcu)**
-- **[Rmcu_init](#rmcu_init)**
-- **[Rmcu_btn](#rmcu_btn)**
-- **[Rmcu_next_step](#rmcu_next_step)**
-- **[Rmcu_back_step](#rmcu_back_step)**
-- **[Rmcu_Functions](#rmcu_Functions)**
+## Rmo_Update
+- **[Clean_data - RMCU](#clean_data---rmou)**
+- **[Get_data - RMCU](#get_data---rmou)**
+- **[Radio_toggle - RMOU](#radio_toggle---rmou)**
+- **[Rmou_init](#rmou_init)**
+- **[Rmou_btn](#rmou_btn)**
+- **[Rmou_next_step](#rmou_next_step)**
+- **[Rmou_back_step](#rmou_back_step)**
+- **[Rmou_Functions](#rmou_Functions)**
 
 
 
-### Clean_data - RMCU
+### Clean_data - RMOU
 Responsible by cleaning fields
 ```python
 def clean_data(self, w):
 ```
 
-### Get_data_... - RMCU
-```get_data_generic, get_data_card and get_data_add```<br>
+### Get_data - RMOU
 Responsible by  get data in the fields and update data:
 ```python
-def get_data_...(self, w):
+def get_data(self, w, field):
 ```
-### Rmcu_init
+### Radio_toggle - RMOU
+Responsible for getting option from "radio buttons":
+```python
+def radio_toggle(self, w):
+```
+### Rmou_init
 Responsible by  initialize TreeWidget and fields and set the main page
 ```python
-def rmcu_init(self, w, init):
+def rmou_init(self, w, init):
 ```
-### Rmcu_btn
+### Rmou_btn
 Responsible by  initialize buttons
 ```python
-def rmcu_btn(self, w):
+def rmou_btn(self, w):
 ```
-### Rmcu_next_step
+### Rmou_next_step
 Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
 ```python
-def rmcu_next_step(self, w, current):
+def rmou_next_step(self, w, current, widget):
 ```
-### Rmcu_back_step
+### Rmou_back_step
 Responsible for changing fonts, pages and getting data, according to the current page, when the **BACK** button is pressed
 ```python
-def rmcu_back_step(self, w):
+def rmou_back_step(self, w, current):
 ```
-### Rmcu_Functions
+### Rmou_Functions
 Responsible for calling button function
 ```python
-def rmcu_Functions(self, w):
+def rmou_Functions(self, w):
 ```
 
-## Rmc_Delete
-- **[Delete_data - RMCD](#delete_data---rmcd)**
-- **[Init_Tree_widget - RMCD](#init_tree_widget---rmcd)**
-- **[Rmcd_init](#rmcd_init)**
-- **[Rmcd_btn](#rmcd_btn)**
-- **[Rmcd_next_step](#rmcd_next_step)**
-- **[Rmcd_Functions](#rmcd_Functions)**
+## Rmo_Delete
+- **[Delete_data - RMOD](#delete_data---rmod)**
+- **[Init_Tree_widget - RMOD](#init_tree_widget---rmod)**
+- **[Rmod_init](#rmod_init)**
+- **[Rmod_btn](#rmod_btn)**
+- **[Rmod_next_step](#rmod_next_step)**
+- **[Rmod_Functions](#rmod_Functions)**
 
 
 
-### Delete_data - RMCD
+### Delete_data - RMOD
 Responsible by delete data
 ```python
 def delete_data(self):
 ```
-### Init_Tree_widget - RMCD
+### Init_Tree_widget - RMOD
 Responsible by fill the TreeWidget and change some fonts:
 ```python
 def init_Tree_widget(self, w):
 ```
-### Rmcd_init
+### Rmod_init
 Responsible by  initialize TreeWidget and set the main page
 ```python
-def rmcd_init(self, w, init):
+def rmod_init(self, w, init):
 ```
-### Rmcd_btn
+### Rmod_btn
 Responsible by  initialize buttons
 ```python
-def rmcd_btn(self, w):
+def rmod_btn(self, w):
 ```
-### Rmcd_next_step
+### Rmod_next_step
 Responsible for changing fonts, pages and getting data, according to the current page, when the **NEXT** button is pressed:
 ```python
-def rmcd_next_step(self, w, current):
+def rmod_next_step(self, w, current):
 ```
-### Rmcd_Functions
+### Rmod_Functions
 Responsible for calling button function
 ```python
-def rmcu_Functions(self, w):
+def rmod_Functions(self, w):
 ```
 
 
