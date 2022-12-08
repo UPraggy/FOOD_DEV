@@ -36,7 +36,7 @@ def current_file_src(address_file):
 def create_file(address_file, month, year):
     file = f'ORDER_{month}_{year}.xlsx'
     address_file = address_file.split(r'ORDERS')[0]
-    model = pd_read_excel(f'{address_file}/ORDERS/Model/MODEL_ORDER.xlsx')
+    model = pd_read_excel(f'{address_file}ORDERS/Model/MODEL_ORDER.xlsx')
     cols = model.columns
     model = model.set_index(f'{cols[0]}')
     model.to_excel(f'{address_file}/ORDERS/{year}/{file}')
@@ -57,6 +57,8 @@ def data_processing(input_data):
     return input_data
 
 def view_data(file_path):
+    print("VIEW DATA")
+    print(file_path)
     data = ''
     data = pd_read_excel(f'{file_path}')
     if(len(data) == 0):
@@ -70,22 +72,7 @@ def search_data(data, field_src, input_data):
     return input_data
 
 def insert_data(file_path, input_data):
-    print(f"""\n
-            _______________PATH CLIENT REGISTERED CRUD_______________
-                                     {file_path}
-            ____________________________________________________________\n
-        """)
     data = pd_read_excel(f'{file_path}')
-    print(f"""\n
-            _______________DATA READ EXCEL CLIENT CRUD_______________
-                                     {data}
-            ____________________________________________________________\n
-        """)
-    print(f"""\n
-            _______________PATH CLIENT REGISTERED CRUD_______________
-                                     {file_path}
-            ____________________________________________________________\n
-        """)
     cols = data.columns
     nw_data = [x for x in range(len(cols))]
     for x in range(len(cols)):
@@ -95,11 +82,6 @@ def insert_data(file_path, input_data):
     nw_data = pd_DataFrame(nw_data, columns = cols)
     data = [data, nw_data]
     data = pd_concat(data)
-    print(f"""\n
-            _______________DATA WITH EXCEL CLIENT REGISTERED CRUD_______________
-                                     {data}
-            ____________________________________________________________\n
-        """)
     data = data.set_index(f'{cols[0]}')
     data.to_excel(f'{file_path}')
 
@@ -128,7 +110,6 @@ def update_data(data, file_path, field_up, input_data, update_data):
 def delete_data(data, file_path, input_data):
     cols = data.columns
     input_data = input_data.index
-    print("DATA {}".format(input_data))
     data = data.drop([input_data[0]])   
     data = data.set_index(f'{cols[0]}')
     data.to_excel(f'{file_path}')
