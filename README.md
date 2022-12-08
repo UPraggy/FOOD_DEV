@@ -7,9 +7,6 @@ The project presentation and documentation can be found at the link below.
 ### [Link of documentation](https://upraggy.github.io/FOOD_DEV/Documentation/)
 
 
-Check the dropbox link to access the program **executable** :  **[LINK](https://www.dropbox.com/sh/h6rknwswrynkj4m/AAA9T_bWKJXiDA0FWNfyksvOa?dl=0)**
-
-
 **THIS PROGRAM WAS MADE BY**:<br>
 **Rafael Moreira Ramos de Rezende** 
 
