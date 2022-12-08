@@ -645,7 +645,7 @@ class Rmp_View(RMP_FUNCTIONS):
         file = f'{file}/{grapich_Title}.png'
         plt.savefig(file)
         plt.close()
-        style = f'border-image: url({file}) 0 0 0 0 stretch stretch;\nborder-radius: 5px;\n'
+        style = f'border-image: url("{file}") 0 0 0 0 stretch stretch;\nborder-radius: 5px;\n'
         frame.setStyleSheet(style)
    
         
@@ -1146,7 +1146,7 @@ class RMO_FUNCTIONS():
                 if (operation == "Update"):
                         if (prod1 < prod_temp[2]):
                                 w.alert.show()
-                                w.alert.Alert_win_f1_lb.setStyleSheet("font: 28pt \"Voga \";\n color:#f6f6e9;")
+                                w.alert.Alert_win_f1_lb.setStyleSheet("font: 25pt \"Voga \";\n color:#f6f6e9;")
                                 w.alert.Alert_win_f1_lb.setText(f'The selected quantity is\ngreater than the available')
                                 w.rmor_slc_p.hide()
                                 w.hide()
@@ -1348,7 +1348,7 @@ class Rmo_Register(RMO_FUNCTIONS):
                 self.data_order[0] = int(temp) + 1 # NUMBER ORDER
                 self.data_order[0] = str(self.data_order[0])
         except:
-                self.data_order[0] = f'{date.year}{month}000001' # NUMBER ORDER
+                self.data_order[0] = f'{date.year}{month}0001' # NUMBER ORDER
         self.data_order[3] = 'received' # STATUS
         self.data_order[5] = str(self.total_value) # TOTAL VALUE
         
@@ -1621,13 +1621,11 @@ class Rmo_View(RMO_FUNCTIONS):
         plt.title(grapich_Title)
         plt.barh(tx, ty)
         file = p.src_path()
-        file = file.replace('PRODUCTS/PRODUCTS.xlsx','ORDERS/GRAPHICS')
-        style = f'border-image: url({file}/temp.png) 0 0 0 0 stretch stretch;\nborder-radius: 5px;\n'
-        frame.setStyleSheet(style)
+        file = file.replace('Products/PRODUCTS.xlsx','ORDERS/GRAPHICS')
         file = f'{file}/{grapich_Title}.png'
         plt.savefig(file)
         plt.close()
-        style = f'border-image: url({file}) 0 0 0 0 stretch stretch;\nborder-radius: 5px;\n'
+        style = f'border-image: url("{file}") 0 0 0 0 stretch stretch;\nborder-radius: 5px;\n'
         frame.setStyleSheet(style)
     
     def date_tratament(self, month = None):
@@ -1655,6 +1653,7 @@ class Rmo_View(RMO_FUNCTIONS):
     def rmov_init(self, w, init):
         w.rmov_btn_b.setVisible(False)
         switch_page(w.rm_stackedWidget,w.rmov)
+        self.data = o.view()
         self.date_tratament() #DEFAULT CURRENT DATA
         if (init == 0):
             switch_page(w.rmov_stackedWidget,w.rmov_op)
@@ -1941,7 +1940,7 @@ class Rmo_Delete(RMO_FUNCTIONS):
     def delete_data(self, w):
         print(o.delete(self.data, self.slct_data))
         self.__init__()
-        self.rmod_init(w, 1)
+        self.rmod_init(w, 1, "deleted")
     #DELETE CLIENT FUNCTIONS
 
     def init_Tree_widget(self, w):
@@ -1952,26 +1951,28 @@ class Rmo_Delete(RMO_FUNCTIONS):
             w.rmod_lb_ds.setText("DELETE SYSTEM")
             w.rmod_lb_so.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
           
-    def rmod_init(self, w, init):
+    def rmod_init(self, w, init, deleted = "none"):
         self.data = o.view()
-        try:
-                if (self.data == "Error"):
+        if (deleted == "none"):
+            try:
+                    if (self.data == "Error"):
+                                w.alert.show()
+                                w.alert.Alert_win_f1_lb.setStyleSheet("font: 28pt \"Voga \";\n color:#f6f6e9;")
+                                w.alert.Alert_win_f1_lb.setText(f'No data to Delete')
+                                w.hide()
+                    if (self.data == "ERROR: Invalid Input"):
                             w.alert.show()
                             w.alert.Alert_win_f1_lb.setStyleSheet("font: 28pt \"Voga \";\n color:#f6f6e9;")
                             w.alert.Alert_win_f1_lb.setText(f'No data to Delete')
                             w.hide()
-                if (self.data == "ERROR: Invalid Input"):
-                        w.alert.show()
-                        w.alert.Alert_win_f1_lb.setStyleSheet("font: 28pt \"Voga \";\n color:#f6f6e9;")
-                        w.alert.Alert_win_f1_lb.setText(f'No data to Delete')
-                        w.hide()
-        except:
-            switch_page(w.rm_stackedWidget,w.rmod)
-            w.rmod_btn_n.setVisible(False)
-            w.rmod_lb_ds.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
-            w.rmod_lb_so.setText("DELETE SYSTEM")
-            w.rmod_reg_f2_tree.clear()
-            self.init_Tree_widget(w)
+                    w.rmod_reg_f2_tree.clear()
+            except:
+                switch_page(w.rm_stackedWidget,w.rmod)
+                w.rmod_btn_n.setVisible(False)
+                w.rmod_lb_ds.setStyleSheet("color:#f6f6e9;\nfont: 28pt \"Fira Sans\";\n")
+                w.rmod_lb_so.setText("DELETE SYSTEM")
+                w.rmod_reg_f2_tree.clear()
+                self.init_Tree_widget(w)
             if (init == 0):
                 switch_page(w.rmod_stackedWidget,w.rmod_slct)
                 init = 1
@@ -1984,12 +1985,14 @@ class Rmo_Delete(RMO_FUNCTIONS):
             
     def rmod_next_step(self, w):
             if (w.rmod_reg_f2_tree.currentItem() != None):
+                    self.data = o.view()
                     self.slct_data = w.rmod_reg_f2_tree.currentItem().text(0)
                     self.slct_data = self.data.loc[self.data['number_order'] == int(self.slct_data)]
                     self.slct_data1 = w.rmod_reg_f2_tree.currentItem().text(2)
                     self.slct_data = self.slct_data.loc[self.slct_data['client'] == self.slct_data1]
                     switch_page(w.rmod_stackedWidget,w.rmod_suc)
                     self.delete_data(w)
+                    self.data = o.view()
                     w.rmod_btn_n.setVisible(False)
                     w.rmod_lb_ds.setText("")
                     w.rmod_lb_so.setText("DELETE SYSTEM")
