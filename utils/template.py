@@ -108,6 +108,8 @@ class Order:
     def view(self, current = True, month = None, year = None):
             path = self.src_path(current, month, year)
             input_data = cd.view_data(path)
+            print("RETURn DataFrame")
+            print(input_data)
             return input_data
     def update(self, data,  field_src, input_data, update_data):
         try:
