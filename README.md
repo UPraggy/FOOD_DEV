@@ -3,7 +3,9 @@ This page aims to present and document the project. The presentation can and wil
 The idealized and designed system does not have many functions, because its objective is to be a basic system.<br>
 Check the dropbox link to access the program **executable** : **[LINK](https://www.dropbox.com/sh/h6rknwswrynkj4m/AAA9T_bWKJXiDA0FWNfyksvOa?dl=0)**
 
-**PROJECT STATUS: IN PROGRESS / PROGRAMMING AND DOCUMENTING STEP**
+This Project was conceived and developed based on the proposal to learn through research and practice the knowledge acquired about python and its libraries, through the creation of the respective program. Still from this perspective, another factor that boosted its development was the need to have a project that could be placed in the "showcase" in order to show a little of the author's skills. Obs.: As this is the first project, it is not intended to be something big or complex, it was made based on the thought of being something simple, so that it can increase perception, gain experience, and help in the creation of the next ones.
+
+**PROJECT STATUS: FINNALIZED / PROGRAMMING AND DOCUMENTING STEP**
 <br>
 
 >***Documentation links will be at the bottom of the page.*** <br>
@@ -25,3 +27,4 @@ Check the dropbox link to access the program **executable** : **[LINK](https://w
 **Rafael Moreira Ramos de Rezende** 
 
  [![image](https://user-images.githubusercontent.com/100146657/159492505-d6134d9b-7d19-43ee-9e30-72be719d69f4.png)](https://www.linkedin.com/in/rafael-moreira-ramos-de-rezende-16420b21b/)
+
