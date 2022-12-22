@@ -11,6 +11,7 @@ o = template.Order()
 
 
 
+
 def switch_page(stacked, page):
         stacked.setCurrentWidget(page)
 
@@ -1568,8 +1569,8 @@ class Rmo_View(RMO_FUNCTIONS):
                 tx[j] = str(tx[j])
                 if (test == 1 and len(self.data) > 5):
                         tx[j] = tx[j][0:6]
-        plt.xlabel('ORDER')
-        plt.ylabel('VALUE')
+        plt.ylabel('ORDER')
+        plt.xlabel('VALUE')
         plt.title(grapich_Title)
         plt.barh(tx, ty)
         plt.show()
